@@ -1,0 +1,122 @@
+[
+  {
+    "id": 1,
+    "name": "Logitech G502 Hero",
+    "detail": "High-performance gaming mouse with HERO sensor and customizable weights",
+    "price": 79.99,
+    "prevPrice": 89.99,
+    "image": "assets/images/mouse/mouse1.png"
+  },
+  {
+    "id": 2,
+    "name": "Razer DeathAdder Elite",
+    "detail": "Ergonomic gaming mouse with Razer Optical Mouse Switches and 16,000 DPI sensor",
+    "price": 69.99,
+    "prevPrice": 79.99,
+    "image": "assets/images/mouse/mouse2.png"
+  },
+  {
+    "id": 3,
+    "name": "SteelSeries Rival 600",
+    "detail": "Dual-sensor gaming mouse with customizable weight and split-trigger buttons",
+    "price": 79.99,
+    "prevPrice": 89.99,
+    "image": "assets/images/mouse/mouse3.png"
+  },
+  {
+    "id": 4,
+    "name": "Corsair Dark Core RGB Pro",
+    "detail": "Wireless gaming mouse with customizable RGB lighting and 18,000 DPI sensor",
+    "price": 89.99,
+    "prevPrice": 99.99,
+    "image": "assets/images/mouse/mouse4.png"
+  },
+  {
+    "id": 5,
+    "name": "Logitech G Pro Wireless",
+    "detail": "Ultra-lightweight wireless gaming mouse with HERO sensor and 16,000 DPI",
+    "price": 129.99,
+    "prevPrice": 139.99,
+    "image": "assets/images/mouse/mouse5.png"
+  },
+  {
+    "id": 6,
+    "name": "Razer Basilisk Ultimate",
+    "detail": "Wireless gaming mouse with HyperSpeed technology and 20,000 DPI sensor",
+    "price": 149.99,
+    "prevPrice": 159.99,
+    "image": "assets/images/mouse/mouse6.png"
+  },
+  {
+    "id": 7,
+    "name": "Corsair M65 RGB Elite",
+    "detail": "High-precision gaming mouse with customizable weights and Omron switches",
+    "price": 59.99,
+    "prevPrice": 69.99,
+    "image": "assets/images/mouse/mouse7.png"
+  },
+  {
+    "id": 8,
+    "name": "SteelSeries Sensei 310",
+    "detail": "Ambidextrous gaming mouse with TrueMove3 optical sensor and split-trigger buttons",
+    "price": 49.99,
+    "prevPrice": 59.99,
+    "image": "assets/images/mouse/mouse8.png"
+  },
+  {
+    "id": 9,
+    "name": "Logitech G203 Lightsync",
+    "detail": "Budget-friendly gaming mouse with customizable RGB lighting and 8,000 DPI sensor",
+    "price": 29.99,
+    "prevPrice": 39.99,
+    "image": "assets/images/mouse/mouse9.png"
+  },
+  {
+    "id": 10,
+    "name": "Razer Naga Trinity",
+    "detail": "Modular gaming mouse with interchangeable side plates and 16,000 DPI sensor",
+    "price": 99.99,
+    "prevPrice": 109.99,
+    "image": "assets/images/mouse/mouse10.png"
+  },
+  {
+    "id": 11,
+    "name": "HyperX Pulsefire Surge",
+    "detail": "RGB gaming mouse with Pixart 3389 sensor and customizable DPI settings",
+    "price": 59.99,
+    "prevPrice": 69.99,
+    "image": "assets/images/mouse/mouse11.png"
+  },
+  {
+    "id": 12,
+    "name": "Corsair Harpoon RGB Wireless",
+    "detail": "Wireless gaming mouse with Slipstream technology and 10,000 DPI sensor",
+    "price": 49.99,
+    "prevPrice": 59.99,
+    "image": "assets/images/mouse/mouse12.png"
+  },
+  {
+    "id": 13,
+    "name": "Roccat Kain 120 AIMO",
+    "detail": "Comfortable gaming mouse with Titan Click technology and 16,000 DPI Owl-Eye sensor",
+    "price": 69.99,
+    "prevPrice": 79.99,
+    "image": "assets/images/mouse/mouse13.png"
+  },
+  {
+    "id": 14,
+    "name": "SteelSeries Rival 3",
+    "detail": "Affordable gaming mouse with TrueMove Core sensor and Prism RGB lighting",
+    "price": 29.99,
+    "prevPrice": 39.99,
+    "image": "assets/images/mouse/mouse14.png"
+  },
+  {
+    "id": 15,
+    "name": "Razer Viper Mini",
+    "detail": "Ultra-light gaming mouse with Razer Optical Mouse Switches and 8,500 DPI sensor",
+    "price": 39.99,
+    "prevPrice": 49.99,
+    "image": "assets/images/mouse/mouse15.png"
+  }
+]

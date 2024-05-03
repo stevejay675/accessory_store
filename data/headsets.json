@@ -1,0 +1,122 @@
+[
+  {
+    "id": 1,
+    "name": "HyperX Cloud II",
+    "detail": "Wired gaming headset with 7.1 surround sound and detachable microphone",
+    "price": 99.99,
+    "prevPrice": 109.99,
+    "image": "assets/images/headsets/headset1.png"
+  },
+  {
+    "id": 2,
+    "name": "SteelSeries Arctis 7",
+    "detail": "Wireless gaming headset with DTS Headphone:X v2.0 surround sound and ClearCast microphone",
+    "price": 149.99,
+    "prevPrice": 169.99,
+    "image": "assets/images/headsets/headset2.png"
+  },
+  {
+    "id": 3,
+    "name": "Razer BlackShark V2",
+    "detail": "Wired gaming headset with THX 7.1 surround sound and Triforce Titanium 50mm drivers",
+    "price": 99.99,
+    "prevPrice": 119.99,
+    "image": "assets/images/headsets/headset3.png"
+  },
+  {
+    "id": 4,
+    "name": "Logitech G Pro X",
+    "detail": "Wired gaming headset with Blue VO!CE microphone technology and customizable EQ profiles",
+    "price": 129.99,
+    "prevPrice": 139.99,
+    "image": "assets/images/headsets/headset4.png"
+  },
+  {
+    "id": 5,
+    "name": "Corsair HS70 Pro",
+    "detail": "Wireless gaming headset with 7.1 surround sound and detachable noise-cancelling microphone",
+    "price": 99.99,
+    "prevPrice": 119.99,
+    "image": "assets/images/headsets/headset5.png"
+  },
+  {
+    "id": 6,
+    "name": "Astro A50 Wireless",
+    "detail": "Premium wireless gaming headset with Dolby Audio and Astro Audio V2",
+    "price": 299.99,
+    "prevPrice": 349.99,
+    "image": "assets/images/headsets/headset6.png"
+  },
+  {
+    "id": 7,
+    "name": "Turtle Beach Stealth 700 Gen 2",
+    "detail": "Wireless gaming headset with Superhuman Hearing and glasses-friendly design",
+    "price": 149.99,
+    "prevPrice": 159.99,
+    "image": "assets/images/headsets/headset7.png"
+  },
+  {
+    "id": 8,
+    "name": "HyperX Cloud Alpha S",
+    "detail": "Wired gaming headset with virtual 7.1 surround sound and dual chamber drivers",
+    "price": 129.99,
+    "prevPrice": 139.99,
+    "image": "assets/images/headsets/headset8.png"
+  },
+  {
+    "id": 9,
+    "name": "SteelSeries Arctis Pro + GameDAC",
+    "detail": "Wired gaming headset with hi-res audio and dedicated DAC (Digital-to-Analog Converter)",
+    "price": 249.99,
+    "prevPrice": 279.99,
+    "image": "assets/images/headsets/headset9.png"
+  },
+  {
+    "id": 10,
+    "name": "Razer Kraken X",
+    "detail": "Lightweight gaming headset with 7.1 surround sound and bendable cardioid microphone",
+    "price": 49.99,
+    "prevPrice": 59.99,
+    "image": "assets/images/headsets/headset10.png"
+  },
+  {
+    "id": 11,
+    "name": "Logitech G733 Lightspeed",
+    "detail": "Wireless gaming headset with LIGHTSYNC RGB lighting and Blue VO!CE microphone",
+    "price": 129.99,
+    "prevPrice": 149.99,
+    "image": "assets/images/headsets/headset11.png"
+  },
+  {
+    "id": 12,
+    "name": "Corsair Void RGB Elite Wireless",
+    "detail": "Wireless gaming headset with 7.1 surround sound and customizable RGB lighting",
+    "price": 99.99,
+    "prevPrice": 109.99,
+    "image": "assets/images/headsets/headset12.png"
+  },
+  {
+    "id": 13,
+    "name": "SteelSeries Arctis 1 Wireless",
+    "detail": "Versatile wireless gaming headset with detachable ClearCast microphone and USB-C dongle",
+    "price": 99.99,
+    "prevPrice": 119.99,
+    "image": "assets/images/headsets/headset13.png"
+  },
+  {
+    "id": 14,
+    "name": "Astro A40 TR",
+    "detail": "Modular wired gaming headset with customizable speaker tags and Astro Audio V2",
+    "price": 149.99,
+    "prevPrice": 169.99,
+    "image": "assets/images/headsets/headset14.png"
+  },
+  {
+    "id": 15,
+    "name": "HyperX Cloud Stinger Core",
+    "detail": "Affordable gaming headset with directional 40mm drivers and swivel-to-mute microphone",
+    "price": 49.99,
+    "prevPrice": 59.99,
+    "image": "assets/images/headsets/headset15.png"
+  }
+]

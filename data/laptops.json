@@ -1,0 +1,130 @@
+[
+  {
+    "id": 1,
+    "name": "ASUS ROG Zephyrus G14",
+    "detail": "14-inch gaming laptop with AMD Ryzen 9 processor and NVIDIA GeForce RTX 3060 graphics",
+    "price": 1499.99,
+    "prevPrice": 1599.99,
+    "image": "assets/images/laptops/laptop1.png"
+  },
+  {
+    "id": 2,
+    "name": "Razer Blade 15",
+    "detail": "15.6-inch gaming laptop with Intel Core i7 processor and NVIDIA GeForce RTX 3080 graphics",
+    "price": 2199.99,
+    "prevPrice": 2399.99,
+    "image": "assets/images/laptops/laptop2.png"
+  },
+  {
+    "id": 3,
+    "name": "MSI GS66 Stealth",
+    "detail": "15.6-inch gaming laptop with Intel Core i9 processor and NVIDIA GeForce RTX 3070 graphics",
+    "price": 1999.99,
+    "prevPrice": 2199.99,
+    "image": "assets/images/laptops/laptop3.png"
+  },
+  {
+    "id": 4,
+    "name": "Alienware m15 R6",
+    "detail": "15.6-inch gaming laptop with Intel Core i7 processor and NVIDIA GeForce RTX 3060 graphics",
+    "price": 1799.99,
+    "prevPrice": 1899.99,
+    "image": "assets/images/laptops/laptop4.png"
+  },
+  {
+    "id": 5,
+    "name": "Lenovo Legion 5 Pro",
+    "detail": "16-inch gaming laptop with AMD Ryzen 7 processor and NVIDIA GeForce RTX 3070 graphics",
+    "price": 1699.99,
+    "prevPrice": 1799.99,
+    "image": "assets/images/laptops/laptop5.png"
+  },
+  {
+    "id": 6,
+    "name": "HP Omen 15",
+    "detail": "15.6-inch gaming laptop with Intel Core i7 processor and NVIDIA GeForce RTX 3060 graphics",
+    "price": 1599.99,
+    "prevPrice": 1699.99,
+    "image": "assets/images/laptops/laptop6.png"
+  },
+  {
+    "id": 7,
+    "name": "Acer Predator Helios 300",
+    "detail": "15.6-inch gaming laptop with Intel Core i7 processor and NVIDIA GeForce RTX 3060 graphics",
+    "price": 1299.99,
+    "prevPrice": 1399.99,
+    "image": "assets/images/laptops/laptop7.png"
+  },
+  {
+    "id": 8,
+    "name": "Dell G15",
+    "detail": "15.6-inch gaming laptop with Intel Core i5 processor and NVIDIA GeForce RTX 3050 graphics",
+    "price": 1099.99,
+    "prevPrice": 1199.99,
+    "image": "assets/images/laptops/laptop8.png"
+  },
+  {
+    "id": 9,
+    "name": "Gigabyte Aorus 15G",
+    "detail": "15.6-inch gaming laptop with Intel Core i7 processor and NVIDIA GeForce RTX 3080 graphics",
+    "price": 2399.99,
+    "prevPrice": 2599.99,
+    "image": "assets/images/laptops/laptop9.png"
+  },
+  {
+    "id": 10,
+    "name": "MSI GE76 Raider",
+    "detail": "17.3-inch gaming laptop with Intel Core i9 processor and NVIDIA GeForce RTX 3080 graphics",
+    "price": 2699.99,
+    "prevPrice": 2899.99,
+    "image": "assets/images/laptops/laptop10.png"
+  },
+  {
+    "id": 11,
+    "name": "Razer Blade Stealth 13",
+    "detail": "13.3-inch gaming laptop with Intel Core i7 processor and NVIDIA GeForce GTX 1650 Ti graphics",
+    "price": 1499.99,
+    "prevPrice": 1599.99,
+    "image": "assets/images/laptops/laptop11.png"
+  },
+  {
+    "id": 12,
+    "name": "ASUS TUF Gaming A15",
+    "detail": "15.6-inch gaming laptop with AMD Ryzen 7 processor and NVIDIA GeForce GTX 1660 Ti graphics",
+    "price": 999.99,
+    "prevPrice": 1099.99,
+    "image": "assets/images/laptops/laptop12.png"
+  },
+  {
+    "id": 13,
+    "name": "Lenovo Legion 7i",
+    "detail": "15.6-inch gaming laptop with Intel Core i7 processor and NVIDIA GeForce RTX 3080 graphics",
+    "price": 2199.99,
+    "prevPrice": 2399.99,
+    "image": "assets/images/laptops/laptop13.png"
+  },
+  {
+    "id": 14,
+    "name": "Alienware x17",
+    "detail": "17.3-inch gaming laptop with Intel Core i9 processor and NVIDIA GeForce RTX 3080 graphics",
+    "price": 2999.99,
+    "prevPrice": 3199.99,
+    "image": "assets/images/laptops/laptop14.png"
+  },
+  {
+    "id": 15,
+    "name": "HP Victus 16",
+    "detail": "16.1-inch gaming laptop with AMD Ryzen 7 processor and NVIDIA GeForce RTX 3050 Ti graphics",
+    "price": 1099.99,
+    "prevPrice": 1199.99,
+    "image": "assets/images/laptops/laptop15.png"
+  },
+  {
+    "id": 16,
+    "name": "Acer Nitro 5",
+    "detail": "15.6-inch gaming laptop with AMD Ryzen 5 processor and NVIDIA GeForce GTX 1650 graphics",
+    "price": 799.99,
+    "prevPrice": 899.99,
+    "image": "assets/images/laptops/laptop16.png"
+  }
+]

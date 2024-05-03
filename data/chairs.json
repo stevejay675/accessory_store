@@ -1,0 +1,122 @@
+[
+  {
+    "id": 1,
+    "name": "Ergonomic Gaming Chair",
+    "detail": "High-back racing style gaming chair with adjustable armrests and lumbar support",
+    "price": 199.99,
+    "prevPrice": 229.99,
+    "image": "assets/images/chairs/chair1.png"
+  },
+  {
+    "id": 2,
+    "name": "Executive Gaming Chair",
+    "detail": "Luxurious leather gaming chair with built-in footrest and reclining function",
+    "price": 249.99,
+    "prevPrice": 299.99,
+    "image": "assets/images/chairs/chair2.png"
+  },
+  {
+    "id": 3,
+    "name": "Racing Style Gaming Chair",
+    "detail": "Sleek and stylish gaming chair with ergonomic design and adjustable headrest",
+    "price": 149.99,
+    "prevPrice": 179.99,
+    "image": "assets/images/chairs/chair3.png"
+  },
+  {
+    "id": 4,
+    "name": "Gaming Rocker Chair",
+    "detail": "Compact gaming chair with rocking motion and integrated speakers",
+    "price": 129.99,
+    "prevPrice": 149.99,
+    "image": "assets/images/chairs/chair4.png"
+  },
+  {
+    "id": 5,
+    "name": "Mesh Gaming Chair",
+    "detail": "Breathable mesh gaming chair with lumbar support and 360-degree swivel",
+    "price": 179.99,
+    "prevPrice": 199.99,
+    "image": "assets/images/chairs/chair5.png"
+  },
+  {
+    "id": 6,
+    "name": "Big and Tall Gaming Chair",
+    "detail": "Sturdy gaming chair designed for larger individuals with extra-wide seat",
+    "price": 299.99,
+    "prevPrice": 349.99,
+    "image": "assets/images/chairs/chair6.png"
+  },
+  {
+    "id": 7,
+    "name": "Fabric Gaming Chair",
+    "detail": "Comfortable fabric gaming chair with adjustable armrests and headrest",
+    "price": 169.99,
+    "prevPrice": 199.99,
+    "image": "assets/images/chairs/chair7.png"
+  },
+  {
+    "id": 8,
+    "name": "Gaming Bean Bag Chair",
+    "detail": "Casual and fun gaming chair in bean bag style for relaxed gaming sessions",
+    "price": 79.99,
+    "prevPrice": 89.99,
+    "image": "assets/images/chairs/chair8.png"
+  },
+  {
+    "id": 9,
+    "name": "Ergonomic Recliner Gaming Chair",
+    "detail": "Reclining gaming chair with ergonomic design and built-in footrest",
+    "price": 219.99,
+    "prevPrice": 249.99,
+    "image": "assets/images/chairs/chair9.png"
+  },
+  {
+    "id": 10,
+    "name": "Gaming Floor Chair",
+    "detail": "Low-profile gaming chair with adjustable backrest and foldable design",
+    "price": 99.99,
+    "prevPrice": 119.99,
+    "image": "assets/images/chairs/chair10.png"
+  },
+  {
+    "id": 11,
+    "name": "Modern Gaming Chair",
+    "detail": "Sleek and contemporary gaming chair with minimalist design",
+    "price": 189.99,
+    "prevPrice": 219.99,
+    "image": "assets/images/chairs/chair11.png"
+  },
+  {
+    "id": 12,
+    "name": "Gaming Recliner Sofa",
+    "detail": "Reclining sofa-style gaming chair with cup holders and storage pockets",
+    "price": 349.99,
+    "prevPrice": 399.99,
+    "image": "assets/images/chairs/chair12.png"
+  },
+  {
+    "id": 13,
+    "name": "Gaming Massage Chair",
+    "detail": "Massage gaming chair with heating function and multiple massage modes",
+    "price": 399.99,
+    "prevPrice": 449.99,
+    "image": "assets/images/chairs/chair13.png"
+  },
+  {
+    "id": 14,
+    "name": "Gaming Pedestal Chair",
+    "detail": "Pedestal-style gaming chair with swivel base and vibration feedback",
+    "price": 179.99,
+    "prevPrice": 199.99,
+    "image": "assets/images/chairs/chair14.png"
+  },
+  {
+    "id": 15,
+    "name": "Vintage Gaming Chair",
+    "detail": "Retro-style gaming chair with vinyl upholstery and classic design",
+    "price": 219.99,
+    "prevPrice": 249.99,
+    "image": "assets/images/chairs/chair15.png"
+  }
+]

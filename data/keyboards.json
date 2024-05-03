@@ -1,0 +1,122 @@
+[
+    {
+        "id": 1,
+        "name": "Mechanical Gaming Keyboard 1",
+        "detail": "Mechanical gaming keyboard with customizable RGB lighting and Cherry MX Blue switches",
+        "price": 99.99,
+        "prevPrice": 119.99,
+        "image": "assets/images/keyboards/keyboard1.png"
+    },
+    {
+        "id": 2,
+        "name": "RGB Gaming Keyboard 2",
+        "detail": "RGB gaming keyboard with detachable wrist rest and customizable macros",
+        "price": 79.99,
+        "prevPrice": 89.99,
+        "image": "assets/images/keyboards/keyboard2.png"
+    },
+    {
+        "id": 3,
+        "name": "Wireless Gaming Keyboard 3",
+        "detail": "Wireless gaming keyboard with low-profile switches and long battery life",
+        "price": 129.99,
+        "prevPrice": 149.99,
+        "image": "assets/images/keyboards/keyboard3.png"
+    },
+    {
+        "id": 4,
+        "name": "Compact Gaming Keyboard 4",
+        "detail": "Compact gaming keyboard with RGB backlighting and detachable cable",
+        "price": 69.99,
+        "prevPrice": 79.99,
+        "image": "assets/images/keyboards/keyboard4.png"
+    },
+    {
+        "id": 5,
+        "name": "TKL Gaming Keyboard 5",
+        "detail": "Tenkeyless gaming keyboard with Cherry MX Red switches and aluminum frame",
+        "price": 119.99,
+        "prevPrice": 139.99,
+        "image": "assets/images/keyboards/keyboard5.png"
+    },
+    {
+        "id": 6,
+        "name": "Ergonomic Gaming Keyboard 6",
+        "detail": "Ergonomic gaming keyboard with split design and customizable RGB lighting",
+        "price": 59.99,
+        "prevPrice": 69.99,
+        "image": "assets/images/keyboards/keyboard6.png"
+    },
+    {
+        "id": 7,
+        "name": "Mechanical Gaming Keyboard 7",
+        "detail": "Mechanical gaming keyboard with Cherry MX Brown switches and customizable keycaps",
+        "price": 149.99,
+        "prevPrice": 169.99,
+        "image": "assets/images/keyboards/keyboard7.png"
+    },
+    {
+        "id": 8,
+        "name": "Compact Wireless Gaming Keyboard 8",
+        "detail": "Compact wireless gaming keyboard with low-latency connection and RGB lighting",
+        "price": 89.99,
+        "prevPrice": 99.99,
+        "image": "assets/images/keyboards/keyboard8.png"
+    },
+    {
+        "id": 9,
+        "name": "Membrane Gaming Keyboard 9",
+        "detail": "Membrane gaming keyboard with dedicated media keys and customizable macros",
+        "price": 49.99,
+        "prevPrice": 59.99,
+        "image": "assets/images/keyboards/keyboard9.png"
+    },
+    {
+        "id": 10,
+        "name": "Wireless Mechanical Gaming Keyboard 10",
+        "detail": "Wireless mechanical gaming keyboard with customizable RGB lighting and Cherry MX Red switches",
+        "price": 109.99,
+        "prevPrice": 129.99,
+        "image": "assets/images/keyboards/keyboard10.png"
+    },
+    {
+        "id": 11,
+        "name": "RGB TKL Gaming Keyboard 11",
+        "detail": "Tenkeyless gaming keyboard with RGB lighting and detachable wrist rest",
+        "price": 79.99,
+        "prevPrice": 89.99,
+        "image": "assets/images/keyboards/keyboard11.png"
+    },
+    {
+        "id": 12,
+        "name": "Mechanical Gaming Keyboard 12",
+        "detail": "Mechanical gaming keyboard with customizable RGB lighting and Cherry MX Red switches",
+        "price": 69.99,
+        "prevPrice": 79.99,
+        "image": "assets/images/keyboards/keyboard12.png"
+    },
+    {
+        "id": 13,
+        "name": "Compact Mechanical Gaming Keyboard 13",
+        "detail": "Compact mechanical gaming keyboard with detachable wrist rest and Cherry MX Brown switches",
+        "price": 129.99,
+        "prevPrice": 149.99,
+        "image": "assets/images/keyboards/keyboard13.png"
+    },
+    {
+        "id": 14,
+        "name": "Wireless RGB Gaming Keyboard 14",
+        "detail": "Wireless RGB gaming keyboard with customizable macros and long battery life",
+        "price": 99.99,
+        "prevPrice": 119.99,
+        "image": "assets/images/keyboards/keyboard14.png"
+    },
+    {
+        "id": 15,
+        "name": "Compact TKL Gaming Keyboard 15",
+        "detail": "Tenkeyless gaming keyboard with compact design and Cherry MX Blue switches",
+        "price": 89.99,
+        "prevPrice": 99.99,
+        "image": "assets/images/keyboards/keyboard15.png"
+    }
+]
