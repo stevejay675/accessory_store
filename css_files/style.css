@@ -124,7 +124,7 @@ a{
 .cartCount{
     position: absolute;
     top: -8px;
-    right: -5px;
+    right: -10px;
     background-color: red;
     color: white;
     width: 16px;
