@@ -3,9 +3,314 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Shop</title>
+    <title>My Ecoommence site</title>
+    <link rel="stylesheet" href="css_files/shop.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link rel="icon" href="assets/logo2.png" type="image/x-icon">
 </head>
 <body>
     
+     <nav class="navbar">
+        <div class="logo">
+            <img src="assets/images/my_logo-removebg-preview.png" alt="" class="imageLogo">
+            <span class="jayxshop">JAYXSHOP</span>
+        </div>
+        <input type="text" placeholder="Looking for something?......." class="inputBar mediaquery">
+        
+        <div class="container-left">
+            <span href="" class="mediaquery category-parent">
+            
+                <a>Category <i class="bi-chevron-down"></i></a>
+                <ul class="categories-topMenu">
+                    <li><a href="#">All categories</a></li>
+                    <li><a href="#">Gaming Laptops</a></li>
+                    <li><a href="#">Keyboards</a></li>
+                    <li><a href="#">mouse</a></li>
+                    <li><a href="#">Gamepads</a></li>
+                </ul>
+            </span>
+
+            <a href="" class="mediaquery">about</a>
+            <a><i class="bi-search search"></i></a>
+            <a href="" class="mediaquery"><i class="bi-telephone"></i></a>
+            <a href="" class="cartcount-parent"><i class="bi-bag"></i> <span class="cartCount">0</span></a>
+
+            <div class="hamburger-menu">
+                <span class="line1"></span>
+                <span class="line2"></span>
+                <span class="line3"></span>
+            </div>
+        </div>
+     </nav>
+
+     
+     
+     <header class="hero-banner">
+        <div class="banner-content">
+          <h1>Discover Our Latest Products</h1>
+          <p>Shop all your gaming accessories with us. durable and affordable, -10% off everything</p>
+        </div>
+
+        <img src="assets/images/laptops/laptop9.png" alt="">
+      </header>
+
+
+      <div class="shop-options">
+        <div class="options active">All Category</div>
+        <div class="options" id="opt-laptop">laptops</div>
+        <div class="options" id="opt-gamepad">Gamepads</div>
+        <div class="options" id="opt-keyboard">Keyboards</div>
+        <div class="options" id="opt-mouse">Mouse</div>
+        <div class="options" id="opt-headset">Headsets</div>
+      </div>
+
+     <div class="searchbar">
+        <div>
+            <input type="text">
+            <i class="bi-search"></i>
+        </div>
+
+
+     </div>
+
+     <div class="sidebar">
+        <div class="sidebar-header">
+            <img src="assets/images/my_logo-removebg-preview.png" alt="" class="imageLogo">
+            <h3 class="jayxshop">JAYXSHOP</h3>
+        </div>
+
+        <ul>
+            <li><a href="#"><i class="bi-house"></i> home</a></li>
+            <li class="Category">
+                <a href="#"><i class="bi-chevron-down chevron-down-icon"></i> Category</a>
+                <li class="subcategories">
+                    <span>All Category</span>
+                    <span>Gaming PC</span>
+                    <span>Gaming Laptops</span>
+                    <span>Gamepads</span>
+                    <span>Gaming Headsets</span>
+                    <span>Mouse</span>
+                </li>
+            </li>
+            
+            <li><a href="#"><i class="bi-telephone"></i> contact</a></li>
+            <li><a href="#"><i class="bi-shop"></i> shop</a></li>
+            <li><a href="login.html"><i class="bi-person"></i>account</a></li>
+            <li><a href="#"><i class="bi-cart4"></i> cart</a></li>
+            <li><a href="#"><i class="bi-people"></i> about us</a></li>
+            <li><a href="#"><i class="bi-headset"></i> support</a></li>
+        </ul>
+     </div>
+
+            
+        
+<!--
+     <header class="hero-banner hero-banner2">
+        <div class="banner-content">
+          <h1>Discover Our Latest Flash Sales Products</h1>
+          <p>Shop all your gaming accessories with us. durable and affordable, -10% off everything</p>
+          <a href="shop.html" class="shop-now2">-32% OFF</a>
+        </div>
+
+      </header>
+
+     <div class="flashsales" id="flashsales">
+        
+     </div>
+    
+
+-->
+
+
+        <div class="productcontainer AllCategories" id="product-container">
+                
+
+        </div>
+
+        <div class="productcontainer laptops" id="product-container-laptops">
+                
+
+        </div>
+
+        <div class="productcontainer gamepads" id="product-container-gamepads">
+                
+
+        </div>
+
+        <div class="productcontainer keyboards" id="product-container-keyboards">
+                
+
+        </div>
+
+        <div class="productcontainer mouse" id="product-container-mouse">
+                
+
+        </div>
+
+        <div class="productcontainer headsets" id="product-container-headsets">
+                
+
+        </div>
+
+
+
+
+     <div class="darken">
+        
+
+     </div>
+
+
+     <footer>
+        <div class="footer-line1">
+            <div>
+                <i class="bi bi-car-front"></i>
+                <div>
+                    <h4>Free Shipping</h4>
+                    <span>we provide free shipping for orders from $200</span>
+                </div>
+            </div>
+
+            <div>
+                <i class="bi bi-person"></i>
+                <div>
+                    <h4>24/7 Support</h4>
+                    <span>contact us via our email for support</span>
+                </div>
+            </div>
+
+
+            <div>
+                <i class="bi bi-credit-card"></i>
+                <div>
+                    <h4>Online Payment</h4>
+                    <span>we accept online payment via bankcard</span>
+                </div>
+            </div>
+
+
+            <div>
+                <i class="bi bi-headset"></i>
+                <div>
+                    <h4>24/7 Support</h4>
+                    <span>contact us via our email for support</span>
+                </div>
+            </div>
+
+            <div>
+                <i class="bi bi-shop"></i>
+                <div>
+                    <h4>product variety</h4>
+                    <span>visit our shop for all products</span>
+                </div>
+            </div>
+
+            <div>
+                <i class="bi bi-credit-card"></i>
+                <div>
+                    <h4>Online Payment</h4>
+                    <span>we accept online payment via bankcard</span>
+                </div>
+            </div>
+
+        </div>
+        
+
+
+        <div class="separation"></div>
+
+        <div class="our-stores">
+            <ul>
+                <h4>Our Stores</h4>
+                <li><a href="#">New York</a></li>
+                <li><a href="#">London</a></li>
+                <li><a href="#">Uk</a></li>
+                <li><a href="#">oChicag</a></li>
+                <li><a href="#">Miami</a></li>
+            </ul>
+
+            <ul>
+                <h4>Useful links</h4>
+                <li><a href="#">privacy Policy</a></li>
+                <li><a href="#">Returns</a></li>
+                <li><a href="#">Terms and Condition</a></li>
+                <li><a href="#">Contact Us</a></li>
+                <li><a href="#">Latest news</a></li>
+            </ul>
+
+            <ul>
+                <h4>Our Stores</h4>
+                <li><a href="#">New York</a></li>
+                <li><a href="#">London</a></li>
+                <li><a href="#">Uk</a></li>
+                <li><a href="#">oChicag</a></li>
+                <li><a href="#">Miami</a></li>
+            </ul>
+
+            <ul>
+                <h4>F.A.Q</h4>
+                <li><a href="#">privacy Policy</a></li>
+                <li><a href="#">Returns</a></li>
+                <li><a href="#">Terms and Condition</a></li>
+                <li><a href="#">Contact Us</a></li>
+                <li><a href="#">Latest news</a></li>
+            </ul>
+
+            <ul>
+                <h4>Our Stores</h4>
+                <li><a href="#">New York</a></li>
+                <li><a href="#">London</a></li>
+                <li><a href="#">Uk</a></li>
+                <li><a href="#">oChicag</a></li>
+                <li><a href="#">Miami</a></li>
+            </ul>
+
+            <ul>
+                <h4>Useful links</h4>
+                <li><a href="#">privacy Policy</a></li>
+                <li><a href="#">Returns</a></li>
+                <li><a href="#">Terms and Condition</a></li>
+                <li><a href="#">Contact Us</a></li>
+                <li><a href="#">Latest news</a></li>
+            </ul>
+        </div>
+
+        <div class="separation"></div>
+
+        <div class="payment-system">
+        <p class="appleLogo">
+            <img src="assets/images/apple image.jpeg" alt="">
+        </p>
+
+        <div class="payment">
+            <h4>Payment system:</h4>
+            <div>
+                <img src="assets/images/logos/paypal_logo.png" alt="">
+                <img src="assets/images/logos/mastercard.png" alt="">
+                <img src="assets/images/logos/visacard_logo.png" alt="">
+                <img src="assets/images/logos/bitcoin.png" alt="">
+            </div>
+        </div>
+
+        <div class="social-links">
+            <h4>Our Social Links:</h4>
+            <span>
+                <i class="bi bi-facebook" id="fb"></i>
+                <i class="bi bi-whatsapp" id="wsp"></i>
+                <i class="bi bi-instagram" id="ig"></i>
+                <i class="bi bi-twitter" id="twt"></i>
+                <i class="bi bi-youtube" id="ytb"></i>
+            </div>
+        </span>
+    </div>
+
+        <div class="separation"></div>
+
+        <small class="designed-by">
+            &copy designed by Steve Jay, All rights reserve
+          </small>
+    </footer>
+
+    <script src="shop.js"></script>
 </body>
 </html>
