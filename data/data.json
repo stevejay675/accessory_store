@@ -611,14 +611,6 @@
           "price": 1099.99,
           "prevPrice": 1199.99,
           "image": "assets/images/laptops/laptop15.png"
-        },
-        {
-          "id": 76,
-          "name": "Acer Nitro 5",
-          "detail": "15.6-inch gaming laptop with AMD Ryzen 5 processor and NVIDIA GeForce GTX 1650 graphics",
-          "price": 799.99,
-          "prevPrice": 899.99,
-          "image": "assets/images/laptops/laptop16.png"
         }
       ],
 
