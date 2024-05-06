@@ -1,0 +1,148 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none;
+    font-family: sans-serif;
+}
+
+body{
+  position: relative;
+  background: linear-gradient(to bottom right, #E6E6E6, #FFFFFF);
+}
+
+a{
+    text-decoration: none;
+}
+
+
+
+.main-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#main-container2{
+    display: none;
+}
+
+.container-left{
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    border-right: 1px solid black;
+}
+
+.container-left h1{
+    font-size: 40px;
+    text-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+.container-left img{
+    width: 80%;
+    height: auto;
+}
+
+.container-right{
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100vh;
+    background: linear-gradient(to bottom, rgb(238, 24, 24), #222);
+    color: white;
+    gap: 10px;
+}
+
+.container-right i{
+    font-size: 100px;
+    color: white;
+}
+
+form{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    margin-top: 20px;
+    width: 80%;
+}
+
+form .div1{
+    display: flex;
+    gap: 5px;
+    width: 100%;
+    margin: auto;
+    flex-direction: column;
+}
+
+form div label{
+    font-weight: bold;
+    font-size: 15px;
+}
+
+.password-box{
+    display: flex;
+    width: 100%;
+    border: 1px solid #ccc;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+    border-radius: 10px;
+}
+
+.password-box input{
+    height: 100%;
+    border: transparent;
+    width: 90%;
+}
+
+.password-box i{
+    font-size: 15px;
+    width: 10%;
+    cursor: pointer;
+}
+
+ form div input{
+    width: 100%;
+    padding: 10px;
+    border-radius: 10px;
+    border: 1px solid #ccc;
+ }
+
+ .asteris{
+    color: red;
+    font-size: 20px;
+ }
+
+
+ .login, .signup, .Terms, .Conditions{
+    color: rgb(0, 94, 255);
+    cursor: pointer;
+ }
+ 
+
+ .submitbtn{
+    width: 100%;
+    padding: 10px;
+    border-radius: 10px;
+    margin-top: 10px;
+    background-color: black;
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.1);
+    color: white;
+    border: transparent;
+    cursor: pointer;
+ }
+
+ @media screen and (max-width: 600px){
+    .container-left{
+        display: none;
+    }
+
+    .container-right{
+        width: 100%;
+    }
+ }

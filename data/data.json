@@ -1,0 +1,1144 @@
+{
+    "chairs": [
+        {
+          "id": 1,
+          "name": "Ergonomic Gaming Chair",
+          "detail": "High-back racing style gaming chair with adjustable armrests and lumbar support",
+          "price": 199.99,
+          "prevPrice": 229.99,
+          "image": "assets/images/chairs/chair1.png"
+        },
+        {
+          "id": 2,
+          "name": "Executive Gaming Chair",
+          "detail": "Luxurious leather gaming chair with built-in footrest and reclining function",
+          "price": 249.99,
+          "prevPrice": 299.99,
+          "image": "assets/images/chairs/chair2.png"
+        },
+        {
+          "id": 3,
+          "name": "Racing Style Gaming Chair",
+          "detail": "Sleek and stylish gaming chair with ergonomic design and adjustable headrest",
+          "price": 149.99,
+          "prevPrice": 179.99,
+          "image": "assets/images/chairs/chair3.png"
+        },
+        {
+          "id": 4,
+          "name": "Gaming Rocker Chair",
+          "detail": "Compact gaming chair with rocking motion and integrated speakers",
+          "price": 129.99,
+          "prevPrice": 149.99,
+          "image": "assets/images/chairs/chair4.png"
+        },
+        {
+          "id": 5,
+          "name": "Mesh Gaming Chair",
+          "detail": "Breathable mesh gaming chair with lumbar support and 360-degree swivel",
+          "price": 179.99,
+          "prevPrice": 199.99,
+          "image": "assets/images/chairs/chair5.png"
+        },
+        {
+          "id": 6,
+          "name": "Big and Tall Gaming Chair",
+          "detail": "Sturdy gaming chair designed for larger individuals with extra-wide seat",
+          "price": 299.99,
+          "prevPrice": 349.99,
+          "image": "assets/images/chairs/chair6.png"
+        },
+        {
+          "id": 7,
+          "name": "Fabric Gaming Chair",
+          "detail": "Comfortable fabric gaming chair with adjustable armrests and headrest",
+          "price": 169.99,
+          "prevPrice": 199.99,
+          "image": "assets/images/chairs/chair7.png"
+        },
+        {
+          "id": 8,
+          "name": "Gaming Bean Bag Chair",
+          "detail": "Casual and fun gaming chair in bean bag style for relaxed gaming sessions",
+          "price": 79.99,
+          "prevPrice": 89.99,
+          "image": "assets/images/chairs/chair8.png"
+        },
+        {
+          "id": 9,
+          "name": "Ergonomic Recliner Gaming Chair",
+          "detail": "Reclining gaming chair with ergonomic design and built-in footrest",
+          "price": 219.99,
+          "prevPrice": 249.99,
+          "image": "assets/images/chairs/chair9.png"
+        },
+        {
+          "id": 10,
+          "name": "Gaming Floor Chair",
+          "detail": "Low-profile gaming chair with adjustable backrest and foldable design",
+          "price": 99.99,
+          "prevPrice": 119.99,
+          "image": "assets/images/chairs/chair10.png"
+        },
+        {
+          "id": 11,
+          "name": "Modern Gaming Chair",
+          "detail": "Sleek and contemporary gaming chair with minimalist design",
+          "price": 189.99,
+          "prevPrice": 219.99,
+          "image": "assets/images/chairs/chair11.png"
+        },
+        {
+          "id": 12,
+          "name": "Gaming Recliner Sofa",
+          "detail": "Reclining sofa-style gaming chair with cup holders and storage pockets",
+          "price": 349.99,
+          "prevPrice": 399.99,
+          "image": "assets/images/chairs/chair12.png"
+        },
+        {
+          "id": 13,
+          "name": "Gaming Massage Chair",
+          "detail": "Massage gaming chair with heating function and multiple massage modes",
+          "price": 399.99,
+          "prevPrice": 449.99,
+          "image": "assets/images/chairs/chair13.png"
+        },
+        {
+          "id": 14,
+          "name": "Gaming Pedestal Chair",
+          "detail": "Pedestal-style gaming chair with swivel base and vibration feedback",
+          "price": 179.99,
+          "prevPrice": 199.99,
+          "image": "assets/images/chairs/chair14.png"
+        },
+        {
+          "id": 15,
+          "name": "Vintage Gaming Chair",
+          "detail": "Retro-style gaming chair with vinyl upholstery and classic design",
+          "price": 219.99,
+          "prevPrice": 249.99,
+          "image": "assets/images/chairs/chair15.png"
+        }
+      ],
+
+    "gamepads": [
+        {
+          "id": 16,
+          "name": "Wireless Gamepad Pro",
+          "detail": "High-performance wireless gamepad with ergonomic design and customizable buttons",
+          "price": 49.99,
+          "prevPrice": 59.99,
+          "image": "assets/images/gamepads/gamepad1.png"
+        },
+        {
+          "id": 17,
+          "name": "DualShock 5 Controller",
+          "detail": "Next-generation gamepad with haptic feedback and adaptive triggers for immersive gaming",
+          "price": 69.99,
+          "prevPrice": 79.99,
+          "image": "assets/images/gamepads/gamepad2.png"
+        },
+        {
+          "id": 18,
+          "name": "Xbox Elite Wireless Controller Series 2",
+          "detail": "Premium controller with adjustable thumbsticks, paddle buttons, and hair trigger locks",
+          "price": 149.99,
+          "prevPrice": 169.99,
+          "image": "assets/images/gamepads/gamepad3.png"
+        },
+        {
+          "id": 19,
+          "name": "Nintendo Switch Pro Controller",
+          "detail": "Official controller for Nintendo Switch with motion controls and amiibo support",
+          "price": 69.99,
+          "prevPrice": 79.99,
+          "image": "assets/images/gamepads/gamepad4.png"
+        },
+        {
+          "id": 20,
+          "name": "Razer Wolverine Ultimate Controller",
+          "detail": "Customizable gaming controller with interchangeable thumbsticks and D-pad",
+          "price": 159.99,
+          "prevPrice": 179.99,
+          "image": "assets/images/gamepads/gamepad5.png"
+        },
+        {
+          "id": 21,
+          "name": "Logitech F710 Wireless Gamepad",
+          "detail": "Reliable wireless gamepad with dual vibration feedback and plug-and-play compatibility",
+          "price": 39.99,
+          "prevPrice": 49.99,
+          "image": "assets/images/gamepads/gamepad6.png"
+        },
+        {
+          "id": 22,
+          "name": "SteelSeries Nimbus+ Controller",
+          "detail": "MFi-certified wireless controller for iOS devices with built-in rechargeable battery",
+          "price": 69.99,
+          "prevPrice": 79.99,
+          "image": "assets/images/gamepads/gamepad7.png"
+        },
+        {
+          "id": 23,
+          "name": "Sony DualSense Charging Station",
+          "detail": "Official charging station for DualSense controllers with convenient drop-in design",
+          "price": 29.99,
+          "prevPrice": 39.99,
+          "image": "assets/images/gamepads/gamepad8.png"
+        },
+        {
+          "id": 24,
+          "name": "8BitDo SN30 Pro+ Bluetooth Gamepad",
+          "detail": "Retro-inspired Bluetooth gamepad with customizable profiles and motion controls",
+          "price": 49.99,
+          "prevPrice": 59.99,
+          "image": "assets/images/gamepads/gamepad9.png"
+        },
+        {
+          "id": 25,
+          "name": "Thrustmaster T.16000M FCS HOTAS Controller",
+          "detail": "Flight control system with precision control and ambidextrous design for flight simulation",
+          "price": 129.99,
+          "prevPrice": 149.99,
+          "image": "assets/images/gamepads/gamepad10.png"
+        },
+        {
+          "id": 26,
+          "name": "Hori Fighting Commander Gamepad",
+          "detail": "Specialized gamepad designed for fighting games with adjustable D-pad and six-button layout",
+          "price": 39.99,
+          "prevPrice": 49.99,
+          "image": "assets/images/gamepads/gamepad11.png"
+        },
+        {
+          "id": 27,
+          "name": "PowerA Enhanced Wired Controller",
+          "detail": "Wired controller with advanced gaming features and durable construction",
+          "price": 24.99,
+          "prevPrice": 29.99,
+          "image": "assets/images/gamepads/gamepad12.png"
+        },
+        {
+          "id": 28,
+          "name": "Mad Catz R.A.T. Pro X3 Gaming Mouse",
+          "detail": "Modular gaming mouse with adjustable components and customizable weight system",
+          "price": 149.99,
+          "prevPrice": 169.99,
+          "image": "assets/images/gamepads/gamepad13.png"
+        },
+        {
+          "id": 29,
+          "name": "GameSir G4 Pro Wireless Gamepad",
+          "detail": "Wireless gamepad with built-in smartphone holder and multi-platform compatibility",
+          "price": 39.99,
+          "prevPrice": 49.99,
+          "image": "assets/images/gamepads/gamepad14.png"
+        },
+        {
+          "id": 30,
+          "name": "Hori Split Pad Pro",
+          "detail": "Joy-Con alternative for Nintendo Switch with ergonomic grip and larger buttons",
+          "price": 49.99,
+          "prevPrice": 59.99,
+          "image": "assets/images/gamepads/gamepad15.png"
+        }
+      ],
+
+      "headsets": [
+        {
+          "id": 31,
+          "name": "HyperX Cloud II",
+          "detail": "Wired gaming headset with 7.1 surround sound and detachable microphone",
+          "price": 99.99,
+          "prevPrice": 109.99,
+          "image": "assets/images/headsets/headset1.png"
+        },
+        {
+          "id": 32,
+          "name": "SteelSeries Arctis 7",
+          "detail": "Wireless gaming headset with DTS Headphone:X v2.0 surround sound and ClearCast microphone",
+          "price": 149.99,
+          "prevPrice": 169.99,
+          "image": "assets/images/headsets/headset2.png"
+        },
+        {
+          "id": 33,
+          "name": "Razer BlackShark V2",
+          "detail": "Wired gaming headset with THX 7.1 surround sound and Triforce Titanium 50mm drivers",
+          "price": 99.99,
+          "prevPrice": 119.99,
+          "image": "assets/images/headsets/headset3.png"
+        },
+        {
+          "id": 34,
+          "name": "Logitech G Pro X",
+          "detail": "Wired gaming headset with Blue VO!CE microphone technology and customizable EQ profiles",
+          "price": 129.99,
+          "prevPrice": 139.99,
+          "image": "assets/images/headsets/headset4.png"
+        },
+        {
+          "id": 35,
+          "name": "Corsair HS70 Pro",
+          "detail": "Wireless gaming headset with 7.1 surround sound and detachable noise-cancelling microphone",
+          "price": 99.99,
+          "prevPrice": 119.99,
+          "image": "assets/images/headsets/headset5.png"
+        },
+        {
+          "id": 36,
+          "name": "Astro A50 Wireless",
+          "detail": "Premium wireless gaming headset with Dolby Audio and Astro Audio V2",
+          "price": 299.99,
+          "prevPrice": 349.99,
+          "image": "assets/images/headsets/headset6.png"
+        },
+        {
+          "id": 37,
+          "name": "Turtle Beach Stealth 700 Gen 2",
+          "detail": "Wireless gaming headset with Superhuman Hearing and glasses-friendly design",
+          "price": 149.99,
+          "prevPrice": 159.99,
+          "image": "assets/images/headsets/headset7.png"
+        },
+        {
+          "id": 38,
+          "name": "HyperX Cloud Alpha S",
+          "detail": "Wired gaming headset with virtual 7.1 surround sound and dual chamber drivers",
+          "price": 129.99,
+          "prevPrice": 139.99,
+          "image": "assets/images/headsets/headset8.png"
+        },
+        {
+          "id": 39,
+          "name": "SteelSeries Arctis Pro + GameDAC",
+          "detail": "Wired gaming headset with hi-res audio and dedicated DAC (Digital-to-Analog Converter)",
+          "price": 249.99,
+          "prevPrice": 279.99,
+          "image": "assets/images/headsets/headset9.png"
+        },
+        {
+          "id": 40,
+          "name": "Razer Kraken X",
+          "detail": "Lightweight gaming headset with 7.1 surround sound and bendable cardioid microphone",
+          "price": 49.99,
+          "prevPrice": 59.99,
+          "image": "assets/images/headsets/headset10.png"
+        },
+        {
+          "id": 41,
+          "name": "Logitech G733 Lightspeed",
+          "detail": "Wireless gaming headset with LIGHTSYNC RGB lighting and Blue VO!CE microphone",
+          "price": 129.99,
+          "prevPrice": 149.99,
+          "image": "assets/images/headsets/headset11.png"
+        },
+        {
+          "id": 42,
+          "name": "Corsair Void RGB Elite Wireless",
+          "detail": "Wireless gaming headset with 7.1 surround sound and customizable RGB lighting",
+          "price": 99.99,
+          "prevPrice": 109.99,
+          "image": "assets/images/headsets/headset12.png"
+        },
+        {
+          "id": 43,
+          "name": "SteelSeries Arctis 1 Wireless",
+          "detail": "Versatile wireless gaming headset with detachable ClearCast microphone and USB-C dongle",
+          "price": 99.99,
+          "prevPrice": 119.99,
+          "image": "assets/images/headsets/headset13.png"
+        },
+        {
+          "id": 44,
+          "name": "Astro A40 TR",
+          "detail": "Modular wired gaming headset with customizable speaker tags and Astro Audio V2",
+          "price": 149.99,
+          "prevPrice": 169.99,
+          "image": "assets/images/headsets/headset14.png"
+        },
+        {
+          "id": 45,
+          "name": "HyperX Cloud Stinger Core",
+          "detail": "Affordable gaming headset with directional 40mm drivers and swivel-to-mute microphone",
+          "price": 49.99,
+          "prevPrice": 59.99,
+          "image": "assets/images/headsets/headset15.png"
+        }
+      ],
+
+      "keyboards": [
+        {
+            "id": 46,
+            "name": "Mechanical Gaming Keyboard",
+            "detail": "Mechanical gaming keyboard with customizable RGB lighting and Cherry MX Blue switches",
+            "price": 99.99,
+            "prevPrice": 119.99,
+            "image": "assets/images/keyboards/keyboard1.png"
+        },
+        {
+            "id": 47,
+            "name": "RGB Gaming Keyboard",
+            "detail": "RGB gaming keyboard with detachable wrist rest and customizable macros",
+            "price": 79.99,
+            "prevPrice": 89.99,
+            "image": "assets/images/keyboards/keyboard2.png"
+        },
+        {
+            "id": 48,
+            "name": "Wireless Gaming Keyboard",
+            "detail": "Wireless gaming keyboard with low-profile switches and long battery life",
+            "price": 129.99,
+            "prevPrice": 149.99,
+            "image": "assets/images/keyboards/keyboard3.png"
+        },
+        {
+            "id": 49,
+            "name": "Compact Gaming Keyboard",
+            "detail": "Compact gaming keyboard with RGB backlighting and detachable cable",
+            "price": 69.99,
+            "prevPrice": 79.99,
+            "image": "assets/images/keyboards/keyboard4.png"
+        },
+        {
+            "id": 50,
+            "name": "TKL Gaming Keyboard",
+            "detail": "Tenkeyless gaming keyboard with Cherry MX Red switches and aluminum frame",
+            "price": 119.99,
+            "prevPrice": 139.99,
+            "image": "assets/images/keyboards/keyboard5.png"
+        },
+        {
+            "id": 51,
+            "name": "Ergonomic Gaming Keyboard",
+            "detail": "Ergonomic gaming keyboard with split design and customizable RGB lighting",
+            "price": 59.99,
+            "prevPrice": 69.99,
+            "image": "assets/images/keyboards/keyboard6.png"
+        },
+        {
+            "id": 52,
+            "name": "Mechanical Gaming Keyboard",
+            "detail": "Mechanical gaming keyboard with Cherry MX Brown switches and customizable keycaps",
+            "price": 149.99,
+            "prevPrice": 169.99,
+            "image": "assets/images/keyboards/keyboard7.png"
+        },
+        {
+            "id": 53,
+            "name": "Compact Wireless Gaming Keyboard",
+            "detail": "Compact wireless gaming keyboard with low-latency connection and RGB lighting",
+            "price": 89.99,
+            "prevPrice": 99.99,
+            "image": "assets/images/keyboards/keyboard8.png"
+        },
+        {
+            "id": 54,
+            "name": "Membrane Gaming Keyboard",
+            "detail": "Membrane gaming keyboard with dedicated media keys and customizable macros",
+            "price": 49.99,
+            "prevPrice": 59.99,
+            "image": "assets/images/keyboards/keyboard9.png"
+        },
+        {
+            "id": 55,
+            "name": "Wireless Mechanical Gaming Keyboard",
+            "detail": "Wireless mechanical gaming keyboard with customizable RGB lighting and Cherry MX Red switches",
+            "price": 109.99,
+            "prevPrice": 129.99,
+            "image": "assets/images/keyboards/keyboard10.png"
+        },
+        {
+            "id": 56,
+            "name": "RGB TKL Gaming Keyboard",
+            "detail": "Tenkeyless gaming keyboard with RGB lighting and detachable wrist rest",
+            "price": 79.99,
+            "prevPrice": 89.99,
+            "image": "assets/images/keyboards/keyboard11.png"
+        },
+        {
+            "id": 57,
+            "name": "Mechanical Gaming Keyboard",
+            "detail": "Mechanical gaming keyboard with customizable RGB lighting and Cherry MX Red switches",
+            "price": 69.99,
+            "prevPrice": 79.99,
+            "image": "assets/images/keyboards/keyboard12.png"
+        },
+        {
+            "id": 58,
+            "name": "Compact Mechanical Gaming Keyboard",
+            "detail": "Compact mechanical gaming keyboard with detachable wrist rest and Cherry MX Brown switches",
+            "price": 129.99,
+            "prevPrice": 149.99,
+            "image": "assets/images/keyboards/keyboard13.png"
+        },
+        {
+            "id": 59,
+            "name": "Wireless RGB Gaming Keyboard",
+            "detail": "Wireless RGB gaming keyboard with customizable macros and long battery life",
+            "price": 99.99,
+            "prevPrice": 119.99,
+            "image": "assets/images/keyboards/keyboard14.png"
+        },
+        {
+            "id": 60,
+            "name": "Compact TKL Gaming Keyboard",
+            "detail": "Tenkeyless gaming keyboard with compact design and Cherry MX Blue switches",
+            "price": 89.99,
+            "prevPrice": 99.99,
+            "image": "assets/images/keyboards/keyboard15.png"
+        }
+    ],
+
+    "laptops": [
+        {
+          "id": 61,
+          "name": "ASUS ROG Zephyrus G14",
+          "detail": "14-inch gaming laptop with AMD Ryzen 9 processor and NVIDIA GeForce RTX 3060 graphics",
+          "price": 1499.99,
+          "prevPrice": 1599.99,
+          "image": "assets/images/laptops/laptop1.png"
+        },
+        {
+          "id": 62,
+          "name": "Razer Blade 15",
+          "detail": "15.6-inch gaming laptop with Intel Core i7 processor and NVIDIA GeForce RTX 3080 graphics",
+          "price": 2199.99,
+          "prevPrice": 2399.99,
+          "image": "assets/images/laptops/laptop2.png"
+        },
+        {
+          "id": 63,
+          "name": "MSI GS66 Stealth",
+          "detail": "15.6-inch gaming laptop with Intel Core i9 processor and NVIDIA GeForce RTX 3070 graphics",
+          "price": 1999.99,
+          "prevPrice": 2199.99,
+          "image": "assets/images/laptops/laptop3.png"
+        },
+        {
+          "id": 64,
+          "name": "Alienware m15 R6",
+          "detail": "15.6-inch gaming laptop with Intel Core i7 processor and NVIDIA GeForce RTX 3060 graphics",
+          "price": 1799.99,
+          "prevPrice": 1899.99,
+          "image": "assets/images/laptops/laptop4.png"
+        },
+        {
+          "id": 65,
+          "name": "Lenovo Legion 5 Pro",
+          "detail": "16-inch gaming laptop with AMD Ryzen 7 processor and NVIDIA GeForce RTX 3070 graphics",
+          "price": 1699.99,
+          "prevPrice": 1799.99,
+          "image": "assets/images/laptops/laptop5.png"
+        },
+        {
+          "id": 66,
+          "name": "HP Omen 15",
+          "detail": "15.6-inch gaming laptop with Intel Core i7 processor and NVIDIA GeForce RTX 3060 graphics",
+          "price": 1599.99,
+          "prevPrice": 1699.99,
+          "image": "assets/images/laptops/laptop6.png"
+        },
+        {
+          "id": 67,
+          "name": "Acer Predator Helios 300",
+          "detail": "15.6-inch gaming laptop with Intel Core i7 processor and NVIDIA GeForce RTX 3060 graphics",
+          "price": 1299.99,
+          "prevPrice": 1399.99,
+          "image": "assets/images/laptops/laptop7.png"
+        },
+        {
+          "id": 68,
+          "name": "Dell G15",
+          "detail": "15.6-inch gaming laptop with Intel Core i5 processor and NVIDIA GeForce RTX 3050 graphics",
+          "price": 1099.99,
+          "prevPrice": 1199.99,
+          "image": "assets/images/laptops/laptop8.png"
+        },
+        {
+          "id": 69,
+          "name": "Gigabyte Aorus 15G",
+          "detail": "15.6-inch gaming laptop with Intel Core i7 processor and NVIDIA GeForce RTX 3080 graphics",
+          "price": 2399.99,
+          "prevPrice": 2599.99,
+          "image": "assets/images/laptops/laptop9.png"
+        },
+        {
+          "id": 70,
+          "name": "MSI GE76 Raider",
+          "detail": "17.3-inch gaming laptop with Intel Core i9 processor and NVIDIA GeForce RTX 3080 graphics",
+          "price": 2699.99,
+          "prevPrice": 2899.99,
+          "image": "assets/images/laptops/laptop10.png"
+        },
+        {
+          "id": 71,
+          "name": "Razer Blade Stealth 13",
+          "detail": "13.3-inch gaming laptop with Intel Core i7 processor and NVIDIA GeForce GTX 1650 Ti graphics",
+          "price": 1499.99,
+          "prevPrice": 1599.99,
+          "image": "assets/images/laptops/laptop11.png"
+        },
+        {
+          "id": 72,
+          "name": "ASUS TUF Gaming A15",
+          "detail": "15.6-inch gaming laptop with AMD Ryzen 7 processor and NVIDIA GeForce GTX 1660 Ti graphics",
+          "price": 999.99,
+          "prevPrice": 1099.99,
+          "image": "assets/images/laptops/laptop12.png"
+        },
+        {
+          "id": 73,
+          "name": "Lenovo Legion 7i",
+          "detail": "15.6-inch gaming laptop with Intel Core i7 processor and NVIDIA GeForce RTX 3080 graphics",
+          "price": 2199.99,
+          "prevPrice": 2399.99,
+          "image": "assets/images/laptops/laptop13.png"
+        },
+        {
+          "id": 74,
+          "name": "Alienware x17",
+          "detail": "17.3-inch gaming laptop with Intel Core i9 processor and NVIDIA GeForce RTX 3080 graphics",
+          "price": 2999.99,
+          "prevPrice": 3199.99,
+          "image": "assets/images/laptops/laptop14.png"
+        },
+        {
+          "id": 75,
+          "name": "HP Victus 16",
+          "detail": "16.1-inch gaming laptop with AMD Ryzen 7 processor and NVIDIA GeForce RTX 3050 Ti graphics",
+          "price": 1099.99,
+          "prevPrice": 1199.99,
+          "image": "assets/images/laptops/laptop15.png"
+        },
+        {
+          "id": 76,
+          "name": "Acer Nitro 5",
+          "detail": "15.6-inch gaming laptop with AMD Ryzen 5 processor and NVIDIA GeForce GTX 1650 graphics",
+          "price": 799.99,
+          "prevPrice": 899.99,
+          "image": "assets/images/laptops/laptop16.png"
+        }
+      ],
+
+
+      "mouse": [
+        {
+          "id": 77,
+          "name": "Logitech G502 Hero",
+          "detail": "High-performance gaming mouse with HERO sensor and customizable weights",
+          "price": 79.99,
+          "prevPrice": 89.99,
+          "image": "assets/images/mouse/mouse1.png"
+        },
+        {
+          "id": 78,
+          "name": "Razer DeathAdder Elite",
+          "detail": "Ergonomic gaming mouse with Razer Optical Mouse Switches and 16,000 DPI sensor",
+          "price": 69.99,
+          "prevPrice": 79.99,
+          "image": "assets/images/mouse/mouse2.png"
+        },
+        {
+          "id": 79,
+          "name": "SteelSeries Rival 600",
+          "detail": "Dual-sensor gaming mouse with customizable weight and split-trigger buttons",
+          "price": 79.99,
+          "prevPrice": 89.99,
+          "image": "assets/images/mouse/mouse3.png"
+        },
+        {
+          "id": 80,
+          "name": "Corsair Dark Core RGB Pro",
+          "detail": "Wireless gaming mouse with customizable RGB lighting and 18,000 DPI sensor",
+          "price": 89.99,
+          "prevPrice": 99.99,
+          "image": "assets/images/mouse/mouse4.png"
+        },
+        {
+          "id": 81,
+          "name": "Logitech G Pro Wireless",
+          "detail": "Ultra-lightweight wireless gaming mouse with HERO sensor and 16,000 DPI",
+          "price": 129.99,
+          "prevPrice": 139.99,
+          "image": "assets/images/mouse/mouse5.png"
+        },
+        {
+          "id": 82,
+          "name": "Razer Basilisk Ultimate",
+          "detail": "Wireless gaming mouse with HyperSpeed technology and 20,000 DPI sensor",
+          "price": 149.99,
+          "prevPrice": 159.99,
+          "image": "assets/images/mouse/mouse6.png"
+        },
+        {
+          "id": 83,
+          "name": "Corsair M65 RGB Elite",
+          "detail": "High-precision gaming mouse with customizable weights and Omron switches",
+          "price": 59.99,
+          "prevPrice": 69.99,
+          "image": "assets/images/mouse/mouse7.png"
+        },
+        {
+          "id": 84,
+          "name": "SteelSeries Sensei 310",
+          "detail": "Ambidextrous gaming mouse with TrueMove3 optical sensor and split-trigger buttons",
+          "price": 49.99,
+          "prevPrice": 59.99,
+          "image": "assets/images/mouse/mouse8.png"
+        },
+        {
+          "id": 85,
+          "name": "Logitech G203 Lightsync",
+          "detail": "Budget-friendly gaming mouse with customizable RGB lighting and 8,000 DPI sensor",
+          "price": 29.99,
+          "prevPrice": 39.99,
+          "image": "assets/images/mouse/mouse9.png"
+        },
+        {
+          "id": 86,
+          "name": "Razer Naga Trinity",
+          "detail": "Modular gaming mouse with interchangeable side plates and 16,000 DPI sensor",
+          "price": 99.99,
+          "prevPrice": 109.99,
+          "image": "assets/images/mouse/mouse10.png"
+        },
+        {
+          "id": 87,
+          "name": "HyperX Pulsefire Surge",
+          "detail": "RGB gaming mouse with Pixart 3389 sensor and customizable DPI settings",
+          "price": 59.99,
+          "prevPrice": 69.99,
+          "image": "assets/images/mouse/mouse11.png"
+        },
+        {
+          "id": 88,
+          "name": "Corsair Harpoon RGB Wireless",
+          "detail": "Wireless gaming mouse with Slipstream technology and 10,000 DPI sensor",
+          "price": 49.99,
+          "prevPrice": 59.99,
+          "image": "assets/images/mouse/mouse12.png"
+        },
+        {
+          "id": 89,
+          "name": "Roccat Kain 120 AIMO",
+          "detail": "Comfortable gaming mouse with Titan Click technology and 16,000 DPI Owl-Eye sensor",
+          "price": 69.99,
+          "prevPrice": 79.99,
+          "image": "assets/images/mouse/mouse13.png"
+        },
+        {
+          "id": 90,
+          "name": "SteelSeries Rival 3",
+          "detail": "Affordable gaming mouse with TrueMove Core sensor and Prism RGB lighting",
+          "price": 29.99,
+          "prevPrice": 39.99,
+          "image": "assets/images/mouse/mouse14.png"
+        },
+        {
+          "id": 91,
+          "name": "Razer Viper Mini",
+          "detail": "Ultra-light gaming mouse with Razer Optical Mouse Switches and 8,500 DPI sensor",
+          "price": 39.99,
+          "prevPrice": 49.99,
+          "image": "assets/images/mouse/mouse15.png"
+        }
+      ],
+
+      "popularProducts": [
+        {
+            "id": 92,
+            "name": "Ergonomic Gaming Chair",
+            "detail": "High-back racing style gaming chair with adjustable armrests and lumbar support",
+            "price": 199.99,
+            "prevPrice": 229.99,
+            "image": "assets/images/chairs/chair1.png"
+          },
+          {
+            "id": 93,
+            "name": "Executive Gaming Chair",
+            "detail": "Luxurious leather gaming chair with built-in footrest and reclining function",
+            "price": 249.99,
+            "prevPrice": 299.99,
+            "image": "assets/images/chairs/chair2.png"
+          },
+          {
+            "id": 94,
+            "name": "Racing Style Gaming Chair",
+            "detail": "Sleek and stylish gaming chair with ergonomic design and adjustable headrest",
+            "price": 149.99,
+            "prevPrice": 179.99,
+            "image": "assets/images/chairs/chair3.png"
+          },
+          {
+            "id": 95,
+            "name": "Gaming Rocker Chair",
+            "detail": "Compact gaming chair with rocking motion and integrated speakers",
+            "price": 129.99,
+            "prevPrice": 149.99,
+            "image": "assets/images/chairs/chair4.png"
+          },
+          {
+            "id": 96,
+            "name": "Wireless Gamepad Pro",
+            "detail": "High-performance wireless gamepad with ergonomic design and customizable buttons",
+            "price": 49.99,
+            "prevPrice": 59.99,
+            "image": "assets/images/gamepads/gamepad1.png"
+          },
+          {
+            "id": 97,
+            "name": "DualShock 5 Controller",
+            "detail": "Next-generation gamepad with haptic feedback and adaptive triggers for immersive gaming",
+            "price": 69.99,
+            "prevPrice": 79.99,
+            "image": "assets/images/gamepads/gamepad2.png"
+          },
+          {
+            "id": 98,
+            "name": "Xbox Elite Wireless Controller Series 2",
+            "detail": "Premium controller with adjustable thumbsticks, paddle buttons, and hair trigger locks",
+            "price": 149.99,
+            "prevPrice": 169.99,
+            "image": "assets/images/gamepads/gamepad3.png"
+          },
+          {
+            "id": 99,
+            "name": "Nintendo Switch Pro Controller",
+            "detail": "Official controller for Nintendo Switch with motion controls and amiibo support",
+            "price": 69.99,
+            "prevPrice": 79.99,
+            "image": "assets/images/gamepads/gamepad4.png"
+          },
+          {
+            "id": 100,
+            "name": "HyperX Cloud II",
+            "detail": "Wired gaming headset with 7.1 surround sound and detachable microphone",
+            "price": 99.99,
+            "prevPrice": 109.99,
+            "image": "assets/images/headsets/headset1.png"
+          },
+          {
+            "id": 101,
+            "name": "SteelSeries Arctis 7",
+            "detail": "Wireless gaming headset with DTS Headphone:X v2.0 surround sound and ClearCast microphone",
+            "price": 149.99,
+            "prevPrice": 169.99,
+            "image": "assets/images/headsets/headset2.png"
+          },
+          {
+            "id": 102,
+            "name": "Razer BlackShark V2",
+            "detail": "Wired gaming headset with THX 7.1 surround sound and Triforce Titanium 50mm drivers",
+            "price": 99.99,
+            "prevPrice": 119.99,
+            "image": "assets/images/headsets/headset3.png"
+          },
+          {
+            "id": 103,
+            "name": "Logitech G Pro X",
+            "detail": "Wired gaming headset with Blue VO!CE microphone technology and customizable EQ profiles",
+            "price": 129.99,
+            "prevPrice": 139.99,
+            "image": "assets/images/headsets/headset4.png"
+          },
+          {
+            "id": 104,
+            "name": "ASUS ROG Zephyrus G14",
+            "detail": "14-inch gaming laptop with AMD Ryzen 9 processor and NVIDIA GeForce RTX 3060 graphics",
+            "price": 1499.99,
+            "prevPrice": 1599.99,
+            "image": "assets/images/laptops/laptop1.png"
+          },
+          {
+            "id": 105,
+            "name": "Razer Blade 15",
+            "detail": "15.6-inch gaming laptop with Intel Core i7 processor and NVIDIA GeForce RTX 3080 graphics",
+            "price": 2199.99,
+            "prevPrice": 2399.99,
+            "image": "assets/images/laptops/laptop2.png"
+          },
+          {
+            "id": 106,
+            "name": "MSI GS66 Stealth",
+            "detail": "15.6-inch gaming laptop with Intel Core i9 processor and NVIDIA GeForce RTX 3070 graphics",
+            "price": 1999.99,
+            "prevPrice": 2199.99,
+            "image": "assets/images/laptops/laptop3.png"
+          },
+          {
+            "id": 107,
+            "name": "Alienware m15 R6",
+            "detail": "15.6-inch gaming laptop with Intel Core i7 processor and NVIDIA GeForce RTX 3060 graphics",
+            "price": 1799.99,
+            "prevPrice": 1899.99,
+            "image": "assets/images/laptops/laptop4.png"
+          },
+          {
+            "id": 108,
+            "name": "Logitech G502 Hero",
+            "detail": "High-performance gaming mouse with HERO sensor and customizable weights",
+            "price": 79.99,
+            "prevPrice": 89.99,
+            "image": "assets/images/mouse/mouse1.png"
+          },
+          {
+            "id": 109,
+            "name": "Razer DeathAdder Elite",
+            "detail": "Ergonomic gaming mouse with Razer Optical Mouse Switches and 16,000 DPI sensor",
+            "price": 69.99,
+            "prevPrice": 79.99,
+            "image": "assets/images/mouse/mouse2.png"
+          },
+          {
+            "id": 110,
+            "name": "SteelSeries Rival 600",
+            "detail": "Dual-sensor gaming mouse with customizable weight and split-trigger buttons",
+            "price": 79.99,
+            "prevPrice": 89.99,
+            "image": "assets/images/mouse/mouse3.png"
+          },
+          {
+            "id": 111,
+            "name": "Corsair Dark Core RGB Pro",
+            "detail": "Wireless gaming mouse with customizable RGB lighting and 18,000 DPI sensor",
+            "price": 89.99,
+            "prevPrice": 99.99,
+            "image": "assets/images/mouse/mouse4.png"
+          },
+          {
+            "id": 112,
+            "name": "Mechanical Gaming Keyboard 1",
+            "detail": "Mechanical gaming keyboard with customizable RGB lighting and Cherry MX Blue switches",
+            "price": 99.99,
+            "prevPrice": 119.99,
+            "image": "assets/images/keyboards/keyboard1.png"
+        },
+        {
+            "id": 113,
+            "name": "RGB Gaming Keyboard 2",
+            "detail": "RGB gaming keyboard with detachable wrist rest and customizable macros",
+            "price": 79.99,
+            "prevPrice": 89.99,
+            "image": "assets/images/keyboards/keyboard2.png"
+        },
+        {
+            "id": 114,
+            "name": "Wireless Gaming Keyboard 3",
+            "detail": "Wireless gaming keyboard with low-profile switches and long battery life",
+            "price": 129.99,
+            "prevPrice": 149.99,
+            "image": "assets/images/keyboards/keyboard3.png"
+        },
+        {
+            "id": 115,
+            "name": "Compact Gaming Keyboard 4",
+            "detail": "Compact gaming keyboard with RGB backlighting and detachable cable",
+            "price": 69.99,
+            "prevPrice": 79.99,
+            "image": "assets/images/keyboards/keyboard4.png"
+        }
+      
+      ],
+      
+      "flashsalesProduct": [
+
+  
+
+        {
+           "id": 116,
+           "name": "Corsair HS70 Pro",
+           "detail": "Wireless gaming headset with 7.1 surround sound and detachable noise-cancelling microphone",
+           "price": 99.99,
+           "prevPrice": 119.99,
+           "image": "assets/images/headsets/headset5.png"
+         },
+         {
+           "id": 117,
+           "name": "Astro A50 Wireless",
+           "detail": "Premium wireless gaming headset with Dolby Audio and Astro Audio V2",
+           "price": 299.99,
+           "prevPrice": 349.99,
+           "image": "assets/images/headsets/headset6.png"
+         },
+         {
+           "id": 118,
+           "name": "Turtle Beach Stealth 700 Gen 2",
+           "detail": "Wireless gaming headset with Superhuman Hearing and glasses-friendly design",
+           "price": 149.99,
+           "prevPrice": 159.99,
+           "image": "assets/images/headsets/headset7.png"
+         },
+         {
+           "id": 119,
+           "name": "HyperX Cloud Alpha S",
+           "detail": "Wired gaming headset with virtual 7.1 surround sound and dual chamber drivers",
+           "price": 129.99,
+           "prevPrice": 139.99,
+           "image": "assets/images/headsets/headset8.png"
+         },
+         {
+           "id": 120,
+           "name": "SteelSeries Arctis Pro + GameDAC",
+           "detail": "Wired gaming headset with hi-res audio and dedicated DAC (Digital-to-Analog Converter)",
+           "price": 249.99,
+           "prevPrice": 279.99,
+           "image": "assets/images/headsets/headset9.png"
+         },
+         {
+           "id": 121,
+           "name": "Razer Kraken X",
+           "detail": "Lightweight gaming headset with 7.1 surround sound and bendable cardioid microphone",
+           "price": 49.99,
+           "prevPrice": 59.99,
+           "image": "assets/images/headsets/headset10.png"
+         },
+         {
+           "id": 122,
+           "name": "Razer Wolverine Ultimate Controller",
+           "detail": "Customizable gaming controller with interchangeable thumbsticks and D-pad",
+           "price": 159.99,
+           "prevPrice": 179.99,
+           "image": "assets/images/gamepads/gamepad5.png"
+         },
+         {
+           "id": 123,
+           "name": "Logitech F710 Wireless Gamepad",
+           "detail": "Reliable wireless gamepad with dual vibration feedback and plug-and-play compatibility",
+           "price": 39.99,
+           "prevPrice": 49.99,
+           "image": "assets/images/gamepads/gamepad6.png"
+         },
+         {
+           "id": 124,
+           "name": "SteelSeries Nimbus+ Controller",
+           "detail": "MFi-certified wireless controller for iOS devices with built-in rechargeable battery",
+           "price": 69.99,
+           "prevPrice": 79.99,
+           "image": "assets/images/gamepads/gamepad7.png"
+         },
+         {
+           "id": 125,
+           "name": "Sony DualSense Charging Station",
+           "detail": "Official charging station for DualSense controllers with convenient drop-in design",
+           "price": 29.99,
+           "prevPrice": 39.99,
+           "image": "assets/images/gamepads/gamepad8.png"
+         },
+         {
+           "id": 126,
+           "name": "8BitDo SN30 Pro+ Bluetooth Gamepad",
+           "detail": "Retro-inspired Bluetooth gamepad with customizable profiles and motion controls",
+           "price": 49.99,
+           "prevPrice": 59.99,
+           "image": "assets/images/gamepads/gamepad9.png"
+         },
+         {
+           "id": 127,
+           "name": "Thrustmaster T.16000M FCS HOTAS Controller",
+           "detail": "Flight control system with precision control and ambidextrous design for flight simulation",
+           "price": 129.99,
+           "prevPrice": 149.99,
+           "image": "assets/images/gamepads/gamepad10.png"
+         },
+         {
+           "id": 128,
+           "name": "TKL Gaming Keyboard",
+           "detail": "Tenkeyless gaming keyboard with Cherry MX Red switches and aluminum frame",
+           "price": 119.99,
+           "prevPrice": 139.99,
+           "image": "assets/images/keyboards/keyboard5.png"
+         },
+         {
+           "id": 129,
+           "name": "Ergonomic Gaming Keyboard",
+           "detail": "Ergonomic gaming keyboard with split design and customizable RGB lighting",
+           "price": 59.99,
+           "prevPrice": 69.99,
+           "image": "assets/images/keyboards/keyboard6.png"
+       },
+       {
+           "id": 130,
+           "name": "Mechanical Gaming Keyboard",
+           "detail": "Mechanical gaming keyboard with Cherry MX Brown switches and customizable keycaps",
+           "price": 149.99,
+           "prevPrice": 169.99,
+           "image": "assets/images/keyboards/keyboard7.png"
+       },
+       {
+           "id": 131,
+           "name": "Compact Wireless Gaming Keyboard",
+           "detail": "Compact wireless gaming keyboard with low-latency connection and RGB lighting",
+           "price": 89.99,
+           "prevPrice": 99.99,
+           "image": "assets/images/keyboards/keyboard8.png"
+       },
+       {
+           "id": 132,
+           "name": "Membrane Gaming Keyboard",
+           "detail": "Membrane gaming keyboard with dedicated media keys and customizable macros",
+           "price": 49.99,
+           "prevPrice": 59.99,
+           "image": "assets/images/keyboards/keyboard9.png"
+       },
+       {
+           "id": 133,
+           "name": "Wireless Mechanical Gaming Keyboard",
+           "detail": "Wireless mechanical gaming keyboard with customizable RGB lighting and Cherry MX Red switches",
+           "price": 109.99,
+           "prevPrice": 129.99,
+           "image": "assets/images/keyboards/keyboard10.png"
+       },
+       {
+           "id": 134,
+           "name": "Mesh Gaming Chair",
+           "detail": "Breathable mesh gaming chair with lumbar support and 360-degree swivel",
+           "price": 179.99,
+           "prevPrice": 199.99,
+           "image": "assets/images/chairs/chair5.png"
+         },
+         {
+           "id": 135,
+           "name": "Big and Tall Gaming Chair",
+           "detail": "Sturdy gaming chair designed for larger individuals with extra-wide seat",
+           "price": 299.99,
+           "prevPrice": 349.99,
+           "image": "assets/images/chairs/chair6.png"
+         },
+         {
+           "id": 136,
+           "name": "Fabric Gaming Chair",
+           "detail": "Comfortable fabric gaming chair with adjustable armrests and headrest",
+           "price": 169.99,
+           "prevPrice": 199.99,
+           "image": "assets/images/chairs/chair7.png"
+         },
+         {
+           "id": 137,
+           "name": "Gaming Bean Bag Chair",
+           "detail": "Casual and fun gaming chair in bean bag style for relaxed gaming sessions",
+           "price": 79.99,
+           "prevPrice": 89.99,
+           "image": "assets/images/chairs/chair8.png"
+         },
+         {
+           "id": 138,
+           "name": "Ergonomic Recliner Gaming Chair",
+           "detail": "Reclining gaming chair with ergonomic design and built-in footrest",
+           "price": 219.99,
+           "prevPrice": 249.99,
+           "image": "assets/images/chairs/chair9.png"
+         },
+         {
+           "id": 139,
+           "name": "Gaming Floor Chair",
+           "detail": "Low-profile gaming chair with adjustable backrest and foldable design",
+           "price": 99.99,
+           "prevPrice": 119.99,
+           "image": "assets/images/chairs/chair10.png"
+         }
+   
+   ]
+        
+  }

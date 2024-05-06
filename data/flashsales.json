@@ -1,0 +1,196 @@
+[
+
+     {
+        "id": 5,
+        "name": "Corsair HS70 Pro",
+        "detail": "Wireless gaming headset with 7.1 surround sound and detachable noise-cancelling microphone",
+        "price": 99.99,
+        "prevPrice": 119.99,
+        "image": "assets/images/headsets/headset5.png"
+      },
+      {
+        "id": 6,
+        "name": "Astro A50 Wireless",
+        "detail": "Premium wireless gaming headset with Dolby Audio and Astro Audio V2",
+        "price": 299.99,
+        "prevPrice": 349.99,
+        "image": "assets/images/headsets/headset6.png"
+      },
+      {
+        "id": 7,
+        "name": "Turtle Beach Stealth 700 Gen 2",
+        "detail": "Wireless gaming headset with Superhuman Hearing and glasses-friendly design",
+        "price": 149.99,
+        "prevPrice": 159.99,
+        "image": "assets/images/headsets/headset7.png"
+      },
+      {
+        "id": 8,
+        "name": "HyperX Cloud Alpha S",
+        "detail": "Wired gaming headset with virtual 7.1 surround sound and dual chamber drivers",
+        "price": 129.99,
+        "prevPrice": 139.99,
+        "image": "assets/images/headsets/headset8.png"
+      },
+      {
+        "id": 9,
+        "name": "SteelSeries Arctis Pro + GameDAC",
+        "detail": "Wired gaming headset with hi-res audio and dedicated DAC (Digital-to-Analog Converter)",
+        "price": 249.99,
+        "prevPrice": 279.99,
+        "image": "assets/images/headsets/headset9.png"
+      },
+      {
+        "id": 10,
+        "name": "Razer Kraken X",
+        "detail": "Lightweight gaming headset with 7.1 surround sound and bendable cardioid microphone",
+        "price": 49.99,
+        "prevPrice": 59.99,
+        "image": "assets/images/headsets/headset10.png"
+      },
+      {
+        "id": 5,
+        "name": "Razer Wolverine Ultimate Controller",
+        "detail": "Customizable gaming controller with interchangeable thumbsticks and D-pad",
+        "price": 159.99,
+        "prevPrice": 179.99,
+        "image": "assets/images/gamepads/gamepad5.png"
+      },
+      {
+        "id": 6,
+        "name": "Logitech F710 Wireless Gamepad",
+        "detail": "Reliable wireless gamepad with dual vibration feedback and plug-and-play compatibility",
+        "price": 39.99,
+        "prevPrice": 49.99,
+        "image": "assets/images/gamepads/gamepad6.png"
+      },
+      {
+        "id": 7,
+        "name": "SteelSeries Nimbus+ Controller",
+        "detail": "MFi-certified wireless controller for iOS devices with built-in rechargeable battery",
+        "price": 69.99,
+        "prevPrice": 79.99,
+        "image": "assets/images/gamepads/gamepad7.png"
+      },
+      {
+        "id": 8,
+        "name": "Sony DualSense Charging Station",
+        "detail": "Official charging station for DualSense controllers with convenient drop-in design",
+        "price": 29.99,
+        "prevPrice": 39.99,
+        "image": "assets/images/gamepads/gamepad8.png"
+      },
+      {
+        "id": 9,
+        "name": "8BitDo SN30 Pro+ Bluetooth Gamepad",
+        "detail": "Retro-inspired Bluetooth gamepad with customizable profiles and motion controls",
+        "price": 49.99,
+        "prevPrice": 59.99,
+        "image": "assets/images/gamepads/gamepad9.png"
+      },
+      {
+        "id": 10,
+        "name": "Thrustmaster T.16000M FCS HOTAS Controller",
+        "detail": "Flight control system with precision control and ambidextrous design for flight simulation",
+        "price": 129.99,
+        "prevPrice": 149.99,
+        "image": "assets/images/gamepads/gamepad10.png"
+      },
+      {
+        "id": 5,
+        "name": "TKL Gaming Keyboard",
+        "detail": "Tenkeyless gaming keyboard with Cherry MX Red switches and aluminum frame",
+        "price": 119.99,
+        "prevPrice": 139.99,
+        "image": "assets/images/keyboards/keyboard5.png"
+      },
+      {
+        "id": 6,
+        "name": "Ergonomic Gaming Keyboard",
+        "detail": "Ergonomic gaming keyboard with split design and customizable RGB lighting",
+        "price": 59.99,
+        "prevPrice": 69.99,
+        "image": "assets/images/keyboards/keyboard6.png"
+    },
+    {
+        "id": 7,
+        "name": "Mechanical Gaming Keyboard",
+        "detail": "Mechanical gaming keyboard with Cherry MX Brown switches and customizable keycaps",
+        "price": 149.99,
+        "prevPrice": 169.99,
+        "image": "assets/images/keyboards/keyboard7.png"
+    },
+    {
+        "id": 8,
+        "name": "Compact Wireless Gaming Keyboard",
+        "detail": "Compact wireless gaming keyboard with low-latency connection and RGB lighting",
+        "price": 89.99,
+        "prevPrice": 99.99,
+        "image": "assets/images/keyboards/keyboard8.png"
+    },
+    {
+        "id": 9,
+        "name": "Membrane Gaming Keyboard",
+        "detail": "Membrane gaming keyboard with dedicated media keys and customizable macros",
+        "price": 49.99,
+        "prevPrice": 59.99,
+        "image": "assets/images/keyboards/keyboard9.png"
+    },
+    {
+        "id": 10,
+        "name": "Wireless Mechanical Gaming Keyboard",
+        "detail": "Wireless mechanical gaming keyboard with customizable RGB lighting and Cherry MX Red switches",
+        "price": 109.99,
+        "prevPrice": 129.99,
+        "image": "assets/images/keyboards/keyboard10.png"
+    },
+    {
+        "id": 5,
+        "name": "Mesh Gaming Chair",
+        "detail": "Breathable mesh gaming chair with lumbar support and 360-degree swivel",
+        "price": 179.99,
+        "prevPrice": 199.99,
+        "image": "assets/images/chairs/chair5.png"
+      },
+      {
+        "id": 6,
+        "name": "Big and Tall Gaming Chair",
+        "detail": "Sturdy gaming chair designed for larger individuals with extra-wide seat",
+        "price": 299.99,
+        "prevPrice": 349.99,
+        "image": "assets/images/chairs/chair6.png"
+      },
+      {
+        "id": 7,
+        "name": "Fabric Gaming Chair",
+        "detail": "Comfortable fabric gaming chair with adjustable armrests and headrest",
+        "price": 169.99,
+        "prevPrice": 199.99,
+        "image": "assets/images/chairs/chair7.png"
+      },
+      {
+        "id": 8,
+        "name": "Gaming Bean Bag Chair",
+        "detail": "Casual and fun gaming chair in bean bag style for relaxed gaming sessions",
+        "price": 79.99,
+        "prevPrice": 89.99,
+        "image": "assets/images/chairs/chair8.png"
+      },
+      {
+        "id": 9,
+        "name": "Ergonomic Recliner Gaming Chair",
+        "detail": "Reclining gaming chair with ergonomic design and built-in footrest",
+        "price": 219.99,
+        "prevPrice": 249.99,
+        "image": "assets/images/chairs/chair9.png"
+      },
+      {
+        "id": 10,
+        "name": "Gaming Floor Chair",
+        "detail": "Low-profile gaming chair with adjustable backrest and foldable design",
+        "price": 99.99,
+        "prevPrice": 119.99,
+        "image": "assets/images/chairs/chair10.png"
+      }
+
+]
