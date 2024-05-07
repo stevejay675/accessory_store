@@ -4,6 +4,7 @@
     box-sizing: border-box;
     outline: none;
     font-family: Arial, sans-serif;
+    transition: 0.5s;
 }
 
 body{
@@ -33,16 +34,20 @@ a{
     position: absolute;
     display: flex;
     flex-direction: column;
-    gap: 10px;
     background-color: white;
     top: 100%;
+    right: -100%;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
     width: 250px;
-    padding-left: 20px;
-    padding-bottom: 15px;
     border-radius: 10px;
-    z-index: 40;
+    z-index: 400;
     display: none;
+
+    
+}
+
+.categBTN{
+  cursor: pointer;
 }
 
 
@@ -50,14 +55,17 @@ a{
   display: flex;
 }
 
-.categories-topMenu a{
+.categories-topMenu span{
      font-size: 15px;
      color: black;
      width: 100%;
      cursor: pointer;
+     padding: 10px;
+     transition: 0.3s;
+     cursor: pointer;
 }
 
-.categories-topMenu a:hover{
+.categories-topMenu span:hover{
     color: white;
     background-color: #222;
 }
@@ -103,10 +111,11 @@ a{
 
 .inputBar{
     width: 45%;
-    padding: 4px;
+    padding: 5px;
     border-radius: 20px;
     outline: none;
     border: transparent;
+    padding-left: 20px;
 }
 
 .container-left{
@@ -238,6 +247,7 @@ i{
     justify-content: space-around;
     margin-top: 15px;
     flex-wrap: wrap;
+    display: none;
   }
 
   .options{
@@ -377,33 +387,35 @@ i{
     color: orangered;
 }
 
-.Category{
-    display: flex;
-    flex-direction: column;
-    
+
+.Category-sidebar{
+  display: flex;
+  flex-direction: column;
+  
 }
 
-.subcategories{
-    display: flex;
-    flex-direction: column;
-    margin-left: 35px;
-    gap: 10px;
-    height: 0;
-    overflow: hidden;
-    transition: 0.5s;
-    margin-top: -10px;
+.subcategories-sidebar{
+  display: flex;
+  flex-direction: column;
+  margin-left: 35px;
+  gap: 10px;
+  height: 0;
+  overflow: hidden;
+  transition: 0.5s;
+  margin-top: -10px;
 }
 
-.subcategories.active{
-    height: 150px;
-    transition:  0.5s;
+.subcategories-sidebar.active{
+  height: 150px;
+  transition:  0.5s;
 }
 
-.subcategories span{
-    font-size: 15px;
-    color: grey;
-    cursor: pointer;
+.subcategories-sidebar span{
+  font-size: 15px;
+  color: grey;
+  cursor: pointer;
 }
+
 
 
 
@@ -504,10 +516,6 @@ strike{
 
   
 
-  .categories-topMen{
-    background-color: aqua;
-  }
-
 
   .hero-banner2{
     background: linear-gradient(to top, #BBBFBF, white);
@@ -563,6 +571,9 @@ strike{
   }
 
   
+  .theme{
+    cursor: pointer;
+  }
 
 
 
@@ -755,6 +766,10 @@ strike{
 
     .hero-banner img{
       width: 100%;
+    }
+
+    .shop-options{
+      display: flex;
     }
     
   }

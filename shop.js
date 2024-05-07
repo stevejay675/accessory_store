@@ -22,27 +22,50 @@ const hamburgerIcon = document.querySelector(".hamburger-menu");
   const darkenBG = document.querySelector(".darken");
   const searchIcon = document.querySelector(".search");
   const searchbar = document.querySelector(".searchbar");
-  const subcategories = document.querySelector(".subcategories");
+  const subcategories = document.querySelector(".categories-topMenu");
   const Category = document.querySelector(".Category");
+  const categBTN = document.querySelector(".categBTN");
+  const subcategoriesSidebar = document.querySelector(".subcategories-sidebar");
+  const CategorySidebar = document.querySelector(".Category-sidebar");
   const chevronIcon = document.querySelector(".chevron-down-icon");
   const addtocartBtn = document.getElementsByClassName("addtocart"); 
   const product = document.getElementsByClassName("product");
   const cartcount = document.querySelector(".cartCount");
-  const allcartBTn = document.getElementById("opt-allcategory");
-  const laptopOPT = document.getElementById("opt-laptop");
-  const gamepadOPT = document.getElementById("opt-gamepad");
-  const keyboardOPT = document.getElementById("opt-keyboard");
-  const mouseOPT = document.getElementById("opt-mouse");
-  const headsetOPT = document.getElementById("opt-headset");
+  const allcartBTn = document.querySelector(".opt-allcategory");
+  const laptopOPT = document.querySelector(".opt-laptop");
+  const gamepadOPT = document.querySelector(".opt-gamepad");
+  const keyboardOPT = document.querySelector(".opt-keyboard");
+  const mouseOPT = document.querySelector(".opt-mouse");
+  const headsetOPT = document.querySelector(".opt-headset");
   const allCat = document.getElementById("product-container");
   const laptopsCat = document.getElementById("product-container-laptops")
   const gamepadsCat = document.getElementById("product-container-gamepads")
   const keyboardsCat = document.getElementById("product-container-keyboards")
   const mouseCat = document.getElementById("product-container-mouse")
-  const headsetsCat = document.getElementById("product-container-headsets")
+  const headsetsCat = document.getElementById("product-container-headsets");
+  const changeThemebtn = document.querySelector(".theme");
+  const navbar = document.querySelector(".navbar")
+  
+  const body = document.getElementsByTagName("body")[0];
 
   let productArray = [];
 
+
+  //toggle btwn dark and bright mode
+  changeThemebtn.addEventListener('click', () =>{
+    if(changeThemebtn.classList.contains('bi-sun')){
+      changeThemebtn.classList.remove("bi-sun");
+      changeThemebtn.classList.add("bi-moon");
+      body.style.backgroundColor = '#222';
+      navbar.style.backgroundColor = "#121212";
+    } 
+    else if(changeThemebtn.classList.contains("bi-moon")){
+      changeThemebtn.classList.add("bi-sun");
+      changeThemebtn.classList.remove("bi-moon");
+      body.style.backgroundColor = "white";
+      navbar.style.backgroundColor = "#222";
+    }
+  })
 
   allcartBTn.addEventListener("click", () =>{
     allCat.style.display = "flex";
@@ -51,6 +74,7 @@ const hamburgerIcon = document.querySelector(".hamburger-menu");
     gamepadsCat.style.display = "none";
     keyboardsCat.style.display = 'none';
     laptopsCat.style.display = "none";
+    subcategories.classList.toggle("active");
 })
 
 
@@ -63,6 +87,7 @@ laptopOPT.addEventListener('click', () =>{
     gamepadsCat.style.display = "none";
     keyboardsCat.style.display = 'none';
     laptopsCat.style.display = "flex";
+    subcategories.classList.toggle("active");
 })
 
 
@@ -73,6 +98,7 @@ gamepadOPT.addEventListener("click", () =>{
     gamepadsCat.style.display = "flex";
     keyboardsCat.style.display = 'none';
     laptopsCat.style.display = "none";
+    subcategories.classList.toggle("active");
 })
 
 
@@ -83,6 +109,7 @@ keyboardOPT.addEventListener("click", () =>{
     gamepadsCat.style.display = "none";
     keyboardsCat.style.display = 'flex';
     laptopsCat.style.display = "none";
+    subcategories.classList.toggle("active");
 })
 
 
@@ -93,6 +120,7 @@ mouseOPT.addEventListener("click", () =>{
     gamepadsCat.style.display = "none";
     keyboardsCat.style.display = 'none';
     laptopsCat.style.display = "none";
+    subcategories.classList.toggle("active");
 })
 
 
@@ -103,6 +131,7 @@ headsetOPT.addEventListener("click", () =>{
     gamepadsCat.style.display = "none";
     keyboardsCat.style.display = 'none';
     laptopsCat.style.display = "none";
+    subcategories.classList.toggle("active");
 })
 
 
@@ -434,10 +463,33 @@ fetch('data/data.json')
 
   searchIcon.addEventListener("click", () =>{
        searchbar.classList.toggle("active");
-       darkenBG.classList.toggle("active")
+       darkenBG.classList.add("active")
   })
 
-  Category.addEventListener("click", () =>{
+  categBTN.addEventListener("click", () =>{
     subcategories.classList.toggle("active");
     chevronIcon.style.transform = "rotate(90deg)";
   })
+
+  CategorySidebar.addEventListener("click", () =>{
+    subcategoriesSidebar.classList.toggle("active");
+    chevronIcon.style.transform = "rotate(90deg)";
+  })
+
+  //remove all toggled elements when any part of the window is clicked
+  document.addEventListener('click', function(event) {
+    const targetElement = event.target;
+    if (!subcategories.contains(targetElement) && !categBTN.contains(targetElement)) {
+      subcategories.classList.remove('active');
+    }
+
+    if (!sidebar.contains(targetElement) && !hamburgerIcon.contains(targetElement)) {
+      sidebar.classList.remove('active');
+      line1.classList.remove("active");
+      line2.classList.remove("active");
+      line3.classList.remove("active");
+      darkenBG.classList.remove("active")
+    }
+
+  });
+

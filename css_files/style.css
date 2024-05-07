@@ -9,6 +9,7 @@
 body{
   position: relative;
   box-sizing: border-box;
+
 }
 
 
@@ -30,19 +31,22 @@ a{
 }
 
 .categories-topMenu{
-    position: absolute;
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
-    background-color: white;
-    top: 100%;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
-    width: 250px;
-    padding-left: 20px;
-    padding-bottom: 15px;
-    border-radius: 10px;
-    z-index: 40;
-    display: none;
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  background-color: white;
+  top: 100%;
+  right: -100%;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+  width: 250px;
+  border-radius: 10px;
+  z-index: 40;
+  
+}
+
+
+.categBTN{
+  cursor: pointer;
 }
 
 
@@ -55,6 +59,8 @@ a{
      color: black;
      width: 100%;
      cursor: pointer;
+     padding: 10px;
+     transition: 0.3s;
 }
 
 .categories-topMenu a:hover{
@@ -101,10 +107,11 @@ a{
 
 .inputBar{
     width: 45%;
-    padding: 4px;
-    border-radius: 20px;
+    padding: 5px;
     outline: none;
     border: transparent;
+    padding-left: 20px;
+    border-radius: 20px;
 }
 
 .container-left{
@@ -350,13 +357,13 @@ i{
     color: orangered;
 }
 
-.Category{
+.Category-sidebar{
     display: flex;
     flex-direction: column;
     
 }
 
-.subcategories{
+.subcategories-sidebar{
     display: flex;
     flex-direction: column;
     margin-left: 35px;
@@ -367,12 +374,12 @@ i{
     margin-top: -10px;
 }
 
-.subcategories.active{
+.subcategories-sidebar.active{
     height: 150px;
     transition:  0.5s;
 }
 
-.subcategories span{
+.subcategories-sidebar span{
     font-size: 15px;
     color: grey;
     cursor: pointer;
@@ -455,6 +462,10 @@ strike{
     font-size: 12px;
   }
 
+  .added{
+    font-size: 13px;
+  }
+
   .darken{
     width: 100%;
     position: absolute;
@@ -475,9 +486,7 @@ strike{
 
   
 
-  .categories-topMen{
-    background-color: aqua;
-  }
+  
 
 
   .hero-banner2{

@@ -6,12 +6,15 @@ const hamburgerIcon = document.querySelector(".hamburger-menu");
   const darkenBG = document.querySelector(".darken");
   const searchIcon = document.querySelector(".search");
   const searchbar = document.querySelector(".searchbar");
-  const subcategories = document.querySelector(".subcategories");
-  const Category = document.querySelector(".Category");
+  const subcategoriesSidebar = document.querySelector(".subcategories-sidebar");
+  const CategorySidebar = document.querySelector(".Category-sidebar");
   const chevronIcon = document.querySelector(".chevron-down-icon");
   const addtocartBtn = document.getElementsByClassName("addtocart"); 
   const product = document.getElementsByClassName("product");
   const cartcount = document.querySelector(".cartCount");
+  const subcategories = document.querySelector(".categories-topMenu");
+  const Category = document.querySelector(".Category");
+  const categBTN = document.querySelector(".categBTN");
   let productArray = [];
 
 
@@ -75,7 +78,7 @@ fetch('data/data.json')
 
 
 
-        addtocartBtn[i].innerHTML = `<strike>added</strike> <i class="bi-check"></i>`;
+        addtocartBtn[i].innerHTML = `<strike class="added">added</strike> <i class="bi-check"></i>`;
         addtocartBtn[i].disabled = true;
       })
     }
@@ -138,7 +141,7 @@ fetch('data/data.json')
        
 
 
-        addtocartBtn[i].innerHTML = `<strike>added</strike> <i class="bi-check"></i>`;
+        addtocartBtn[i].innerHTML = `<strike class="added">added</strike> <i class="bi-check"></i>`;
         addtocartBtn[i].disabled = true;
 
 
@@ -187,7 +190,25 @@ fetch('data/data.json')
        darkenBG.classList.toggle("active")
   })
 
-  Category.addEventListener("click", () =>{
-    subcategories.classList.toggle("active");
+  CategorySidebar.addEventListener("click", () =>{
+    subcategoriesSidebar.classList.toggle("active");
     chevronIcon.style.transform = "rotate(90deg)";
   })
+
+  //remove all toggled elements when any part of the window is clicked
+  document.addEventListener('click', function(event) {
+    const targetElement = event.target;
+    if (!subcategories.contains(targetElement) && !categBTN.contains(targetElement)) {
+      subcategories.classList.remove('active');
+    }
+
+    if (!sidebar.contains(targetElement) && !hamburgerIcon.contains(targetElement)) {
+      sidebar.classList.remove('active');
+      line1.classList.remove("active");
+      line2.classList.remove("active");
+      line3.classList.remove("active");
+      darkenBG.classList.remove("active")
+    }
+
+  });
+  
