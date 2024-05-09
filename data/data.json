@@ -901,7 +901,7 @@
           },
           {
             "id": 112,
-            "name": "Mechanical Gaming Keyboard 1",
+            "name": "Mechanical Gaming Keyboard",
             "detail": "Mechanical gaming keyboard with customizable RGB lighting and Cherry MX Blue switches",
             "price": 99.99,
             "prevPrice": 119.99,
@@ -909,7 +909,7 @@
         },
         {
             "id": 113,
-            "name": "RGB Gaming Keyboard 2",
+            "name": "RGB Gaming Keyboard",
             "detail": "RGB gaming keyboard with detachable wrist rest and customizable macros",
             "price": 79.99,
             "prevPrice": 89.99,
@@ -917,7 +917,7 @@
         },
         {
             "id": 114,
-            "name": "Wireless Gaming Keyboard 3",
+            "name": "Wireless Gaming Keyboard",
             "detail": "Wireless gaming keyboard with low-profile switches and long battery life",
             "price": 129.99,
             "prevPrice": 149.99,
@@ -925,7 +925,7 @@
         },
         {
             "id": 115,
-            "name": "Compact Gaming Keyboard 4",
+            "name": "Compact Gaming Keyboard",
             "detail": "Compact gaming keyboard with RGB backlighting and detachable cable",
             "price": 69.99,
             "prevPrice": 79.99,

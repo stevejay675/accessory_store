@@ -5,6 +5,7 @@
     outline: none;
     font-family: Arial, sans-serif;
     transition: 0.5s;
+    scroll-behavior: smooth;
 }
 
 body{
@@ -24,6 +25,7 @@ a{
     text-decoration: none;
     color: white;
 }
+
 
 .category-parent{
     position: relative;
@@ -63,6 +65,10 @@ a{
      padding: 10px;
      transition: 0.3s;
      cursor: pointer;
+     display: block;
+      padding: 10px 15px;
+      text-decoration: none;
+      color: #333;
 }
 
 .categories-topMenu span:hover{
@@ -77,7 +83,7 @@ a{
     padding: 20px 12px 20px 12px;
     background-color: #222;
     color: white;
-    position: fixed;
+    position: sticky;
     z-index: 10;
     left: 0;
     right: 0;
@@ -109,14 +115,37 @@ a{
     display: none;
 }
 
-.inputBar{
-    width: 45%;
-    padding: 5px;
-    border-radius: 20px;
-    outline: none;
-    border: transparent;
-    padding-left: 20px;
+
+.inbut-div{
+  width: 45%;
+  background-color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
 }
+
+  .inbut-div input{
+    width: 93%;
+    height: 100%;
+    padding: 5px;
+    background: transparent;
+    border: transparent;
+    padding-left: 30px;
+  }
+
+  .inbut-div i{
+    width: 7%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    background-color: red;
+    font-size: 15px;
+    padding: 6px;
+    cursor: pointer;
+  }
+
 
 .container-left{
     display: flex;
@@ -184,13 +213,17 @@ i{
     font-size: 18px;
 }
 
-/*hero banner styling*/
   
  
   .bi-check{
     background-color: green;
     border-radius: 50%;
     font-size: 12px;
+  }
+
+
+  .greycolor.darkmode{
+    color: grey;
   }
   
   
@@ -207,6 +240,11 @@ i{
     padding-bottom: 50px;
     padding-top: 40px;
     text-align: center;
+  }
+
+  .hero-banner.darkmode{
+    background: #222;
+    color: white;
   }
 
   .hero-banner img{
@@ -250,22 +288,63 @@ i{
     display: none;
   }
 
+  
   .options{
     padding: 5px;
-    border: 1px solid black;
     border-radius: 10px;
-    cursor: pointer;
     width: 100px;
     text-align: center;
     margin: 10px;
     transition: 0.3s;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
   }
 
-  .options.active{
+  .options img{
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    border: 1px solid #222;
+    padding: 3px;
+    cursor: pointer;
+  }
+
+  .options-img.active{
+    background-color: #222;
+  }
+
+  .options-img:active{
+    background-color: grey;
+  }
+
+  .options span{
+    font-size: 13px;
+    letter-spacing: 1px;
+  }
+
+
+  .by-categories{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    display: none;
+  }
+
+  .by-categories span{
+    width: fit-content;
+    padding: 10px;
+    border: 1px solid black;
+    border-radius: 20px;
+  }
+
+ /* .options.active{
     background-color: #222;
     color: white;
     transition: 0.3s;
-  }
+  }*/
   
   
 
@@ -437,6 +516,13 @@ i{
     border-radius: 5px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
   }
+
+  .product.darkmode {
+    background-color: #333; /* Dark background color for product */
+    color: #fff; /* Light text color for better contrast */
+    border-radius: 8px; /* Rounded corners */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Shadow for depth */
+  }
   
   /* Style for product image */
   .product img {
@@ -491,6 +577,15 @@ strike{
     cursor: pointer;
   }
 
+  .addtocart.active {
+    background-color: black; /* Light background color for button */
+    color: white; /* Dark text color */
+    border: none; /* Remove border */
+    cursor: pointer; /* Add cursor pointer */
+    transition: background-color 0.3s, color 0.3s; /* Smooth transition */
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.2);
+  }
+
 
   .addtocart i{
     font-size: 12px;
@@ -511,6 +606,22 @@ strike{
     background-color: rgba(0, 0, 0, 0.8);
     transition: 0.5s;
     height: 100%;
+  }
+
+  .categ-labels{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .categ-labels span{
+       font-size: 30px;
+       font-weight: bold;
+       color: black;
+  }
+
+  .categ-labels span i{
+    color: red;
   }
 
 
@@ -771,6 +882,20 @@ strike{
     .shop-options{
       display: flex;
     }
+
+    
+
+    .hero-banner p{
+      font-size: 15px;
+    }
+
+    .by-categories {
+      display: flex;
+    }
+
+    .inbut-div{
+      display: none;
+    }
     
   }
 
@@ -778,6 +903,7 @@ strike{
     .product{
         width: 350px;
     }
+
   }
 
 

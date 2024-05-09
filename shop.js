@@ -3,14 +3,15 @@ const shopOptions = document.querySelector(".shop-options");
 
 
 shopOptions.addEventListener("click", function(event){
-    if(event.target.classList.contains("options")){
-        option.forEach(function(opt){
-            opt.classList.remove("active")
+    if(event.target.classList.contains("options-img")){
+        optImage.forEach(function(image){
+            image.classList.remove("active")
         })
     }
 
     event.target.classList.add("active");
-})
+}) 
+
 
 
 
@@ -31,12 +32,13 @@ const hamburgerIcon = document.querySelector(".hamburger-menu");
   const addtocartBtn = document.getElementsByClassName("addtocart"); 
   const product = document.getElementsByClassName("product");
   const cartcount = document.querySelector(".cartCount");
-  const allcartBTn = document.querySelector(".opt-allcategory");
-  const laptopOPT = document.querySelector(".opt-laptop");
-  const gamepadOPT = document.querySelector(".opt-gamepad");
-  const keyboardOPT = document.querySelector(".opt-keyboard");
-  const mouseOPT = document.querySelector(".opt-mouse");
-  const headsetOPT = document.querySelector(".opt-headset");
+  const optImage = document.querySelectorAll(".options-img");
+  const allcartBTn = document.querySelectorAll(".opt-allcategory");
+  const laptopOPT = document.querySelectorAll(".opt-laptop");
+  const gamepadOPT = document.querySelectorAll(".opt-gamepad");
+  const keyboardOPT = document.querySelectorAll(".opt-keyboard");
+  const mouseOPT = document.querySelectorAll(".opt-mouse");
+  const headsetOPT = document.querySelectorAll(".opt-headset");
   const allCat = document.getElementById("product-container");
   const laptopsCat = document.getElementById("product-container-laptops")
   const gamepadsCat = document.getElementById("product-container-gamepads")
@@ -44,7 +46,11 @@ const hamburgerIcon = document.querySelector(".hamburger-menu");
   const mouseCat = document.getElementById("product-container-mouse")
   const headsetsCat = document.getElementById("product-container-headsets");
   const changeThemebtn = document.querySelector(".theme");
-  const navbar = document.querySelector(".navbar")
+  const navbar = document.querySelector(".navbar");
+  const footer = document.querySelector('.footer');
+  const herobanner = document.querySelector(".hero-banner");
+  const greyColor = document.querySelectorAll(".greyColor");
+  const categlabels = document.querySelector(".categ-labels");
   
   const body = document.getElementsByTagName("body")[0];
 
@@ -58,86 +64,131 @@ const hamburgerIcon = document.querySelector(".hamburger-menu");
       changeThemebtn.classList.add("bi-moon");
       body.style.backgroundColor = '#222';
       navbar.style.backgroundColor = "#121212";
+      sidebar.style.backgroundColor = "#333";
+      sidebar.style.color = "white";
+      footer.style.backgroundColor = "#121212";
+      herobanner.classList.toggle("darkmode");
+      for(let i=0; i<product.length; i++){
+        product[i].classList.toggle('darkmode')
+      }
+      for(let i=0; i<addtocartBtn.length; i++){
+        addtocartBtn[i].classList.toggle('darkmode')
+      }
+      for(let i=0; i<greyColor.length; i++){
+        greyColor[i].classList.toggle('darkmode')
+      }
+      
     } 
     else if(changeThemebtn.classList.contains("bi-moon")){
       changeThemebtn.classList.add("bi-sun");
       changeThemebtn.classList.remove("bi-moon");
       body.style.backgroundColor = "white";
       navbar.style.backgroundColor = "#222";
+      sidebar.style.backgroundColor = "white";
+      sidebar.style.color = "black";
+      footer.style.backgroundColor = "#222";
+      herobanner.classList.toggle('darkmode');
+      for(let i=0; i<product.length; i++){
+        product[i].classList.toggle('darkmode')
+      }
+      for(let i=0; i<addtocartBtn.length; i++){
+        addtocartBtn[i].classList.toggle('darkmode')
+      }
     }
   })
 
-  allcartBTn.addEventListener("click", () =>{
-    allCat.style.display = "flex";
-    mouseCat.style.display = "none";
-    headsetsCat.style.display = "none";
-    gamepadsCat.style.display = "none";
-    keyboardsCat.style.display = 'none';
-    laptopsCat.style.display = "none";
-    subcategories.classList.toggle("active");
-})
 
 
 
 //toggle between the various categories options
-laptopOPT.addEventListener('click', () =>{
+allcartBTn.forEach(allcarteg =>{
+  allcarteg.addEventListener("click", ()=>{
+    allCat.style.display = "flex";
+    mouseCat.style.display = "flex";
+    headsetsCat.style.display = "flex";
+    gamepadsCat.style.display = "flex";
+    keyboardsCat.style.display = 'flex';
+    laptopsCat.style.display = "flex";
+    subcategories.classList.remove("active");
+    categlabels.innerHTML = `<span>All Category <i class="bi-laptop"></i></span>`;
+  })
+})  
+
+
+laptopOPT.forEach(laptop =>{
+  laptop.addEventListener('click', () =>{
     allCat.style.display = "none";
     mouseCat.style.display = "none";
     headsetsCat.style.display = "none";
     gamepadsCat.style.display = "none";
     keyboardsCat.style.display = 'none';
     laptopsCat.style.display = "flex";
-    subcategories.classList.toggle("active");
+    subcategories.classList.remove("active");
+    categlabels.innerHTML = `<span>Laptops <i class="bi-laptop"></i></span>`;
+})
 })
 
 
-gamepadOPT.addEventListener("click", () =>{
+gamepadOPT.forEach(gamepad =>{
+  gamepad.addEventListener("click", () =>{
     allCat.style.display = "none";
     mouseCat.style.display = "none";
     headsetsCat.style.display = "none";
     gamepadsCat.style.display = "flex";
     keyboardsCat.style.display = 'none';
     laptopsCat.style.display = "none";
-    subcategories.classList.toggle("active");
+    subcategories.classList.remove("active");
+    categlabels.innerHTML = `<span>Gamepads <i class="bi-game"></i></span>`;
+})
 })
 
 
-keyboardOPT.addEventListener("click", () =>{
+keyboardOPT.forEach(keyboard =>{
+  keyboard.addEventListener("click", () =>{
     allCat.style.display = "none";
     mouseCat.style.display = "none";
     headsetsCat.style.display = "none";
     gamepadsCat.style.display = "none";
     keyboardsCat.style.display = 'flex';
     laptopsCat.style.display = "none";
-    subcategories.classList.toggle("active");
+    subcategories.classList.remove("active");
+    categlabels.innerHTML = `<span>Keyboards <i class="bi-keyboard"></i></span>`;
+})
 })
 
 
-mouseOPT.addEventListener("click", () =>{
+
+
+mouseOPT.forEach(mouse =>{
+  mouse.addEventListener("click", () =>{
     allCat.style.display = "none";
     mouseCat.style.display = "flex";
     headsetsCat.style.display = "none";
     gamepadsCat.style.display = "none";
     keyboardsCat.style.display = 'none';
     laptopsCat.style.display = "none";
-    subcategories.classList.toggle("active");
+    subcategories.classList.remove("active");
+    categlabels.innerHTML = `<span>Mouse <i class="bi-mouse"></i></span>`;
+})
 })
 
 
-headsetOPT.addEventListener("click", () =>{
+headsetOPT.forEach(headset =>{
+  headset.addEventListener("click", () =>{
     allCat.style.display = "none";
     mouseCat.style.display = "none";
     headsetsCat.style.display = "flex";
     gamepadsCat.style.display = "none";
     keyboardsCat.style.display = 'none';
     laptopsCat.style.display = "none";
-    subcategories.classList.toggle("active");
+    subcategories.classList.remove("active");
+    categlabels.innerHTML = `<span>Headsets <i class="bi-headset"></i></span>`;
+}) 
 })
 
 
 
-
-
+/*
 //display all shop products
 fetch('data/data.json')
   .then(response => response.json())
@@ -431,23 +482,179 @@ fetch('data/data.json')
   
 
   
+*/
+
+// Array to store products in the cart
+const cart = [];
+
+
+
+// Fetch data from JSON file and populate shop products
+fetch('data/data.json')
+  .then(response => response.json())
+  .then(data => {
+    const productContainer = document.getElementById('product-container');
+    const laptopsContainer = document.getElementById('product-container-laptops');
+    const gamepadsContainer = document.getElementById('product-container-gamepads');
+    const headsetsContainer = document.getElementById("product-container-headsets");
+    const keyboardsContainer = document.getElementById("product-container-keyboards");
+    const mouseContainer = document.getElementById("product-container-mouse")
+    const flashsalesContainer = document.getElementById('flashsales');
+
+    // Populate shop products
+    data.shop.forEach(product => {
+      const productElement = document.createElement('div');
+      productElement.classList.add('product');
+      productElement.innerHTML = `
+        <img src="${product.image}" alt="${product.name}" class="product-image">
+        <h2 class="product-name">${product.name}</h2>
+        <p class="product-detail greyColor">${product.detail}</p>
+        <p><span class="price">$<span class="product-price">${product.price}</span> <strike>$ ${product.prevPrice}</strike></p>
+        <div class="addcartdiv">
+          <button class="addtocart">add to cart <i class="bi-cart3"></i></button>
+          <span><i class="bi-heart wishlistbtn"></i></span>
+        </div>
+      `;
+      productContainer.appendChild(productElement);
+      const addcart = productElement.querySelector('.addtocart');
+      addcart.addEventListener('click', () => {
+        cart.push(product);
+        updateCartCount();
+        addcart.innerHTML = `<strike>added</strike> <i class="bi-check"></i>`;
+        addcart.disabled = true;
+      });
+      
+    });
+
+    // Populate laptop products
+    data.laptops.forEach(product => {
+      const productElement = document.createElement('div');
+      productElement.classList.add('product');
+      productElement.innerHTML = `
+        <img src="${product.image}" alt="${product.name}" class="product-image">
+        <h2 class="product-name">${product.name}</h2>
+        <p class="product-detail greyColor">${product.detail}</p>
+        <p><span class="price">$<span class="product-price">${product.price}</span> <strike>$ ${product.prevPrice}</strike></p>
+        <div class="addcartdiv">
+          <button class="addtocart">add to cart <i class="bi-cart3"></i></button>
+          <span><i class="bi-heart wishlistbtn"></i></span>
+        </div>
+      `;
+      laptopsContainer.appendChild(productElement);
+     const addcart = productElement.querySelector('.addtocart');
+     addcart.addEventListener('click', () => {
+        cart.push(product);
+        updateCartCount();
+        addcart.innerHTML = `<strike>added</strike> <i class="bi-check"></i>`;
+        addcart.disabled = true;
+      });
+    });
+
+    // Populate gamepad products
+    data.gamepads.forEach(product => {
+      const productElement = document.createElement('div');
+      productElement.classList.add('product');
+      productElement.innerHTML = `
+        <img src="${product.image}" alt="${product.name}" class="product-image">
+        <h2 class="product-name">${product.name}</h2>
+        <p class="product-detail greyColor">${product.detail}</p>
+        <p><span class="price">$<span class="product-price">${product.price}</span> <strike>$ ${product.prevPrice}</strike></p>
+        <div class="addcartdiv">
+          <button class="addtocart">add to cart <i class="bi-cart3"></i></button>
+          <span><i class="bi-heart wishlistbtn"></i></span>
+        </div>
+      `;
+      gamepadsContainer.appendChild(productElement);
+      const addcart = productElement.querySelector('.addtocart');
+     addcart.addEventListener('click', () => {
+        cart.push(product);
+        updateCartCount();
+        addcart.innerHTML = `<strike>added</strike> <i class="bi-check"></i>`;
+        addcart.disabled = true;
+      });
+    });
+
+     // Populate mouse products
+     data.mouse.forEach(product => {
+      const productElement = document.createElement('div');
+      productElement.classList.add('product');
+      productElement.innerHTML = `
+        <img src="${product.image}" alt="${product.name}" class="product-image">
+        <h2 class="product-name">${product.name}</h2>
+        <p class="product-detail greyColor">${product.detail}</p>
+        <p><span class="price">$<span class="product-price">${product.price}</span> <strike>$ ${product.prevPrice}</strike></p>
+        <div class="addcartdiv">
+          <button class="addtocart">add to cart <i class="bi-cart3"></i></button>
+          <span><i class="bi-heart wishlistbtn"></i></span>
+        </div>
+      `;
+      laptopsContainer.appendChild(productElement);
+     const addcart = productElement.querySelector('.addtocart');
+     addcart.addEventListener('click', () => {
+        cart.push(product);
+        updateCartCount();
+        addcart.innerHTML = `<strike>added</strike> <i class="bi-check"></i>`;
+        addcart.disabled = true;
+      });
+    });
+
+
+     // Populate keyboard products
+     data.keyboards.forEach(product => {
+      const productElement = document.createElement('div');
+      productElement.classList.add('product');
+      productElement.innerHTML = `
+        <img src="${product.image}" alt="${product.name}" class="product-image">
+        <h2 class="product-name">${product.name}</h2>
+        <p class="product-detail greyColor">${product.detail}</p>
+        <p><span class="price">$<span class="product-price">${product.price}</span> <strike>$ ${product.prevPrice}</strike></p>
+        <div class="addcartdiv">
+          <button class="addtocart">add to cart <i class="bi-cart3"></i></button>
+          <span><i class="bi-heart wishlistbtn"></i></span>
+        </div>
+      `;
+      laptopsContainer.appendChild(productElement);
+     const addcart = productElement.querySelector('.addtocart');
+     addcart.addEventListener('click', () => {
+        cart.push(product);
+        updateCartCount();
+        addcart.innerHTML = `<strike>added</strike> <i class="bi-check"></i>`;
+        addcart.disabled = true;
+      });
+    });
+
+    // Populate flash sales products
+    data.flashsalesProduct.forEach(product => {
+      const productElement = document.createElement('div');
+      productElement.classList.add('flashsaleproduct');
+      productElement.innerHTML = `
+        <img src="${product.image}" alt="${product.name}">
+        <h2 class="fs-name">${product.name}</h2>
+        <p><span class="fs-price">$${product.price}</span> <strike>$${product.prevPrice}</strike></p>
+        <button class="addtocart fs-addtocart">add to cart <i class="bi-cart3"></i></button>
+      `;
+      flashsalesContainer.appendChild(productElement);
+
+
+      productElement.querySelector('.addtocart').addEventListener('click', () => {
+        cart.push(product);
+        updateCartCount();
+      });
+    });
+  })
+  .catch(error => {
+    console.error('Error fetching products:', error);
+  });
+
+// Function to update cart count displayed in the UI
+function updateCartCount() {
+  const cartCountElement = document.querySelector('.cartCount');
+  cartCountElement.textContent = cart.length;
+}
 
  
         
-
- 
-
-  for(let i=0; i<addtocartBtn.length; i++){
-    addtocartBtn[i].addEventListener("click", () =>{
-      alert('item added to cart')
-    })
-  }
-  
-
-
-  
-
-
+//hamburger menu
   hamburgerIcon.addEventListener("click", () =>{
     sidebar.classList.toggle('active');
     line1.classList.toggle("active");
@@ -493,3 +700,4 @@ fetch('data/data.json')
 
   });
 
+console.log(cart)

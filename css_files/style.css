@@ -4,6 +4,7 @@
     box-sizing: border-box;
     outline: none;
     font-family: Arial, sans-serif;
+    transition: 0.5s;
 }
 
 body{
@@ -205,6 +206,10 @@ i{
     text-align: center;
   }
 
+  .hero-banner-header.active{
+    background-color: #222;
+  }
+
   .hero-banner img{
     width: 25%;
     height: auto;
@@ -299,7 +304,8 @@ i{
     bottom: 0;
     height: 100vh;
     width: 85%;
-    padding-top: 10px;
+    display: flex;
+    flex-direction: column;
     transition: 0.5s;
     z-index: 20;
 }
@@ -315,15 +321,26 @@ i{
     align-items: center;
 }
 
+.sidebar-header{
+    width: 100%;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    color: black;
+    border-bottom: 1px solid #BBBFBF;
+}
+
 .sidebar div span{
     font-weight: bold;
     letter-spacing: 1px;
+    
 }
+
+
 
 .sidebar ul{
     display: flex;
     flex-direction: column;
-    gap: 15px;
+    gap: 18px;
     justify-content: center;
     padding: 30px 0 0 15px;
 }
@@ -335,13 +352,23 @@ i{
 .sidebar ul li a{
     text-decoration: none;
     color: black;
-    font-size: 18px;
+    font-size: 15px;
     letter-spacing: 1px;
+    
 
 }
 
 .sidebar ul li a i{
     color: black;
+}
+
+.subcategories-sidebar-links{
+  font-size: 12px;
+  color: red;
+}
+
+.subcategories-sidebar a{
+  font-size: 12px;
 }
 
 
