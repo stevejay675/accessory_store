@@ -23,143 +23,125 @@ const hamburgerIcon = document.querySelector(".hamburger-menu");
 
 fetch('data/data.json')
   .then(response => response.json())
-  .then(popularProducts => {
+  .then(data => {
     
     const productContainer = document.getElementById('product-container');
+    const NewarrivalContainer = document.getElementById("newarrivals-container");
+    const flashsaleContainer = document.getElementById('flashsales-container');
 
-    let popularProduct = popularProducts.popularProducts;
-   
+    let popularProduct = data.popularProducts.splice(0, 8);
+    let newarrivalproduct = data.shop.splice(0, 8);
+    let flashsaleproduct = data.flashsales.splice(0, 8);
+
+
+
+    // Populate featured products
     popularProduct.forEach(product => {
-     
       const productElement = document.createElement('div');
       productElement.classList.add('product');
-
-      
       productElement.innerHTML = `
         <img src="${product.image}" alt="${product.name}" class="product-image">
         <h2 class="product-name">${product.name}</h2>
-        <p class="product-detail">${product.detail}</p>
-        <p><span class="price">$<span class="product-price">${product.price}</span> <strike>$ ${product.prevPrice}</strike></p>
+        <div id="ratings">
+        <i class="bi-star-fill" id="rating1"></i>
+        <i class="bi-star-fill" id="rating2"></i>
+        <i class="bi-star-fill" id="rating3"></i>
+        <i class="bi-star-fill" id="rating4"></i>
+        <i class="bi-star-fill" id="rating5"></i>
+       </div>
+        <div class="addtocart-div">
+        <p class="price">$<span class="product-price">${product.price}</p>
         <div class="addcartdiv">
-        <button class="addtocart">add to cart <i class="bi-cart3"></i></button>
-        <span><i class="bi-heart wishlistbtn"></i></span>
+          <button class="addtocart"><i class="bi-cart3"></i></button>
+          <span><i class="bi-heart wishlistbtn"></i></span>
         </div>
+      </div>
       `;
-
-      
       productContainer.appendChild(productElement);
+      const addcart = productElement.querySelector('.addtocart');
+      addcart.addEventListener('click', () => {
+        cart.push(product);
+        updateCartCount();
+        addcart.innerHTML = `<strike>added</strike> <i class="bi-check"></i>`;
+        addcart.disabled = true;
+      });
+      
     });
 
-    //add to cart implementation
-    const addtocartBtn = document.getElementsByClassName('addtocart');
 
-    for(let i=0; i<addtocartBtn.length; i++){
-      addtocartBtn[i].addEventListener("click", () =>{
-
-           const addtocartBtn_subparent = addtocartBtn[i].parentNode;
-           const addtocartBtn_mainparent = addtocartBtn_subparent.parentNode
-
-           const productImage = addtocartBtn_mainparent.querySelector(".product-image").src;
-           const productName = addtocartBtn_mainparent.querySelector(".product-name").textContent;
-           const productDetail = addtocartBtn_mainparent.querySelector(".product-detail").textContent;
-           const productPrice = addtocartBtn_mainparent.querySelector(".product-price").textContent;
-
-           const productObject = {
-              image: productImage,
-              name: productName,
-              detail: productDetail,
-              price: productPrice 
-           }
-
-           productArray.push(productObject);
-           cartcount.innerHTML = productArray.length;
-
-           console.log(productArray)
-
-
-
-        addtocartBtn[i].innerHTML = `<strike class="added">added</strike> <i class="bi-check"></i>`;
-        addtocartBtn[i].disabled = true;
-      })
-    }
-
-
-
-    //function
-
-    //wish list implementation
-    const wishlistbtn = document.getElementsByClassName("wishlistbtn");
-    for(let i=0; i<wishlistbtn.length; i++){
-      wishlistbtn[i].addEventListener("click", () =>{
-        wishlistbtn[i].classList.remove('bi-heart');
-        wishlistbtn[i].classList.add("bi-heart-fill");
-        wishlistbtn[i].style.color = "red";
-        wishlistbtn[i].style.transition = "0.4s";
-      })
-    }
-
-  })
-  .catch(error => {
-    console.error('Error fetching products:', error);
-  });
-
-
-  
-  
-  //display flashsales products
-  fetch('data/data.json')
-  .then(response => response.json())
-  .then(flashsales => {
-    // Get reference to product container
-    const flashsale = flashsales.flashsalesProduct;
-    const flashsalescontainer = document.getElementById('flashsales');
-
-    // Loop through products and generate HTML for each product
-    flashsale.forEach(item => {
-      // Create product element
+    // Populate newarrivals products
+    newarrivalproduct.forEach(product => {
       const productElement = document.createElement('div');
-      productElement.classList.add('flashsaleproduct');
-
-      // Populate product HTML
+      productElement.classList.add('product');
       productElement.innerHTML = `
-            <img src="${item.image}" alt="${item.name}">
-            <h2 class="fs-name">${item.name}</h2>
-            <p><span class="fs-price">$${item.price}</span> <strike>$${item.prevPrice}</strike></p>
-            <button class="addtocart fs-addtocart">add to cart <i class="bi-cart3"></i></button>
+        <img src="${product.image}" alt="${product.name}" class="product-image">
+        <h2 class="product-name">${product.name}</h2>
+        <div id="ratings">
+        <i class="bi-star-fill" id="rating1"></i>
+        <i class="bi-star-fill" id="rating2"></i>
+        <i class="bi-star-fill" id="rating3"></i>
+        <i class="bi-star-fill" id="rating4"></i>
+        <i class="bi-star-fill" id="rating5"></i>
+       </div>
+        <div class="addtocart-div">
+        <p class="price">$<span class="product-price">${product.price}</p>
+        <div class="addcartdiv">
+          <button class="addtocart"><i class="bi-cart3"></i></button>
+          <span><i class="bi-heart wishlistbtn"></i></span>
+        </div>
+      </div>
       `;
-
-      // Append product element to container
-      flashsalescontainer.appendChild(productElement);
+      NewarrivalContainer.appendChild(productElement);
+      const addcart = productElement.querySelector('.addtocart');
+      addcart.addEventListener('click', () => {
+        cart.push(product);
+        updateCartCount();
+        addcart.innerHTML = `<strike>added</strike> <i class="bi-check"></i>`;
+        addcart.disabled = true;
+      });
+      
     });
 
-    //add to cart
-    const addtocartBtn = document.getElementsByClassName('addtocart');
 
-    for(let i=0; i<addtocartBtn.length; i++){
-      addtocartBtn[i].addEventListener("click", () =>{
-
-       
-
-
-        addtocartBtn[i].innerHTML = `<strike class="added">added</strike> <i class="bi-check"></i>`;
-        addtocartBtn[i].disabled = true;
-
-
-      })
-    }
-    
+    // Populate flashsales products
+    flashsaleproduct.forEach(product => {
+      const productElement = document.createElement('div');
+      productElement.classList.add('product');
+      productElement.innerHTML = `
+        <img src="${product.image}" alt="${product.name}" class="product-image">
+        <h2 class="product-name">${product.name}</h2>
+        <div id="ratings">
+        <i class="bi-star-fill" id="rating1"></i>
+        <i class="bi-star-fill" id="rating2"></i>
+        <i class="bi-star-fill" id="rating3"></i>
+        <i class="bi-star-fill" id="rating4"></i>
+        <i class="bi-star-fill" id="rating5"></i>
+       </div>
+        <div class="addtocart-div">
+        <p class="price">$<span class="product-price">${product.price}</p>
+        <div class="addcartdiv">
+          <button class="addtocart"><i class="bi-cart3"></i></button>
+          <span><i class="bi-heart wishlistbtn"></i></span>
+        </div>
+      </div>
+      `;
+      flashsaleContainer.appendChild(productElement);
+      const addcart = productElement.querySelector('.addtocart');
+      addcart.addEventListener('click', () => {
+        cart.push(product);
+        updateCartCount();
+        addcart.innerHTML = `<strike>added</strike> <i class="bi-check"></i>`;
+        addcart.disabled = true;
+      });
+      
+    });
+   
   })
   .catch(error => {
     console.error('Error fetching products:', error);
   });
-  
 
-  
 
- 
-        
-
- 
 
   for(let i=0; i<addtocartBtn.length; i++){
     addtocartBtn[i].addEventListener("click", () =>{

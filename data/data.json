@@ -934,7 +934,7 @@
       
       ],
       
-      "flashsalesProduct": [
+      "flashsales": [
 
         {
            "id": 116,
@@ -1220,22 +1220,7 @@
       "prevPrice": 199.99,
       "image": "assets/images/chairs/chair14.png"
     },
-    {
-      "id": 15,
-      "name": "Vintage Gaming Chair",
-      "detail": "Retro-style gaming chair with vinyl upholstery and classic design",
-      "price": 219.99,
-      "prevPrice": 249.99,
-      "image": "assets/images/chairs/chair15.png"
-    },
-    {
-      "id": 19,
-      "name": "Nintendo Switch Pro Controller",
-      "detail": "Official controller for Nintendo Switch with motion controls and amiibo support",
-      "price": 69.99,
-      "prevPrice": 79.99,
-      "image": "assets/images/gamepads/gamepad4.png"
-    },
+
     {
       "id": 20,
       "name": "Razer Wolverine Ultimate Controller",
@@ -1325,22 +1310,6 @@
       "image": "assets/images/gamepads/gamepad15.png"
     },
     {
-      "id": 39,
-      "name": "SteelSeries Arctis Pro + GameDAC",
-      "detail": "Wired gaming headset with hi-res audio and dedicated DAC (Digital-to-Analog Converter)",
-      "price": 249.99,
-      "prevPrice": 279.99,
-      "image": "assets/images/headsets/headset9.png"
-    },
-    {
-      "id": 40,
-      "name": "Razer Kraken X",
-      "detail": "Lightweight gaming headset with 7.1 surround sound and bendable cardioid microphone",
-      "price": 49.99,
-      "prevPrice": 59.99,
-      "image": "assets/images/headsets/headset10.png"
-    },
-    {
       "id": 41,
       "name": "Logitech G733 Lightspeed",
       "detail": "Wireless gaming headset with LIGHTSYNC RGB lighting and Blue VO!CE microphone",
@@ -1372,22 +1341,6 @@
       "prevPrice": 169.99,
       "image": "assets/images/headsets/headset14.png"
     },
-    {
-      "id": 45,
-      "name": "HyperX Cloud Stinger Core",
-      "detail": "Affordable gaming headset with directional 40mm drivers and swivel-to-mute microphone",
-      "price": 49.99,
-      "prevPrice": 59.99,
-      "image": "assets/images/headsets/headset15.png"
-    },
-    {
-      "id": 112,
-      "name": "Mechanical Gaming Keyboard 1",
-      "detail": "Mechanical gaming keyboard with customizable RGB lighting and Cherry MX Blue switches",
-      "price": 99.99,
-      "prevPrice": 119.99,
-      "image": "assets/images/keyboards/keyboard1.png"
-  },
   {
       "id": 113,
       "name": "RGB Gaming Keyboard 2",

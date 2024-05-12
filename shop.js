@@ -187,303 +187,6 @@ headsetOPT.forEach(headset =>{
 })
 
 
-
-/*
-//display all shop products
-fetch('data/data.json')
-  .then(response => response.json())
-  .then(data => {
-    
-    const productContainer = document.getElementById('product-container');
-    let shopproduct = data.shop;
-   
-    shopproduct.forEach(product => {
-     
-      const productElement = document.createElement('div');
-      productElement.classList.add('product');
-
-      
-      productElement.innerHTML = `
-        <img src="${product.image}" alt="${product.name}" class="product-image">
-        <h2 class="product-name">${product.name}</h2>
-        <p class="product-detail">${product.detail}</p>
-        <p><span class="price">$<span class="product-price">${product.price}</span> <strike>$ ${product.prevPrice}</strike></p>
-        <div class="addcartdiv">
-        <button class="addtocart">add to cart <i class="bi-cart3"></i></button>
-        <span><i class="bi-heart wishlistbtn"></i></span>
-        </div>
-      `;
-
-      
-      productContainer.appendChild(productElement);
-    });
-
-    //add to cart implementation
-    const addtocartBtn = document.getElementsByClassName('addtocart');
-
-    for(let i=0; i<addtocartBtn.length; i++){
-      addtocartBtn[i].addEventListener("click", () =>{
-
-           const addtocartBtn_subparent = addtocartBtn[i].parentNode;
-           const addtocartBtn_mainparent = addtocartBtn_subparent.parentNode
-
-           const productImage = addtocartBtn_mainparent.querySelector(".product-image").src;
-           const productName = addtocartBtn_mainparent.querySelector(".product-name").textContent;
-           const productDetail = addtocartBtn_mainparent.querySelector(".product-detail").textContent;
-           const productPrice = addtocartBtn_mainparent.querySelector(".product-price").textContent;
-
-           const productObject = {
-              image: productImage,
-              name: productName,
-              detail: productDetail,
-              price: productPrice 
-           }
-
-           productArray.push(productObject);
-           cartcount.innerHTML = productArray.length;
-
-           console.log(productArray)
-
-
-
-        addtocartBtn[i].innerHTML = `<strike>added</strike> <i class="bi-check"></i>`;
-        addtocartBtn[i].disabled = true;
-      })
-    }
-
-
-    //wish list implementation
-    const wishlistbtn = document.getElementsByClassName("wishlistbtn");
-    for(let i=0; i<wishlistbtn.length; i++){
-      wishlistbtn[i].addEventListener("click", () =>{
-        wishlistbtn[i].classList.remove('bi-heart');
-        wishlistbtn[i].classList.add("bi-heart-fill");
-        wishlistbtn[i].style.color = "red";
-        wishlistbtn[i].style.transition = "0.4s";
-      })
-    }
-
-  })
-  .catch(error => {
-    console.error('Error fetching products:', error);
-  });
-
-
-  //display all only laptops on shop page
-  fetch('data/data.json')
-  .then(response => response.json())
-  .then(data => {
-    
-    const productContainer = document.getElementById('product-container-laptops');
-    let shopproduct = data.laptops;
-   
-    shopproduct.forEach(product => {
-     
-      const productElement = document.createElement('div');
-      productElement.classList.add('product');
-
-      
-      productElement.innerHTML = `
-        <img src="${product.image}" alt="${product.name}" class="product-image">
-        <h2 class="product-name">${product.name}</h2>
-        <p class="product-detail">${product.detail}</p>
-        <p><span class="price">$<span class="product-price">${product.price}</span> <strike>$ ${product.prevPrice}</strike></p>
-        <div class="addcartdiv">
-        <button class="addtocart">add to cart <i class="bi-cart3"></i></button>
-        <span><i class="bi-heart wishlistbtn"></i></span>
-        </div>
-      `;
-
-      
-      productContainer.appendChild(productElement);
-    });
-
-    //add to cart implementation
-    const addtocartBtn = document.getElementsByClassName('addtocart');
-
-    for(let i=0; i<addtocartBtn.length; i++){
-      addtocartBtn[i].addEventListener("click", () =>{
-
-           const addtocartBtn_subparent = addtocartBtn[i].parentNode;
-           const addtocartBtn_mainparent = addtocartBtn_subparent.parentNode
-
-           const productImage = addtocartBtn_mainparent.querySelector(".product-image").src;
-           const productName = addtocartBtn_mainparent.querySelector(".product-name").textContent;
-           const productDetail = addtocartBtn_mainparent.querySelector(".product-detail").textContent;
-           const productPrice = addtocartBtn_mainparent.querySelector(".product-price").textContent;
-
-           const productObject = {
-              image: productImage,
-              name: productName,
-              detail: productDetail,
-              price: productPrice 
-           }
-
-           productArray.push(productObject);
-           cartcount.innerHTML = productArray.length;
-
-           console.log(productArray)
-
-
-
-        addtocartBtn[i].innerHTML = `<strike>added</strike> <i class="bi-check"></i>`;
-        addtocartBtn[i].disabled = true;
-      })
-    }
-
-
-
-    //function
-
-    //wish list implementation
-    const wishlistbtn = document.getElementsByClassName("wishlistbtn");
-    for(let i=0; i<wishlistbtn.length; i++){
-      wishlistbtn[i].addEventListener("click", () =>{
-        wishlistbtn[i].classList.remove('bi-heart');
-        wishlistbtn[i].classList.add("bi-heart-fill");
-        wishlistbtn[i].style.color = "red";
-        wishlistbtn[i].style.transition = "0.4s";
-      })
-    }
-
-  })
-  .catch(error => {
-    console.error('Error fetching products:', error);
-  });
-
-
-  //display all only gamepads on shop page
-  fetch('data/data.json')
-  .then(response => response.json())
-  .then(data => {
-    
-    const productContainer = document.getElementById('product-container-gamepads');
-    let shopproduct = data.gamepads;
-   
-    shopproduct.forEach(product => {
-     
-      const productElement = document.createElement('div');
-      productElement.classList.add('product');
-
-      
-      productElement.innerHTML = `
-        <img src="${product.image}" alt="${product.name}" class="product-image">
-        <h2 class="product-name">${product.name}</h2>
-        <p class="product-detail">${product.detail}</p>
-        <p><span class="price">$<span class="product-price">${product.price}</span> <strike>$ ${product.prevPrice}</strike></p>
-        <div class="addcartdiv">
-        <button class="addtocart">add to cart <i class="bi-cart3"></i></button>
-        <span><i class="bi-heart wishlistbtn"></i></span>
-        </div>
-      `;
-
-      
-      productContainer.appendChild(productElement);
-    });
-
-    //add to cart implementation
-    const addtocartBtn = document.getElementsByClassName('addtocart');
-
-    for(let i=0; i<addtocartBtn.length; i++){
-      addtocartBtn[i].addEventListener("click", () =>{
-
-           const addtocartBtn_subparent = addtocartBtn[i].parentNode;
-           const addtocartBtn_mainparent = addtocartBtn_subparent.parentNode
-
-           const productImage = addtocartBtn_mainparent.querySelector(".product-image").src;
-           const productName = addtocartBtn_mainparent.querySelector(".product-name").textContent;
-           const productDetail = addtocartBtn_mainparent.querySelector(".product-detail").textContent;
-           const productPrice = addtocartBtn_mainparent.querySelector(".product-price").textContent;
-
-           const productObject = {
-              image: productImage,
-              name: productName,
-              detail: productDetail,
-              price: productPrice 
-           }
-
-           productArray.push(productObject);
-           cartcount.innerHTML = productArray.length;
-
-           console.log(productArray)
-
-
-
-        addtocartBtn[i].innerHTML = `<strike>added</strike> <i class="bi-check"></i>`;
-        addtocartBtn[i].disabled = true;
-      })
-    }
-
-
-    //wish list implementation
-    const wishlistbtn = document.getElementsByClassName("wishlistbtn");
-    for(let i=0; i<wishlistbtn.length; i++){
-      wishlistbtn[i].addEventListener("click", () =>{
-        wishlistbtn[i].classList.remove('bi-heart');
-        wishlistbtn[i].classList.add("bi-heart-fill");
-        wishlistbtn[i].style.color = "red";
-        wishlistbtn[i].style.transition = "0.4s";
-      })
-    }
-
-  })
-  .catch(error => {
-    console.error('Error fetching products:', error);
-  });
-
-  
-  
-  //display flashsales products
-  fetch('data/data.json')
-  .then(response => response.json())
-  .then(flashsales => {
-    // Get reference to product container
-    const flashsale = flashsales.flashsalesProduct;
-    const flashsalescontainer = document.getElementById('flashsales');
-
-    // Loop through products and generate HTML for each product
-    flashsale.forEach(item => {
-      // Create product element
-      const productElement = document.createElement('div');
-      productElement.classList.add('flashsaleproduct');
-
-      // Populate product HTML
-      productElement.innerHTML = `
-            <img src="${item.image}" alt="${item.name}">
-            <h2 class="fs-name">${item.name}</h2>
-            <p><span class="fs-price">$${item.price}</span> <strike>$${item.prevPrice}</strike></p>
-            <button class="addtocart fs-addtocart">add to cart <i class="bi-cart3"></i></button>
-      `;
-
-      // Append product element to container
-      flashsalescontainer.appendChild(productElement);
-    });
-
-    //add to cart
-    const addtocartBtn = document.getElementsByClassName('addtocart');
-
-    for(let i=0; i<addtocartBtn.length; i++){
-      addtocartBtn[i].addEventListener("click", () =>{
-
-       
-
-
-        addtocartBtn[i].innerHTML = `<strike>added</strike> <i class="bi-check"></i>`;
-        addtocartBtn[i].disabled = true;
-
-
-      })
-    }
-    
-  })
-  .catch(error => {
-    console.error('Error fetching products:', error);
-  });
-  
-
-  
-*/
-
 // Array to store products in the cart
 const cart = [];
 
@@ -508,21 +211,35 @@ fetch('data/data.json')
       productElement.innerHTML = `
         <img src="${product.image}" alt="${product.name}" class="product-image">
         <h2 class="product-name">${product.name}</h2>
-        <p class="product-detail greyColor">${product.detail}</p>
-        <p><span class="price">$<span class="product-price">${product.price}</span> <strike>$ ${product.prevPrice}</strike></p>
+        <div id="ratings">
+        <i class="bi-star-fill" id="rating1"></i>
+        <i class="bi-star-fill" id="rating2"></i>
+        <i class="bi-star-fill" id="rating3"></i>
+        <i class="bi-star-fill" id="rating4"></i>
+        <i class="bi-star-fill" id="rating5"></i>
+       </div>
+        <div class="addtocart-div">
+        <p class="price">$<span class="product-price">${product.price}</p>
         <div class="addcartdiv">
-          <button class="addtocart">add to cart <i class="bi-cart3"></i></button>
-          <span><i class="bi-heart wishlistbtn"></i></span>
+          <button class="addtocart"><i class="bi-cart3"></i></button>
+          <span class="wishlist"><i class="bi-heart "></i></span>
         </div>
+      </div>
       `;
       productContainer.appendChild(productElement);
       const addcart = productElement.querySelector('.addtocart');
       addcart.addEventListener('click', () => {
         cart.push(product);
         updateCartCount();
-        addcart.innerHTML = `<strike>added</strike> <i class="bi-check"></i>`;
+        addcart.innerHTML = `<i class="bi-check"></i>`;
         addcart.disabled = true;
       });
+
+      const addtowishlist = productElement.querySelector('.wishlist');
+      addtowishlist.addEventListener('click', () =>{
+        console.log(addtowishlist)
+        addtowishlist.innerHTML = `<i class="bi-heart-fill"></i>`
+      })
       
     });
 
@@ -533,21 +250,35 @@ fetch('data/data.json')
       productElement.innerHTML = `
         <img src="${product.image}" alt="${product.name}" class="product-image">
         <h2 class="product-name">${product.name}</h2>
-        <p class="product-detail greyColor">${product.detail}</p>
-        <p><span class="price">$<span class="product-price">${product.price}</span> <strike>$ ${product.prevPrice}</strike></p>
-        <div class="addcartdiv">
-          <button class="addtocart">add to cart <i class="bi-cart3"></i></button>
-          <span><i class="bi-heart wishlistbtn"></i></span>
-        </div>
+        <div id="ratings">
+        <i class="bi-star-fill" id="rating1"></i>
+        <i class="bi-star-fill" id="rating2"></i>
+        <i class="bi-star-fill" id="rating3"></i>
+        <i class="bi-star-fill" id="rating4"></i>
+        <i class="bi-star-fill" id="rating5"></i>
+   </div>
+   <div class="addtocart-div">
+   <p class="price">$<span class="product-price">${product.price}</p>
+   <div class="addcartdiv">
+     <button class="addtocart"><i class="bi-cart3"></i></button>
+     <span class="wishlist"><i class="bi-heart "></i></span>
+   </div>
+</div>
       `;
       laptopsContainer.appendChild(productElement);
      const addcart = productElement.querySelector('.addtocart');
      addcart.addEventListener('click', () => {
         cart.push(product);
         updateCartCount();
-        addcart.innerHTML = `<strike>added</strike> <i class="bi-check"></i>`;
+        addcart.innerHTML = `<i class="bi-check"></i>`;
         addcart.disabled = true;
       });
+
+      const addtowishlist = productElement.querySelector('.wishlist');
+      addtowishlist.addEventListener('click', () =>{
+        console.log(addtowishlist)
+        addtowishlist.innerHTML = `<i class="bi-heart-fill"></i>`
+      })
     });
 
     // Populate gamepad products
@@ -557,21 +288,35 @@ fetch('data/data.json')
       productElement.innerHTML = `
         <img src="${product.image}" alt="${product.name}" class="product-image">
         <h2 class="product-name">${product.name}</h2>
-        <p class="product-detail greyColor">${product.detail}</p>
-        <p><span class="price">$<span class="product-price">${product.price}</span> <strike>$ ${product.prevPrice}</strike></p>
-        <div class="addcartdiv">
-          <button class="addtocart">add to cart <i class="bi-cart3"></i></button>
-          <span><i class="bi-heart wishlistbtn"></i></span>
-        </div>
+        <div id="ratings">
+        <i class="bi-star-fill" id="rating1"></i>
+        <i class="bi-star-fill" id="rating2"></i>
+        <i class="bi-star-fill" id="rating3"></i>
+        <i class="bi-star-fill" id="rating4"></i>
+        <i class="bi-star-fill" id="rating5"></i>
+   </div>
+   <div class="addtocart-div">
+   <p class="price">$<span class="product-price">${product.price}</p>
+   <div class="addcartdiv">
+     <button class="addtocart"><i class="bi-cart3"></i></button>
+     <span class="wishlist"><i class="bi-heart "></i></span>
+   </div>
+</div>
       `;
       gamepadsContainer.appendChild(productElement);
       const addcart = productElement.querySelector('.addtocart');
      addcart.addEventListener('click', () => {
         cart.push(product);
         updateCartCount();
-        addcart.innerHTML = `<strike>added</strike> <i class="bi-check"></i>`;
+        addcart.innerHTML = `<i class="bi-check"></i>`;
         addcart.disabled = true;
       });
+
+      const addtowishlist = productElement.querySelector('.wishlist');
+      addtowishlist.addEventListener('click', () =>{
+        console.log(addtowishlist)
+        addtowishlist.innerHTML = `<i class="bi-heart-fill wishlistbtn"></i>`
+      })
     });
 
      // Populate mouse products
@@ -581,21 +326,35 @@ fetch('data/data.json')
       productElement.innerHTML = `
         <img src="${product.image}" alt="${product.name}" class="product-image">
         <h2 class="product-name">${product.name}</h2>
-        <p class="product-detail greyColor">${product.detail}</p>
-        <p><span class="price">$<span class="product-price">${product.price}</span> <strike>$ ${product.prevPrice}</strike></p>
-        <div class="addcartdiv">
-          <button class="addtocart">add to cart <i class="bi-cart3"></i></button>
-          <span><i class="bi-heart wishlistbtn"></i></span>
-        </div>
+        <div id="ratings">
+        <i class="bi-star-fill" id="rating1"></i>
+        <i class="bi-star-fill" id="rating2"></i>
+        <i class="bi-star-fill" id="rating3"></i>
+        <i class="bi-star-fill" id="rating4"></i>
+        <i class="bi-star-fill" id="rating5"></i>
+   </div>
+   <div class="addtocart-div">
+   <p class="price">$<span class="product-price">${product.price}</p>
+   <div class="addcartdiv">
+     <button class="addtocart"><i class="bi-cart3"></i></button>
+     <span class="wishlist"><i class="bi-heart"></i></span>
+   </div>
+</div>
       `;
       laptopsContainer.appendChild(productElement);
      const addcart = productElement.querySelector('.addtocart');
      addcart.addEventListener('click', () => {
         cart.push(product);
         updateCartCount();
-        addcart.innerHTML = `<strike>added</strike> <i class="bi-check"></i>`;
+        addcart.innerHTML = `<i class="bi-check"></i>`;
         addcart.disabled = true;
       });
+
+      const addtowishlist = productElement.querySelector('.wishlist');
+      addtowishlist.addEventListener('click', () =>{
+        console.log(addtowishlist)
+        addtowishlist.innerHTML = `<i class="bi-heart-fill"></i>`
+      })
     });
 
 
@@ -606,11 +365,17 @@ fetch('data/data.json')
       productElement.innerHTML = `
         <img src="${product.image}" alt="${product.name}" class="product-image">
         <h2 class="product-name">${product.name}</h2>
-        <p class="product-detail greyColor">${product.detail}</p>
-        <p><span class="price">$<span class="product-price">${product.price}</span> <strike>$ ${product.prevPrice}</strike></p>
+        <div id="ratings">
+        <i class="bi-star-fill" id="rating1"></i>
+        <i class="bi-star-fill" id="rating2"></i>
+        <i class="bi-star-fill" id="rating3"></i>
+        <i class="bi-star-fill" id="rating4"></i>
+        <i class="bi-star-fill" id="rating5"></i>
+   </div>
+        <p><span class="price">$<span class="product-price">${product.price}</span> <strike></p>
         <div class="addcartdiv">
           <button class="addtocart">add to cart <i class="bi-cart3"></i></button>
-          <span><i class="bi-heart wishlistbtn"></i></span>
+          <span class="wishlist"><i class="bi-heart"></i></span>
         </div>
       `;
       laptopsContainer.appendChild(productElement);
@@ -618,9 +383,16 @@ fetch('data/data.json')
      addcart.addEventListener('click', () => {
         cart.push(product);
         updateCartCount();
-        addcart.innerHTML = `<strike>added</strike> <i class="bi-check"></i>`;
+        addcart.innerHTML = `<i class="bi-check"></i>`;
         addcart.disabled = true;
       });
+
+
+      const addtowishlist = productElement.querySelector('.wishlist');
+      addtowishlist.addEventListener('click', () =>{
+        console.log(addtowishlist)
+        addtowishlist.innerHTML = `<i class="bi-heart-fill"></i>`
+      })
     });
 
     // Populate flash sales products
@@ -630,7 +402,14 @@ fetch('data/data.json')
       productElement.innerHTML = `
         <img src="${product.image}" alt="${product.name}">
         <h2 class="fs-name">${product.name}</h2>
-        <p><span class="fs-price">$${product.price}</span> <strike>$${product.prevPrice}</strike></p>
+        <div id="ratings">
+        <i class="bi-star-fill" id="rating1"></i>
+        <i class="bi-star-fill" id="rating2"></i>
+        <i class="bi-star-fill" id="rating3"></i>
+        <i class="bi-star-fill" id="rating4"></i>
+        <i class="bi-star-fill" id="rating5"></i>
+        </div>
+        <p><span class="fs-price">$${product.price}</span></p>
         <button class="addtocart fs-addtocart">add to cart <i class="bi-cart3"></i></button>
       `;
       flashsalesContainer.appendChild(productElement);
@@ -640,6 +419,12 @@ fetch('data/data.json')
         cart.push(product);
         updateCartCount();
       });
+
+      const addtowishlist = productContainer.querySelector('.bi-heart');
+      addtowishlist.addEventListener('click', () =>{
+       
+        addtowishlist.innerHTML = `<i class="bi-heart-fill"></i>`
+      })
     });
   })
   .catch(error => {
