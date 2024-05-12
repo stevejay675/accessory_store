@@ -59,6 +59,7 @@ a {
 
 .container-left a {
   text-transform: uppercase;
+  font-weight: bold;
 }
 
 .cartcount-parent {
@@ -69,7 +70,7 @@ a {
   position: absolute;
   top: -8px;
   right: -10px;
-  background-color: red;
+  background-color: #e53935;
   color: white;
   width: 16px;
   height: 16px;
@@ -114,6 +115,7 @@ a {
 
 .bi-sun {
   color: black;
+  cursor: pointer;
 }
 
 .mediaquery.active {
@@ -124,7 +126,6 @@ a {
 
 /*hero banner styling*/
 .hero-banner {
-  background: url("assets/images/logo.png");
   background-position: center;
   background-size: cover;
   display: flex;
@@ -134,17 +135,11 @@ a {
   background-position: center;
   color: black;
   padding: 100px 20px;
-  padding-bottom: 50px;
-  padding-top: 40px;
+  padding-bottom: 60px;
+  padding-top: 60px;
   text-align: center;
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-color: #22222205;
-}
-
-.hero-banner-header.active {
-  background-color: #222;
+  background: linear-gradient(135deg, #37474f, #263238);
+  color: #fff; 
 }
 
 .banner-content {
@@ -165,13 +160,24 @@ a {
 .shop-now {
   display: inline-block;
   padding: 10px 20px;
-  background: linear-gradient(to right, red, #474747);
+
   color: #fff;
   text-decoration: none;
   font-size: 16px;
   border-radius: 8px;
   cursor: pointer;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.4);
+  padding: 10px 20px;
+  border-radius: 5px;
+  text-transform: uppercase;
+  font-weight: bold;
+  text-decoration: none;
+  background-color: #e53935;
+  color: #fff;
+}
+
+.shop-now:hover {
+    background-color: #c62828;
 }
 
 .shop-now i {
@@ -349,7 +355,7 @@ a {
 }
 
 .service3 span {
-  background-color: rgb(0, 149, 255);
+  background-color: #e53935;
   padding: 5px;
   border-radius: 8px;
 }
@@ -367,7 +373,7 @@ a {
 }
 
 .service6 span {
-  background-color: #bbbfbf;
+  background-color: rgb(18, 18, 80);
   padding: 5px;
   border-radius: 8px;
 }
@@ -551,7 +557,7 @@ a {
 
 .categ-labels p {
   font-size: 20px;
-  color: red;
+  color: #e53935;
   font-weight: 700;
 }
 
@@ -599,13 +605,36 @@ a {
   justify-content: center;
   padding: 10px;
   gap: 10px;
+  
 }
+
+.feature11{
+  background-image: url('../Screenshot\ 2024-05-12\ 050953.png');
+  background-size: 60%;
+  background-position: right;
+  color: white;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+
+  .feature12{
+    background-color: #263238;
+    background-image: url('../assets/images/headsets/headset13.png');
+    background-size: 50%;
+    background-position: right;
+    color: white;
+    background-repeat: no-repeat;
+  }
+
 
 .features1 div button {
   width: 100px;
   padding: 8px;
   border: 1px solid white;
   cursor: pointer;
+  background-color: black;
+  color: gold;
 }
 
 .features1 .feature11 {
@@ -621,6 +650,7 @@ a {
   justify-content: space-between;
   margin-top: 10px;
   gap: 15px;
+ 
 }
 
 .features2 div {
@@ -631,20 +661,46 @@ a {
   justify-content: center;
   gap: 10px;
   padding: 10px;
-  background-image: url("assets/images/gamepads/gamepad1.png");
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
   border: 1px solid black;
+  background-color: #222;
 }
 
-.features2 .features21 {
-  background-color: #333;
+.feature21{
+  background-image: url('../assets/images/mouse/mouse1.png');
+  background-size: 60%;
+  background-position: right;
+  color: white;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.feature22{
+  background-image: url('../assets/images/chairs/chair14.png');
+  background-size: 60%;
+  background-position: right;
+  color: white;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.feature23{
+  background-image: url('../assets/images/keyboards/keyboard2.png');
+  background-size: 60%;
+  background-position: right;
+  color: white;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 .features2 button {
   width: 100px;
   padding: 10px;
+  color: gold;
+  background-color: black;
+  border: 1px solid white;
 }
 
 .feature22 {

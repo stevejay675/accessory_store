@@ -9,6 +9,7 @@
 body{
   position: relative;
   background: linear-gradient(to bottom right, #E6E6E6, #FFFFFF);
+  background: linear-gradient(135deg, #37474f, #263238);;
 }
 
 a{
@@ -53,7 +54,6 @@ a{
     flex-direction: column;
     align-items: center;
     height: 100vh;
-    background: linear-gradient(to bottom, rgb(238, 24, 24), #222);
     color: white;
     gap: 10px;
 }
