@@ -1,3 +1,5 @@
+
+
 const option = document.querySelectorAll(".options");
 const shopOptions = document.querySelector(".shop-options");
 
@@ -23,9 +25,6 @@ const hamburgerIcon = document.querySelector(".hamburger-menu");
   const darkenBG = document.querySelector(".darken");
   const searchIcon = document.querySelector(".search");
   const searchbar = document.querySelector(".searchbar");
-  const subcategories = document.querySelector(".categories-topMenu");
-  const Category = document.querySelector(".Category");
-  const categBTN = document.querySelector(".categBTN");
   const subcategoriesSidebar = document.querySelector(".subcategories-sidebar");
   const CategorySidebar = document.querySelector(".Category-sidebar");
   const chevronIcon = document.querySelector(".chevron-down-icon");
@@ -51,10 +50,8 @@ const hamburgerIcon = document.querySelector(".hamburger-menu");
   const herobanner = document.querySelector(".hero-banner");
   const greyColor = document.querySelectorAll(".greyColor");
   const categlabels = document.querySelector(".categ-labels");
-  
-  const body = document.getElementsByTagName("body")[0];
 
-  let productArray = [];
+  const body = document.getElementsByTagName("body")[0];
 
 
   //toggle btwn dark and bright mode
@@ -109,8 +106,8 @@ allcartBTn.forEach(allcarteg =>{
     gamepadsCat.style.display = "flex";
     keyboardsCat.style.display = 'flex';
     laptopsCat.style.display = "flex";
-    subcategories.classList.remove("active");
-    categlabels.innerHTML = `<span>All Category <i class="bi-laptop"></i></span>`;
+    categlabels.innerHTML = `<span>All Category</span> 
+    <small>shop everything</small>`;
   })
 })  
 
@@ -123,8 +120,8 @@ laptopOPT.forEach(laptop =>{
     gamepadsCat.style.display = "none";
     keyboardsCat.style.display = 'none';
     laptopsCat.style.display = "flex";
-    subcategories.classList.remove("active");
-    categlabels.innerHTML = `<span>Laptops <i class="bi-laptop"></i></span>`;
+    categlabels.innerHTML = `<span>Laptops</span> 
+    <small>shop gamepads</small>`;
 })
 })
 
@@ -137,8 +134,8 @@ gamepadOPT.forEach(gamepad =>{
     gamepadsCat.style.display = "flex";
     keyboardsCat.style.display = 'none';
     laptopsCat.style.display = "none";
-    subcategories.classList.remove("active");
-    categlabels.innerHTML = `<span>Gamepads <i class="bi-game"></i></span>`;
+    categlabels.innerHTML = `<span>Gamepads</span> 
+    <small>shop gamepads</small>`;
 })
 })
 
@@ -151,8 +148,8 @@ keyboardOPT.forEach(keyboard =>{
     gamepadsCat.style.display = "none";
     keyboardsCat.style.display = 'flex';
     laptopsCat.style.display = "none";
-    subcategories.classList.remove("active");
-    categlabels.innerHTML = `<span>Keyboards <i class="bi-keyboard"></i></span>`;
+    categlabels.innerHTML = `<span>Keyboards</span> 
+    <small>shop keyboard</small>`;
 })
 })
 
@@ -167,8 +164,8 @@ mouseOPT.forEach(mouse =>{
     gamepadsCat.style.display = "none";
     keyboardsCat.style.display = 'none';
     laptopsCat.style.display = "none";
-    subcategories.classList.remove("active");
-    categlabels.innerHTML = `<span>Mouse <i class="bi-mouse"></i></span>`;
+    categlabels.innerHTML = `<span>Mouse</span> 
+    <small>shop Mouse</small>`;
 })
 })
 
@@ -181,8 +178,8 @@ headsetOPT.forEach(headset =>{
     gamepadsCat.style.display = "none";
     keyboardsCat.style.display = 'none';
     laptopsCat.style.display = "none";
-    subcategories.classList.remove("active");
-    categlabels.innerHTML = `<span>Headsets <i class="bi-headset"></i></span>`;
+    categlabels.innerHTML = `<span>Headsets</span> 
+    <small>shop headsets</small>`;
 }) 
 })
 
@@ -190,6 +187,15 @@ headsetOPT.forEach(headset =>{
 // Array to store products in the cart
 const cart = [];
 
+
+// Load cart items from local storage when the page is loaded
+document.addEventListener('DOMContentLoaded', () => {
+  const storedCartItems = JSON.parse(localStorage.getItem('cartItems'));
+  if (storedCartItems) {
+    cart.push(...storedCartItems);
+    updateCartCount();
+  }
+});
 
 
 // Fetch data from JSON file and populate shop products
@@ -201,7 +207,7 @@ fetch('data/data.json')
     const gamepadsContainer = document.getElementById('product-container-gamepads');
     const headsetsContainer = document.getElementById("product-container-headsets");
     const keyboardsContainer = document.getElementById("product-container-keyboards");
-    const mouseContainer = document.getElementById("product-container-mouse")
+    const mouseContainer = document.getElementById("product-container-mouse");
     const flashsalesContainer = document.getElementById('flashsales');
 
     // Populate shop products
@@ -230,6 +236,7 @@ fetch('data/data.json')
       const addcart = productElement.querySelector('.addtocart');
       addcart.addEventListener('click', () => {
         cart.push(product);
+        localStorage.setItem('cartItems', JSON.stringify(cart));
         updateCartCount();
         addcart.innerHTML = `<i class="bi-check"></i>`;
         addcart.disabled = true;
@@ -269,6 +276,7 @@ fetch('data/data.json')
      const addcart = productElement.querySelector('.addtocart');
      addcart.addEventListener('click', () => {
         cart.push(product);
+        localStorage.setItem('cartItems', JSON.stringify(cart));
         updateCartCount();
         addcart.innerHTML = `<i class="bi-check"></i>`;
         addcart.disabled = true;
@@ -307,6 +315,7 @@ fetch('data/data.json')
       const addcart = productElement.querySelector('.addtocart');
      addcart.addEventListener('click', () => {
         cart.push(product);
+        localStorage.setItem('cartItems', JSON.stringify(cart));
         updateCartCount();
         addcart.innerHTML = `<i class="bi-check"></i>`;
         addcart.disabled = true;
@@ -341,10 +350,50 @@ fetch('data/data.json')
    </div>
 </div>
       `;
-      laptopsContainer.appendChild(productElement);
+      mouseContainer.appendChild(productElement);
      const addcart = productElement.querySelector('.addtocart');
      addcart.addEventListener('click', () => {
         cart.push(product);
+        localStorage.setItem('cartItems', JSON.stringify(cart));
+        updateCartCount();
+        addcart.innerHTML = `<i class="bi-check"></i>`;
+        addcart.disabled = true;
+      });
+
+      const addtowishlist = productElement.querySelector('.wishlist');
+      addtowishlist.addEventListener('click', () =>{
+        console.log(addtowishlist)
+        addtowishlist.innerHTML = `<i class="bi-heart-fill"></i>`
+      })
+    });
+
+    // Populate headsets products
+    data.headsets.forEach(product => {
+      const productElement = document.createElement('div');
+      productElement.classList.add('product');
+      productElement.innerHTML = `
+        <img src="${product.image}" alt="${product.name}" class="product-image">
+        <h2 class="product-name">${product.name}</h2>
+        <div id="ratings">
+        <i class="bi-star-fill" id="rating1"></i>
+        <i class="bi-star-fill" id="rating2"></i>
+        <i class="bi-star-fill" id="rating3"></i>
+        <i class="bi-star-fill" id="rating4"></i>
+        <i class="bi-star-fill" id="rating5"></i>
+   </div>
+   <div class="addtocart-div">
+   <p class="price">$<span class="product-price">${product.price}</p>
+   <div class="addcartdiv">
+     <button class="addtocart"><i class="bi-cart3"></i></button>
+     <span class="wishlist"><i class="bi-heart "></i></span>
+   </div>
+</div>
+      `;
+      headsetsContainer.appendChild(productElement);
+     const addcart = productElement.querySelector('.addtocart');
+     addcart.addEventListener('click', () => {
+        cart.push(product);
+        localStorage.setItem('cartItems', JSON.stringify(cart));
         updateCartCount();
         addcart.innerHTML = `<i class="bi-check"></i>`;
         addcart.disabled = true;
@@ -378,10 +427,12 @@ fetch('data/data.json')
           <span class="wishlist"><i class="bi-heart"></i></span>
         </div>
       `;
-      laptopsContainer.appendChild(productElement);
+      keyboardsContainer.appendChild(productElement);
      const addcart = productElement.querySelector('.addtocart');
      addcart.addEventListener('click', () => {
         cart.push(product);
+        localStorage.setItem('cartItems', JSON.stringify(cart));
+  
         updateCartCount();
         addcart.innerHTML = `<i class="bi-check"></i>`;
         addcart.disabled = true;
@@ -395,41 +446,13 @@ fetch('data/data.json')
       })
     });
 
-    // Populate flash sales products
-    data.flashsalesProduct.forEach(product => {
-      const productElement = document.createElement('div');
-      productElement.classList.add('flashsaleproduct');
-      productElement.innerHTML = `
-        <img src="${product.image}" alt="${product.name}">
-        <h2 class="fs-name">${product.name}</h2>
-        <div id="ratings">
-        <i class="bi-star-fill" id="rating1"></i>
-        <i class="bi-star-fill" id="rating2"></i>
-        <i class="bi-star-fill" id="rating3"></i>
-        <i class="bi-star-fill" id="rating4"></i>
-        <i class="bi-star-fill" id="rating5"></i>
-        </div>
-        <p><span class="fs-price">$${product.price}</span></p>
-        <button class="addtocart fs-addtocart">add to cart <i class="bi-cart3"></i></button>
-      `;
-      flashsalesContainer.appendChild(productElement);
-
-
-      productElement.querySelector('.addtocart').addEventListener('click', () => {
-        cart.push(product);
-        updateCartCount();
-      });
-
-      const addtowishlist = productContainer.querySelector('.bi-heart');
-      addtowishlist.addEventListener('click', () =>{
-       
-        addtowishlist.innerHTML = `<i class="bi-heart-fill"></i>`
-      })
-    });
   })
   .catch(error => {
     console.error('Error fetching products:', error);
   });
+
+  
+
 
 // Function to update cart count displayed in the UI
 function updateCartCount() {

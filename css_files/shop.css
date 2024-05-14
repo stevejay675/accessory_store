@@ -37,7 +37,6 @@ a {
   padding-right: 20px;
   background-color: white;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
-  border: 1px solid #ccc;
   color: white;
   position: sticky;
   z-index: 10;
@@ -190,7 +189,6 @@ a {
     justify-content: space-around;
     margin-top: 15px;
     flex-wrap: wrap;
-    display: none;
   }
 
   
@@ -250,6 +248,40 @@ a {
     color: white;
     transition: 0.3s;
   }*/
+
+
+  /*hero banner styling*/
+.hero-banner {
+  background-position: center;
+  background-size: cover;
+  display: flex;
+  flex-direction: column-reverse;
+  justify-content: center;
+  align-items: center;
+  background-position: center;
+  color: black;
+  padding: 100px 20px;
+  padding-bottom: 60px;
+  padding-top: 60px;
+  text-align: center;
+  background: linear-gradient(135deg, #37474f, #263238);
+  color: #fff; 
+}
+
+.banner-content {
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.banner-content h1 {
+  font-size: 32px;
+  margin-bottom: 20px;
+}
+
+.banner-content p {
+  font-size: 13px;
+  margin-bottom: 30px;
+}
   
   
 
@@ -653,158 +685,202 @@ a {
   }
 
 
-
-
-  footer{
-    background-color: #222;
+  .newsletter {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    background-color: rgb(18, 18, 80);
+    padding: 20px;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    align-items: center;
+  }
+  
+  .newsletter .news {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .newsletter div h2 {
     color: white;
-    margin-top: 20px;
+    margin-bottom: 10px;
+    letter-spacing: 0.7px;
+  }
+  
+  .newsletter div small {
+    color: #bbbfbf;
+  }
+  
+  .newsletter div small span {
+    color: hsl(51, 100%, 40%);
+    cursor: pointer;
+  }
+  
+  .textArea {
+    background-color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 400px;
+    padding-left: 10px;
+  }
+  
+  .textArea button {
+    background-color: rgb(0, 100, 50);
+    color: white;
+    padding: 10px;
+    cursor: pointer;
+  }
+  
+  .newsletter div input {
+    width: 70%;
+    background-color: transparent;
+    outline: none;
+    border: transparent;
+  }
+
+
+
+  footer {
+    color: black;
     padding: 20px 25px 10px 25px;
+    padding-left: 20px;
+    padding-right: 20px;
     display: flex;
     flex-direction: column;
     gap: 30px;
-   
-}
-
-.footer-line1{
+  }
+  
+  .footer-line1 {
     display: flex;
     flex-wrap: wrap;
     gap: 30px;
     justify-content: space-between;
     align-items: center;
-}
-
-.footer-line1 div{
+  }
+  
+  .footer-line1 div {
     display: flex;
     gap: 20px;
     width: 320px;
-    
-}
-
-.footer-line1 div div{
+  }
+  
+  .footer-line1 div div {
     display: flex;
     flex-direction: column;
     justify-content: center;
     gap: 10px;
-    
-}
-
-.separation{
+  }
+  
+  .separation {
     height: 1px;
-    background-color: gray;
+    background-color: #ccc;
     width: 100%;
-}
-
-.footer-line1 div i{
-    color: #BBBFBF;
+  }
+  
+  .footer-line1 div i {
+    color: gray;
     font-size: 40px;
-}
-
-.footer-line1 div div h4{
+  }
+  
+  .footer-line1 div div h4 {
     font-size: 12px;
     font-weight: bold;
-}
-
-.footer-line1 div div span{
-    color: #BBBFBF;
+  }
+  
+  .footer-line1 div div span {
+    color: gray;
     font-size: 10px;
-}
-
-.our-stores{
+  }
+  
+  .our-stores {
     display: flex;
     flex-wrap: wrap;
     gap: 50px;
     justify-content: space-between;
-
-    
-}
-
-.our-stores ul{
+  }
+  
+  .our-stores ul {
     width: 110px;
-}
-
-
-.our-stores ul li{
+  }
+  
+  .our-stores ul li {
     list-style: none;
-}
-
-.our-stores ul li a{
+  }
+  
+  .our-stores ul li a {
     text-decoration: none;
-    color: #BBBFBF;
+    color: gray;
     font-size: 12px;
-   
-}
-
-.payment-system{
-  display: flex;
-  justify-content: space-between;
-  flex-wrap: wrap;
-  align-items: center;
-}
-
-.payment-system div{
-  width: 300px;
-}
-
-.appleLogo img{
+  }
+  
+  .payment-system {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    align-items: center;
+  }
+  
+  .payment-system div {
+    width: 300px;
+  }
+  
+  .appleLogo img {
     width: 200px;
     height: 100px;
-}
-
-
-
-.payment{
+  }
+  
+  .payment {
     display: flex;
     gap: 15px;
     flex-direction: column;
     margin-top: 20px;
     margin-bottom: 20px;
-}
-
-.payment div{
+  }
+  
+  .payment div {
     display: flex;
     gap: 15px;
-}
-
-.payment div img{
+  }
+  
+  .payment div img {
     width: 20px;
     height: 20px;
     border-radius: 50%;
     cursor: pointer;
-}
-
+  }
   
-  
-  #fb{
+  #fb {
     background-color: blue;
     border-radius: 50%;
     cursor: pointer;
-    
   }
   
-  #wsp{
+  #wsp {
     background-color: green;
     border-radius: 50%;
     cursor: pointer;
   }
   
-  #ytb{
+  #ytb {
     color: red;
     cursor: pointer;
   }
   
-  #twt{
+  #twt {
     color: rgb(0, 149, 255);
     cursor: pointer;
   }
   
-  #ig{
+  #ig {
     color: rgb(244, 71, 100);
     cursor: pointer;
   }
   
-  .designed-by{
-    color: white;
+  .designed-by {
+    color: black;
     margin: auto;
   }
 
@@ -813,7 +889,7 @@ a {
 
 
 
-@media screen and (max-width: 900px) {
+@media screen and (max-width: 700px) {
   
     .mediaquery{
         display: none;
@@ -857,6 +933,31 @@ a {
 
     .inbut-div{
       display: none;
+    }
+
+    .newsletter {
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+    }
+
+    .newsletter .textArea {
+      width: 100%;
+      display: flex;
+    }
+  
+    .categ-labels {
+      padding: 20px;
+    }
+  
+    .inbut-div {
+      display: none;
+    }
+  
+    #product-container,
+    #newarrivals-container,
+    #flashsales-container {
+      padding: 5px;
     }
     
   }
