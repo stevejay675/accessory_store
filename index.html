@@ -16,9 +16,9 @@
  
 </head>
 
-<body>
+<body id="body">
 
-    <nav class="navbar">
+    <nav class="navbar dmbg1">
 
         <img src="assets/images/logos/InShot_20240510_231048178.png" alt="" class="imageLogo">
 
@@ -50,7 +50,7 @@
     </header>
 
 
-    <div class="sidebar">
+    <div class="sidebar dmbg1">
         <div>
             <img src="assets/images/logos/InShot_20240510_231048178.png" alt="" class="sidebar-logo">
         </div>
@@ -197,7 +197,7 @@
 
     <button onclick="goToTop()" id="goToTopBtn" title="Go to top"><i class="bi-arrow-up"></i></button>
 
-    <footer>
+    <footer class="dmbg1">
         <div class="footer-line1">
             <div>
                 <i class="bi bi-car-front"></i>
@@ -349,6 +349,23 @@
 
 
     <script src="script.js"></script>
+    <script>
+       const body = document.getElementById('body');
+       const dmbg1 = document.querySelectorAll('.dmbg1');
+       const products = document.querySelectorAll('.product');
+       const dmButton = document.querySelector('.theme');
+       const productimg = document.querySelectorAll('.product-image');
+
+       dmButton.addEventListener('click', () =>{
+           body.classList.toggle('darkmode');
+           products.classList.toggle('darkmode');
+           productimg.classList.toggle('darkmode');
+           dmbg1.forEach(dm, () =>{
+            dm.classList.toggle('darkmode')
+           })
+       })
+
+    </script>
 </body>
 
 </html>

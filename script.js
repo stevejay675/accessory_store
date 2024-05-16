@@ -15,6 +15,8 @@ const hamburgerIcon = document.querySelector(".hamburger-menu");
   const subcategories = document.querySelector(".categories-topMenu");
   const Category = document.querySelector(".Category");
   const categBTN = document.querySelector(".categBTN");
+  
+
   let cart = [];
 
   window.onscroll = function() { scrollFunction() };

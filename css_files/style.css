@@ -11,6 +11,8 @@
 
 
 
+
+
 body {
   position: relative;
   
@@ -429,12 +431,6 @@ a {
   gap: 5px;
 }
 
-.product.darkmode {
-  background-color: #333; /* Dark background color for product */
-  color: #fff; /* Light text color for better contrast */
-  border-radius: 8px; /* Rounded corners */
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Shadow for depth */
-}
 
 /* Style for product image */
 .product img {
@@ -954,6 +950,29 @@ footer {
   margin: auto;
 }
 
+/*dark modes color*/
+
+.dmbg1.darkmode{
+   background-color: #1A1A1A;
+}
+
+#body.darkmode{
+  background-color: #121212;
+  color: #CCCCCC;
+}
+
+.product.darkmode {
+  background-color: #1E1E1E; 
+  color: #fff; 
+  border-radius: 8px; 
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+}
+
+.product-image.darkmode{
+  background-color: #222222;
+}
+
+
 @media screen and (max-width: 700px) {
   .mediaquery {
     display: none;
@@ -977,6 +996,8 @@ footer {
   .hero-banner {
     flex-direction: column-reverse;
     padding-top: 50px;
+    padding-bottom: 100px;
+    height: auto;
   }
 
   .hero-banner img {
