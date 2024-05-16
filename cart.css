@@ -89,7 +89,7 @@
   
   .alink.active{
     color: rgb(0, 100, 50);
-    border-bottom: 2px solid rgb(0, 100, 50);
+    border-bottom: 2px dotted rgb(0, 100, 50);
     font-weight: 700;
   }
   

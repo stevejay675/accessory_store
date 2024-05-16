@@ -180,10 +180,6 @@ fetch('data/data.json')
     line2.classList.toggle("active");
     line3.classList.toggle("active");
     darkenBG.classList.toggle("active");
-    if(searchbar.classList.contains("active")){
-        searchbar.classList.remove("active");
-        darkenBG.classList.toggle("active");
-    }
 
   })
 

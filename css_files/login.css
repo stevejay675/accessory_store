@@ -35,12 +35,13 @@ a{
     justify-content: center;
     align-items: center;
     height: 100vh;
-    border-right: 1px solid black;
+    border-right: 1px solid #ccc;
 }
 
 .container-left h1{
     font-size: 40px;
     text-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    color: white;
 }
 
 .container-left img{
