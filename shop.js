@@ -436,7 +436,6 @@ fetch('data/data.json')
      addcart.addEventListener('click', () => {
         cart.push(product);
         localStorage.setItem('cartItems', JSON.stringify(cart));
-  
         updateCartCount();
         addcart.innerHTML = `<i class="bi-check"></i>`;
         addcart.disabled = true;
@@ -479,29 +478,12 @@ function updateCartCount() {
     }
 
   })
-
-  searchIcon.addEventListener("click", () =>{
-       searchbar.classList.toggle("active");
-       darkenBG.classList.add("active")
-  })
-
-  categBTN.addEventListener("click", () =>{
-    subcategories.classList.toggle("active");
-    chevronIcon.style.transform = "rotate(90deg)";
-  })
-
-  CategorySidebar.addEventListener("click", () =>{
-    subcategoriesSidebar.classList.toggle("active");
-    chevronIcon.style.transform = "rotate(90deg)";
-  })
+  
 
   //remove all toggled elements when any part of the window is clicked
   document.addEventListener('click', function(event) {
     const targetElement = event.target;
-    if (!subcategories.contains(targetElement) && !categBTN.contains(targetElement)) {
-      subcategories.classList.remove('active');
-    }
-
+    
     if (!sidebar.contains(targetElement) && !hamburgerIcon.contains(targetElement)) {
       sidebar.classList.remove('active');
       line1.classList.remove("active");

@@ -111,9 +111,10 @@
   font-size: 20px;
  }
 
- .cart-items.active{
-
- }
+   .cart-item-details input{
+    width: 40px;
+    border: 1px solid black;
+   }
 
   .cart-items{
     width: 70%;
@@ -166,8 +167,10 @@
     color: #fff;
     border: none;
     padding: 10px 20px;
-    border-radius: 5px;
+    border-radius: 7px;
     cursor: pointer;
+    margin-top: 10px;
+    margin-bottom: 10px;
   }
   
   .checkout-btn:hover {
@@ -242,6 +245,151 @@
     color: #e53935;
     border-radius: 10px;
     cursor: pointer;
+  }
+
+  .bi-trash:hover{
+    color: #263238;
+  }
+
+  footer {
+    color: black;
+    padding: 20px 25px 10px 25px;
+    padding-left: 20px;
+    padding-right: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+  }
+  
+  .footer-line1 {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .footer-line1 div {
+    display: flex;
+    gap: 20px;
+    width: 320px;
+  }
+  
+  .footer-line1 div div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 10px;
+  }
+  
+  .separation {
+    height: 1px;
+    background-color: #ccc;
+    width: 100%;
+  }
+  
+  .footer-line1 div i {
+    color: gray;
+    font-size: 40px;
+  }
+  
+  .footer-line1 div div h4 {
+    font-size: 12px;
+    font-weight: bold;
+  }
+  
+  .footer-line1 div div span {
+    color: gray;
+    font-size: 10px;
+  }
+  
+  .our-stores {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 50px;
+    justify-content: space-between;
+  }
+  
+  .our-stores ul {
+    width: 110px;
+  }
+  
+  .our-stores ul li {
+    list-style: none;
+  }
+  
+  .our-stores ul li a {
+    text-decoration: none;
+    color: gray;
+    font-size: 12px;
+  }
+  
+  .payment-system {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    align-items: center;
+  }
+  
+  .payment-system div {
+    width: 300px;
+  }
+  
+  .appleLogo img {
+    width: 200px;
+    height: 100px;
+  }
+  
+  .payment {
+    display: flex;
+    gap: 15px;
+    flex-direction: column;
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+  
+  .payment div {
+    display: flex;
+    gap: 15px;
+  }
+  
+  .payment div img {
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    cursor: pointer;
+  }
+  
+  #fb {
+    background-color: blue;
+    border-radius: 50%;
+    cursor: pointer;
+  }
+  
+  #wsp {
+    background-color: green;
+    border-radius: 50%;
+    cursor: pointer;
+  }
+  
+  #ytb {
+    color: red;
+    cursor: pointer;
+  }
+  
+  #twt {
+    color: rgb(0, 149, 255);
+    cursor: pointer;
+  }
+  
+  #ig {
+    color: rgb(244, 71, 100);
+    cursor: pointer;
+  }
+  
+  .designed-by {
+    color: black;
+    margin: auto;
   }
 
 
