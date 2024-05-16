@@ -15,6 +15,8 @@ shopOptions.addEventListener("click", function(event){
 }) 
 
 
+window.onscroll = function() { scrollFunction() };
+
 
 
 const hamburgerIcon = document.querySelector(".hamburger-menu");
@@ -412,20 +414,22 @@ fetch('data/data.json')
       const productElement = document.createElement('div');
       productElement.classList.add('product');
       productElement.innerHTML = `
-        <img src="${product.image}" alt="${product.name}" class="product-image">
-        <h2 class="product-name">${product.name}</h2>
-        <div id="ratings">
-        <i class="bi-star-fill" id="rating1"></i>
-        <i class="bi-star-fill" id="rating2"></i>
-        <i class="bi-star-fill" id="rating3"></i>
-        <i class="bi-star-fill" id="rating4"></i>
-        <i class="bi-star-fill" id="rating5"></i>
-   </div>
-        <p><span class="price">$<span class="product-price">${product.price}</span> <strike></p>
-        <div class="addcartdiv">
-          <button class="addtocart">add to cart <i class="bi-cart3"></i></button>
-          <span class="wishlist"><i class="bi-heart"></i></span>
-        </div>
+      <img src="${product.image}" alt="${product.name}" class="product-image">
+      <h2 class="product-name">${product.name}</h2>
+      <div id="ratings">
+      <i class="bi-star-fill" id="rating1"></i>
+      <i class="bi-star-fill" id="rating2"></i>
+      <i class="bi-star-fill" id="rating3"></i>
+      <i class="bi-star-fill" id="rating4"></i>
+      <i class="bi-star-fill" id="rating5"></i>
+ </div>
+ <div class="addtocart-div">
+ <p class="price">$<span class="product-price">${product.price}</p>
+ <div class="addcartdiv">
+   <button class="addtocart"><i class="bi-cart3"></i></button>
+   <span class="wishlist"><i class="bi-heart "></i></span>
+ </div>
+</div>
       `;
       keyboardsContainer.appendChild(productElement);
      const addcart = productElement.querySelector('.addtocart');
@@ -508,4 +512,18 @@ function updateCartCount() {
 
   });
 
-console.log(cart)
+// function to Show the "go to top" button when the user scrolls down 20px from the to
+function scrollFunction() {
+  var goToTopBtn = document.getElementById("goToTopBtn");
+  if (document.body.scrollTop > 200 || document.documentElement.scrollTop > 200) {
+    goToTopBtn.style.display = "block";
+  } else {
+    goToTopBtn.style.display = "none";
+  }
+}
+
+// When the user clicks on the button, scroll to the top of the page
+function goToTop() {
+  document.body.scrollTop = 0; // For Safari
+  document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
+}

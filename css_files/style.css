@@ -59,7 +59,10 @@ a {
 
 .container-left a {
   text-transform: uppercase;
-  font-weight: bold;
+}
+
+.container-left a:hover{
+  color: rgb(0, 100, 50);
 }
 
 .cartcount-parent {
@@ -80,7 +83,7 @@ a {
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 4px;
+  padding: 5px;
 }
 
 .hamburger-menu {
@@ -160,7 +163,6 @@ a {
 .shop-now {
   display: inline-block;
   padding: 10px 20px;
-
   color: #fff;
   text-decoration: none;
   font-size: 16px;
@@ -240,7 +242,7 @@ a {
 .sidebar ul {
   display: flex;
   flex-direction: column;
-  gap: 18px;
+  gap: 25px;
   justify-content: center;
   padding: 30px 0 0 15px;
 }
@@ -250,24 +252,23 @@ a {
 }
 
 .sidebar ul li a {
+  text-transform: uppercase;
   text-decoration: none;
   color: black;
   font-size: 15px;
   letter-spacing: 1px;
+  padding-bottom: 3px;
 }
 
-.sidebar ul li a i {
-  color: black;
+
+
+.alink.active{
+  color: rgb(0, 100, 50);
+  border-bottom: 2px dotted rgb(0, 100, 50);
+  font-weight: 700;
 }
 
-.subcategories-sidebar-links {
-  font-size: 12px;
-  color: red;
-}
 
-.subcategories-sidebar a {
-  font-size: 12px;
-}
 
 .Popular {
   display: flex;
@@ -401,10 +402,6 @@ a {
   gap: 5px;
 }
 
-.product:hover {
-  box-shadow: 0 0 12px rgba(0, 0, 0, 0.6);
-}
-
 .product.darkmode {
   background-color: #333; /* Dark background color for product */
   color: #fff; /* Light text color for better contrast */
@@ -477,9 +474,7 @@ a {
   font-weight: bold;
 }
 
-.addtocart-div div i {
-  color: rgb(0, 100, 50);
-}
+
 
 .addtocart {
   background-color: hsl(0, 0%, 95%);
@@ -512,9 +507,10 @@ a {
 }
 
 .bi-check {
-  background-color: green;
+  background-color: rgb(0, 100, 50);
   border-radius: 50%;
   font-size: 12px;
+  color: white;
 }
 
 .darken {
@@ -580,6 +576,9 @@ a {
   cursor: pointer;
   font-size: 15px;
 }
+
+
+
 .search {
   display: none;
 }
@@ -635,6 +634,12 @@ a {
   cursor: pointer;
   background-color: black;
   color: gold;
+}
+
+.features1 div button:hover{
+  color: black;
+  background-color: gold;
+  border: 1px solid black;
 }
 
 .features1 .feature11 {
@@ -705,6 +710,24 @@ a {
 
 .feature22 {
   position: relative;
+}
+
+#goToTopBtn{
+  display: none;
+  position: fixed;
+  bottom: 1.25rem;
+  right: 0;
+  z-index: 99;
+  font-size: 1.125rem;
+  border: none;
+  outline: none;
+  background-color: #37474f;
+  border: 1px solid white;
+  color: white;
+  cursor: pointer;
+  padding: 0.938rem;
+  border-radius: 50%;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.3);
 }
 
 .newsletter {
@@ -981,5 +1004,9 @@ footer {
   #newarrivals-container,
   #flashsales-container {
     padding: 5px;
+  }
+
+  .bi-arrow-up{
+    color: white;
   }
 }

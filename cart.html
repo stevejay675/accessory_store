@@ -31,6 +31,21 @@
         </div>
     </nav>
 
+    <div class="sidebar">
+      <div>
+          <img src="assets/images/logos/InShot_20240510_231048178.png" alt="" class="sidebar-logo">
+      </div>
+      <ul>
+          <li class="links"><a href="index.html" class="alink"><i class="bi-house"></i> home</a></li>
+          <li class="links"><a href="shop.html" class="alink active"><i class="bi-shop"></i> shop</a></li>
+          <li class="links"><a href="contact.html" class="alink"><i class="bi-telephone"></i> contact</a></li>
+          <li class="links"><a href="blog.html" class="alink"><i class="bi-book"></i> Blog</a></li>
+          <li class="links"><a href="login.html" class="alink"><i class="bi-person"></i>account</a></li>
+          <li class="links"><a href="cart.html" class="alink"><i class="bi-cart4"></i> cart</a></li>
+          <li class="links"><a href="about.html" class="alink"><i class="bi-people"></i> about us</a></li>
+      </ul>
+    </div>
+
 
 
     <section class="hero-banner">
@@ -40,29 +55,38 @@
         </div>
     </section>
 
-    
 
-    <main>
+      <main>
+       
+
+
         <div class="cart-items" id="cart-items">
           <!-- Cart items will be dynamically added here -->
 
         </div>
+
+        
     
         <div class="cart-summary">
           <h2>Cart Summary</h2>
           <div class="subtotal">
             <span class="label">Subtotal:</span>
-            <span class="value">$0.00</span>
+            <span class="value" id="subtotal">$0.00</span>
           </div>
+
+          <div class="total">
+            <span class="label">Shipping:</span>
+            <span class="value" id="shipping">$0.00</span>
+          </div>
+
           <div class="total">
             <span class="label">Total:</span>
-            <span class="value">$0.00</span>
+            <span class="value total" id="total">$0.00</span>
           </div>
           <button class="checkout-btn">Checkout</button>
           <a href="./shop.html" class="continue-shopping-link">Continue Shopping</a>
         </div>
       </main>
-
       <script src="cart.js"></script>
 </body>
 </html>

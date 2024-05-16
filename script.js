@@ -15,11 +15,24 @@ const hamburgerIcon = document.querySelector(".hamburger-menu");
   const subcategories = document.querySelector(".categories-topMenu");
   const Category = document.querySelector(".Category");
   const categBTN = document.querySelector(".categBTN");
-  let productArray = [];
+  let cart = [];
 
+  window.onscroll = function() { scrollFunction() };
 
+  // Function to update cart count displayed in the UI
+function updateCartCount() {
+  const cartCountElement = document.querySelector('.cartCount');
+  cartCountElement.textContent = cart.length;
+}
 
-
+// Load cart items from local storage when the page is loaded
+document.addEventListener('DOMContentLoaded', () => {
+  const storedCartItems = JSON.parse(localStorage.getItem('cartItems'));
+  if (storedCartItems) {
+    cart.push(...storedCartItems);
+    updateCartCount();
+  }
+});
 
 fetch('data/data.json')
   .then(response => response.json())
@@ -58,13 +71,20 @@ fetch('data/data.json')
       </div>
       `;
       productContainer.appendChild(productElement);
+      const singleImage = productElement.querySelector('.product-image');
       const addcart = productElement.querySelector('.addtocart');
       addcart.addEventListener('click', () => {
         cart.push(product);
+        localStorage.setItem('cartItems', JSON.stringify(cart));
         updateCartCount();
-        addcart.innerHTML = `<strike>added</strike> <i class="bi-check"></i>`;
+        addcart.innerHTML = `<i class="bi-check"></i>`;
         addcart.disabled = true;
       });
+
+
+      singleImage.addEventListener('click', () =>{
+        alert('Single product page not yet implemented')
+      })
       
     });
 
@@ -95,8 +115,9 @@ fetch('data/data.json')
       const addcart = productElement.querySelector('.addtocart');
       addcart.addEventListener('click', () => {
         cart.push(product);
+        localStorage.setItem('cartItems', JSON.stringify(cart));
         updateCartCount();
-        addcart.innerHTML = `<strike>added</strike> <i class="bi-check"></i>`;
+        addcart.innerHTML = `<i class="bi-check"></i>`;
         addcart.disabled = true;
       });
       
@@ -129,8 +150,9 @@ fetch('data/data.json')
       const addcart = productElement.querySelector('.addtocart');
       addcart.addEventListener('click', () => {
         cart.push(product);
+        localStorage.setItem('cartItems', JSON.stringify(cart));
         updateCartCount();
-        addcart.innerHTML = `<strike>added</strike> <i class="bi-check"></i>`;
+        addcart.innerHTML = `<i class="bi-check"></i>`;
         addcart.disabled = true;
       });
       
@@ -143,11 +165,7 @@ fetch('data/data.json')
 
 
 
-  for(let i=0; i<addtocartBtn.length; i++){
-    addtocartBtn[i].addEventListener("click", () =>{
-      alert('item added to cart')
-    })
-  }
+ 
   
 
 
@@ -194,3 +212,20 @@ fetch('data/data.json')
 
   });
   
+
+  // function to Show the "go to top" button when the user scrolls down 20px from the to
+function scrollFunction() {
+  var goToTopBtn = document.getElementById("goToTopBtn");
+  if (document.body.scrollTop > 200 || document.documentElement.scrollTop > 200) {
+    goToTopBtn.style.display = "block";
+  } else {
+    goToTopBtn.style.display = "none";
+  }
+}
+
+// When the user clicks on the button, scroll to the top of the page
+function goToTop() {
+  document.body.scrollTop = 0; // For Safari
+  document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
+}
+

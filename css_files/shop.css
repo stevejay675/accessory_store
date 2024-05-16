@@ -219,9 +219,7 @@ a {
     background-color: #222;
   }
 
-  .options-img:active{
-    background-color: grey;
-  }
+ 
 
   .options span{
     font-size: 13px;
@@ -337,57 +335,83 @@ a {
 
 
 /* side bar styling*/
-.sidebar{
-    background-color: white;
-    position: fixed;
-    top: 0;
-    left: -100%;
-    bottom: 0;
-    height: 100vh;
-    width: 85%;
-    padding-top: 10px;
-    transition: 0.5s;
-    z-index: 20;
+.sidebar {
+  background-color: white;
+  position: fixed;
+  top: 0;
+  left: -100%;
+  bottom: 0;
+  height: 100vh;
+  width: 85%;
+  display: flex;
+  flex-direction: column;
+  transition: 0.5s;
+  z-index: 20;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
 }
 
-.sidebar.active{
-    left: 0;
-    transition: 0.5s;
+.sidebar div {
+  display: flex;
+  align-items: center;
+  border-bottom: 1px solid #bbbfbf;
 }
 
-.sidebar div{
-    display: flex;
-    gap: 5px;
-    align-items: center;
+.sidebar div .sidebar-logo {
+  width: 85px;
+  height: auto;
+  align-self: center;
+  margin: 0 auto;
 }
 
-.sidebar div span{
-    font-weight: bold;
-    letter-spacing: 1px;
+.sidebar.active {
+  left: 0;
+  transition: 0.5s;
 }
 
-.sidebar ul{
-    display: flex;
-    flex-direction: column;
-    gap: 15px;
-    justify-content: center;
-    padding: 30px 0 0 15px;
+.sidebar div {
+  display: flex;
+  gap: 5px;
+  align-items: center;
 }
 
-.sidebar ul li{
-    list-style: none;
+.sidebar-header {
+  width: 100%;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  color: black;
+  border-bottom: 1px solid #bbbfbf;
 }
 
-.sidebar ul li a{
-    text-decoration: none;
-    color: black;
-    font-size: 18px;
-    letter-spacing: 1px;
-
+.sidebar div span {
+  font-weight: bold;
+  letter-spacing: 1px;
 }
 
-.sidebar ul li a i{
-    color: black;
+.sidebar ul {
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+  justify-content: center;
+  padding: 30px 0 0 15px;
+}
+
+.sidebar ul li {
+  list-style: none;
+}
+
+.sidebar ul li a {
+  text-transform: uppercase;
+  text-decoration: none;
+  color: black;
+  font-size: 15px;
+  letter-spacing: 1px;
+  padding-bottom: 3px;
+}
+
+.alink.active{
+  color: rgb(0, 100, 50);
+  border-bottom: 2px solid rgb(0, 100, 50);
+  font-weight: 700;
 }
 
 
@@ -458,9 +482,6 @@ a {
     gap: 5px;
   }
 
-  .product:hover{
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
-  }
 
   .product.darkmode {
     background-color: #333; /* Dark background color for product */
@@ -538,13 +559,15 @@ a {
   }
 
   .addtocart-div div i{
-    color: rgb(0, 100, 50);
+    
   }
 
   .bi-check{
     border-radius: 50%;
     font-size: 12px;
     font-size: 15px;
+    background-color: rgb(0, 100, 50);
+    color: white;
   }
 
   .addtocart{
@@ -741,6 +764,24 @@ a {
     border: transparent;
   }
 
+
+  #goToTopBtn{
+    display: none;
+    position: fixed;
+    bottom: 1.25rem;
+    right: 0;
+    z-index: 99;
+    font-size: 1.125rem;
+    border: none;
+    outline: none;
+    background-color: #37474f;
+    border: 1px solid white;
+    color: white;
+    cursor: pointer;
+    padding: 0.938rem;
+    border-radius: 50%;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.3);
+  }
 
 
   footer {
@@ -954,10 +995,14 @@ a {
       display: none;
     }
   
-    #product-container,
-    #newarrivals-container,
-    #flashsales-container {
-      padding: 5px;
+    #product-container, #product-container-laptops, #product-container-mouse,
+    #product-container-keyboards, #product-container-gamepads, #product-container-headsets
+     {
+      padding: 1px;
+    }
+
+    .bi-arrow-up{
+      color: white;
     }
     
   }
