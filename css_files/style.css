@@ -3,13 +3,17 @@
   padding: 0;
   box-sizing: border-box;
   outline: none;
-  font-family: Arial, sans-serif;
   transition: 0.5s;
   outline: none;
+  font-family: "Lato", sans-serif;
+  font-style: normal;
 }
+
+
 
 body {
   position: relative;
+  
 }
 
 button {
