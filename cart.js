@@ -88,8 +88,6 @@ function updateCartCount() {
 
   // Checkout button event listener
   document.querySelector('.checkout-btn').addEventListener('click', () => {
-      // Implement your checkout logic here
-      alert('Checkout functionality is not implemented yet!');
   });
 });
 
