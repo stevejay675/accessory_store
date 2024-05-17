@@ -833,6 +833,7 @@ a {
   .appleLogo img {
     width: 200px;
     height: 100px;
+    cursor: pointer;
   }
   
   .payment {
@@ -849,20 +850,32 @@ a {
   }
   
   .payment div img {
-    width: 20px;
-    height: 20px;
+    width: 25px;
+    height: 25px;
     border-radius: 50%;
     cursor: pointer;
+    border: 1px solid #bbbfbf;
+    
+  }
+  
+  .social-links div{
+    display: flex;
+    gap: 10px;
+    margin-top: 10px;
+  }
+  
+  .social-links a i{
+    font-size: 20px;
   }
   
   #fb {
-    background-color: blue;
+    color: #0051ff;
     border-radius: 50%;
     cursor: pointer;
   }
   
   #wsp {
-    background-color: green;
+    color: green;
     border-radius: 50%;
     cursor: pointer;
   }

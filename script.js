@@ -82,6 +82,7 @@ fetch('data/data.json')
         addcart.innerHTML = `<i class="bi-check"></i>`;
         addcart.disabled = true;
       });
+      
 
 
       singleImage.addEventListener('click', () =>{
