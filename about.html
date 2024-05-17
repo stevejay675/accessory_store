@@ -7,6 +7,128 @@
     <link rel="stylesheet" href="css_files/shop.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
 </head>
+<style>
+   body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+.about-hero {
+    position: relative;
+    background: url('../assets/blog/blog4.png') no-repeat center center/cover;
+    height: 400px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+}
+
+.about-hero .overlay {
+    background: rgba(0, 0, 0, 0.5);
+    padding: 50px;
+    text-align: center;
+    border-radius: 10px;
+    width: 100%;
+    height: 100%;
+}
+
+.about-hero h1 {
+    margin: 0;
+    font-size: 48px;
+    
+}
+
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px 0;
+}
+
+.about-intro, .mission-vision, .team, .testimonials {
+    padding: 50px 0;
+}
+
+.about-intro h2, .mission-vision h2, .team h2, .testimonials h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 32px;
+}
+
+.about-intro p, .mission-vision p, .team p, .testimonials p {
+    text-align: center;
+    font-size: 18px;
+    line-height: 1.6;
+}
+
+.mission-vision .container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.mission, .vision {
+    width: 45%;
+    background: #fff;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+
+.team .team-members {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.team-member {
+    width: 30%;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.team-member img {
+    width: 100%;
+    border-radius: 50%;
+    margin-bottom: 10px;
+}
+
+.team-member h3 {
+    margin: 10px 0 5px;
+    font-size: 20px;
+}
+
+.team-member p {
+    font-size: 16px;
+    color: #777;
+}
+
+.testimonials .testimonial {
+    background: #fff;
+    padding: 20px;
+    margin: 20px 0;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    text-align: center;
+}
+
+.testimonials .testimonial h4 {
+    margin-top: 10px;
+    font-size: 18px;
+    color: #555;
+}
+
+@media (max-width: 768px) {
+    .mission, .vision, .team-member {
+        width: 100%;
+    }
+}
+ 
+</style>
 
 <body>
     <nav class="navbar">
@@ -46,12 +168,74 @@
     </div>
 
 
-    <header class="hero-banner">
-        <div class="banner-content">
-            <h1>#KNOW US</h1>
-            <p>Shop all your gaming accessories with us.</p>
+    
+
+    
+    
+      <section class="about-hero">
+        <div class="overlay">
+            <h1>About Us</h1>
         </div>
-    </header>
+    </section>
+
+    <section class="about-intro">
+        <div class="container">
+            <h2>Welcome to Gaming Accessories Store</h2>
+            <p>We are passionate about providing gamers with the best accessories to enhance their gaming experience. Our store offers a wide range of high-quality products from top brands, ensuring that every gamer finds the perfect accessory to elevate their gameplay.</p>
+        </div>
+    </section>
+
+    <section class="mission-vision">
+        <div class="container">
+            <div class="mission">
+                <h2>Our Mission</h2>
+                <p>To provide gamers with the highest quality accessories and unparalleled customer service, helping them achieve the best gaming experience possible.</p>
+            </div>
+            <div class="vision">
+                <h2>Our Vision</h2>
+                <p>To be the leading provider of gaming accessories worldwide, known for our commitment to quality, innovation, and customer satisfaction.</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="team">
+        <div class="container">
+            <h2>Meet Our Team</h2>
+            <div class="team-members">
+                <div class="team-member">
+                    <img src="assets/b1.png" alt="Team Member 1">
+                    <h3>Jane Doe</h3>
+                    <p>CEO & Founder</p>
+                </div>
+                <div class="team-member">
+                    <img src="assets/b2.png" alt="Team Member 2">
+                    <h3>John Smith</h3>
+                    <p>Chief Marketing Officer</p>
+                </div>
+                <div class="team-member">
+                    <img src="assets/b3.png" alt="Team Member 3">
+                    <h3>Emily Johnson</h3>
+                    <p>Head of Customer Support</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="testimonials">
+        <div class="container">
+            <h2>What Our Customers Say</h2>
+            <div class="testimonial">
+                <p>"The best gaming accessories store! Great products and excellent customer service."</p>
+                <h4>- Alex Brown</h4>
+            </div>
+            <div class="testimonial">
+                <p>"I found everything I needed for my gaming setup. Highly recommend this store."</p>
+                <h4>- Lisa White</h4>
+            </div>
+        </div>
+    </section>
+    
+    
 
     <div class="darken">
 
