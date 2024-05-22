@@ -424,7 +424,7 @@ a {
 
 /* Style for the product container */
 #product-container, #product-container-laptops, #product-container-gamepads,
- #product-container-keyboards, #product-container-mouse, #product-container-headsets{
+ #product-container-keyboards, #product-container-mouse, #product-container-headsets, #product-container-cart{
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
@@ -971,7 +971,7 @@ a {
     }
   
     #product-container, #product-container-laptops, #product-container-mouse,
-    #product-container-keyboards, #product-container-gamepads, #product-container-headsets
+    #product-container-keyboards, #product-container-gamepads, #product-container-headsets, #product-container-cart
      {
       padding: 1px;
     }

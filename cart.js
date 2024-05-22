@@ -26,7 +26,7 @@ function updateCartCount() {
       let subtotal = 0;
 
       if (cartItems.length === 0) {
-          cartItemsContainer.innerHTML = `<div class="emptyCart">CART IS EMPTY</div>`;
+          cartItemsContainer.innerHTML = `<div class="emptyCart"><img src="assets/seriviceImages/empty-cart.png" alt="" class="empty-cart-image"> <a href="shop.html" class="shopNow">Shop now</a></div>`;
       } else {
           // Display each item in the cart
           cartItems.forEach((item, index) => {

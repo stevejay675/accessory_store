@@ -33,23 +33,28 @@ a {
   color: black;
 }
 
-.navbar {
+.navbar{
   display: flex;
-  justify-content: space-between;
-  align-items: center;
+  flex-direction: column;
   padding-top: 5px;
   padding-bottom: 5px;
   padding-left: 20px;
   padding-right: 20px;
   background-color: white;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
-  border: 1px solid #ccc;
   color: white;
   position: sticky;
   z-index: 10;
   left: 0;
   right: 0;
   top: 0;
+}
+
+.navbar div {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  
 }
 
 .imageLogo {
@@ -127,11 +132,35 @@ a {
   cursor: pointer;
 }
 
+.navbar p{
+   padding: 10px;
+   background: hsl(0, 0%, 93%);
+   border-radius: 20px;
+   font-size: 15px;
+   display: flex;
+  width: 100%;
+  justify-content: space-between;
+  align-items: center;
+  
+}
+
+.navbar p input{
+  background: transparent;
+  width: 90%;
+}
+
+.navbar p i{
+  font-weight: 700;
+}
+
 .mediaquery.active {
+  
   color: rgb(0, 100, 50);
   font-weight: 700;
   border-bottom: 2px solid rgb(0, 100, 50);
 }
+
+
 
 /*hero banner styling*/
 .hero-banner {
