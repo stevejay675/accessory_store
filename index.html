@@ -20,17 +20,18 @@
 
     <nav class="navbar">
 
-        <div>
-            <img src="assets/images/logos/InShot_20240510_231048178.png" alt="" class="imageLogo">
+        <div class="nav-section">
 
+        <img src="assets/images/logos/InShot_20240510_231048178.png" alt="" class="imageLogo">
 
         <div class="container-left">
-            <a href="index.html" class="mediaquery ">Home</a>
-            <a href="shop.html" class="mediaquery">Shop</a>
-            <a href="blog.html" class="mediaquery active">blog</a>
+            <a href="index.html" class="mediaquery active">Home</a>
+            <a href="shop.html" class="mediaquery ">Shop</a>
+            <a href="blog.html" class="mediaquery">blog</a>
             <a href="about.html" class="mediaquery">About</a>
             <a href="contact.html" class="mediaquery">contact</a>
             <i class="bi-sun theme"></i>
+            <i class="bi-search search-btn"></i>
             <a href="cart.html" class="cartcount-parent"><i class="bi-bag"></i> <span class="cartCount">0</span></a>
             <div class="hamburger-menu">
                 <span class="line1"></span>
@@ -38,9 +39,12 @@
                 <span class="line3"></span>
             </div>
         </div>
-        </div>
+    </div>
 
-        <p><input type="search" placeholder="Looking for something?............."> <i class="bi-search"></i></p>
+    <div class="searchdiv">
+        <input type="search" placeholder="looking for something...........?">
+        <i class="bi-search"></i>
+    </div>
     </nav>
 
 
@@ -368,6 +372,14 @@
             dm.classList.toggle('darkmode')
            })
        })
+
+       const searchBtn = document.querySelector('.search-btn');
+       const searchdiv = document.querySelector('.searchdiv');
+
+       searchBtn.addEventListener('click', ()=>{
+        searchdiv.classList.toggle('active');
+       })
+
 
     </script>
 </body>

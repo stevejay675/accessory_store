@@ -205,10 +205,10 @@ fetch('data/data.json')
   // function to Show the "go to top" button when the user scrolls down 20px from the to
 function scrollFunction() {
   var goToTopBtn = document.getElementById("goToTopBtn");
-  if (document.body.scrollTop > 200 || document.documentElement.scrollTop > 200) {
-    goToTopBtn.style.display = "block";
+  if (document.body.scrollTop > 300 || document.documentElement.scrollTop > 300) {
+    goToTopBtn.style.right = "1%";
   } else {
-    goToTopBtn.style.display = "none";
+    goToTopBtn.style.right = "-99%";
   }
 }
 
